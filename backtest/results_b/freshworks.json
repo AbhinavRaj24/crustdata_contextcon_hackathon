@@ -8,6 +8,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -19,6 +20,7 @@
       "summaries": {
         "profiles": "About 7,121 people worked at Freshworks in Feb 2023",
         "joiner_rate": "3329 joiners since Mar 2022 out of 7,121 profiles (46.7%)",
+        "hiring_momentum": "1503 joiners in the 6 months to Jan 2023 vs 1867 in the best 6 months of the year before (-19%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
         "finance_team_exits": "0 of about 139 finance staff (0%) left between Jul 2022 and Dec 2022",
@@ -28,7 +30,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -36,6 +38,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -47,6 +50,7 @@
       "summaries": {
         "profiles": "About 7,452 people worked at Freshworks in Aug 2023",
         "joiner_rate": "2225 joiners since Sep 2022 out of 7,452 profiles (29.9%)",
+        "hiring_momentum": "1173 joiners in the 6 months to Jul 2023 vs 1867 in the best 6 months of the year before (-37%)",
         "headcount_trend": "Headcount 7,452 (Aug 2023), +5% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
         "finance_team_exits": "2 of about 142 finance staff (1%) left between Jan 2023 and Jul 2023",
@@ -56,14 +60,15 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
-      "momentum": "amber"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "ok"
     },
     {
       "T": "2024-03-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -75,6 +80,7 @@
       "summaries": {
         "profiles": "About 7,757 people worked at Freshworks in Feb 2024",
         "joiner_rate": "2519 joiners since Mar 2023 out of 7,757 profiles (32.5%)",
+        "hiring_momentum": "1094 joiners in the 6 months to Jan 2024 vs 1503 in the best 6 months of the year before (-27%)",
         "headcount_trend": "Headcount 7,757 (Feb 2024), +4% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
         "finance_team_exits": "0 of about 132 finance staff (0%) left between Jul 2023 and Jan 2024",
@@ -84,7 +90,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -92,6 +98,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -103,6 +110,7 @@
       "summaries": {
         "profiles": "About 7,015 people worked at Freshworks in Aug 2024",
         "joiner_rate": "2750 joiners since Sep 2023 out of 7,015 profiles (39.2%)",
+        "hiring_momentum": "1450 joiners in the 6 months to Jul 2024 vs 1173 in the best 6 months of the year before (+24%)",
         "headcount_trend": "Headcount 7,015 (Aug 2024), -10% in 6 months, 10% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
         "finance_team_exits": "1 of about 136 finance staff (1%) left between Jan 2024 and Jul 2024",
@@ -112,7 +120,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "reduce_25 (R6)",
-      "band_momentum": "reduce_25 (R6)",
+      "band_without_momentum": "reduce_25 (R6)",
       "momentum": "ok"
     },
     {
@@ -120,6 +128,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "amber",
         "headcount_trend": "amber",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -131,6 +140,7 @@
       "summaries": {
         "profiles": "About 6,407 people worked at Freshworks in Feb 2025",
         "joiner_rate": "2310 joiners since Mar 2024 out of 6,407 profiles (36.1%)",
+        "hiring_momentum": "622 joiners in the 6 months to Jan 2025 vs 1450 in the best 6 months of the year before (-57%)",
         "headcount_trend": "Headcount 6,407 (Feb 2025), -9% in 6 months, 17% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
         "finance_team_exits": "2 of about 123 finance staff (2%) left between Jul 2024 and Dec 2024",
@@ -140,14 +150,15 @@
         "job_posts": "12 job posts since Mar 2024, newest on 2025-02-26"
       },
       "band": "reduce_25 (R6)",
-      "band_momentum": "reduce_25 (R6)",
-      "momentum": "ok"
+      "band_without_momentum": "reduce_25 (R6)",
+      "momentum": "amber"
     },
     {
       "T": "2025-09-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -159,6 +170,7 @@
       "summaries": {
         "profiles": "About 6,978 people worked at Freshworks in Sep 2025",
         "joiner_rate": "1981 joiners since Sep 2024 out of 6,978 profiles (28.4%)",
+        "hiring_momentum": "1158 joiners in the 6 months to Jul 2025 vs 1450 in the best 6 months of the year before (-20%)",
         "headcount_trend": "Headcount 6,978 (Sep 2025), +8% in 6 months, 10% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
         "finance_team_exits": "0 of about 105 finance staff (0%) left between Jan 2025 and Jul 2025",
@@ -168,7 +180,7 @@
         "job_posts": "752 job posts since Sep 2024, newest on 2025-08-29"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -176,6 +188,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -187,6 +200,7 @@
       "summaries": {
         "profiles": "About 7,362 people worked at Freshworks in Feb 2026",
         "joiner_rate": "1871 joiners since Mar 2025 out of 7,362 profiles (25.4%)",
+        "hiring_momentum": "848 joiners in the 6 months to Jan 2026 vs 1158 in the best 6 months of the year before (-27%)",
         "headcount_trend": "Headcount 7,362 (Feb 2026), +8% in 6 months, 5% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
         "finance_team_exits": "1 of about 93 finance staff (1%) left between Jul 2025 and Dec 2025",
@@ -196,7 +210,7 @@
         "job_posts": "1399 job posts since Mar 2025, newest on 2026-02-25"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -204,6 +218,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -215,6 +230,7 @@
       "summaries": {
         "profiles": "About 7,740 people worked at Freshworks in Aug 2026",
         "joiner_rate": "1398 joiners since Sep 2025 out of 7,740 profiles (18.1%)",
+        "hiring_momentum": "634 joiners in the 6 months to Jul 2026 vs 1158 in the best 6 months of the year before (-45%)",
         "headcount_trend": "Headcount 7,740 (Aug 2026), +4% in 6 months, 0% below its 24-month peak; all-time peak 7,757 in Feb 2024",
         "finance_head_exit": "No finance head left between Jan 2026 and Jul 2026",
         "finance_team_exits": "0 of about 59 finance staff (0%) left between Jan 2026 and Jul 2026",
@@ -224,11 +240,11 @@
         "job_posts": "1549 job posts since Sep 2025, newest on 2026-09-01"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     }
   ],
   "policy_false_alarms": 2,
   "points": 8,
-  "momentum_false_alarms": 2
+  "nomom_false_alarms": 2
 }

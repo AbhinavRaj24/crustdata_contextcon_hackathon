@@ -8,6 +8,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -19,6 +20,7 @@
       "summaries": {
         "profiles": "About 1,069 people worked at Bira 91 in Jan 2024",
         "joiner_rate": "402 joiners since Feb 2023 out of 1,069 profiles (37.6%)",
+        "hiring_momentum": "188 joiners in the 6 months to Dec 2023 vs 210 in the best 6 months of the year before (-10%)",
         "headcount_trend": "Headcount 1,069 (Jan 2024), +6% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jun 2023 and Dec 2023",
         "finance_team_exits": "1 of about 55 finance staff (2%) left between Jun 2023 and Dec 2023",
@@ -28,7 +30,7 @@
         "job_posts": "2 job posts since Feb 2023, newest on 2023-08-16"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -36,6 +38,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -47,6 +50,7 @@
       "summaries": {
         "profiles": "About 1,066 people worked at Bira 91 in Feb 2024",
         "joiner_rate": "394 joiners since Mar 2023 out of 1,066 profiles (37.0%)",
+        "hiring_momentum": "164 joiners in the 6 months to Jan 2024 vs 232 in the best 6 months of the year before (-29%)",
         "headcount_trend": "Headcount 1,066 (Feb 2024), +3% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
         "finance_team_exits": "1 of about 52 finance staff (2%) left between Jul 2023 and Jan 2024",
@@ -56,14 +60,15 @@
         "job_posts": "1 job posts since Mar 2023, newest on 2023-08-16"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
-      "momentum": "amber"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "ok"
     },
     {
       "T": "2024-04-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -75,6 +80,7 @@
       "summaries": {
         "profiles": "About 1,095 people worked at Bira 91 in Apr 2024",
         "joiner_rate": "425 joiners since Apr 2023 out of 1,095 profiles (38.8%)",
+        "hiring_momentum": "150 joiners in the 6 months to Feb 2024 vs 251 in the best 6 months of the year before (-40%)",
         "headcount_trend": "Headcount 1,095 (Apr 2024), +5% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Aug 2023 and Feb 2024",
         "finance_team_exits": "2 of about 52 finance staff (4%) left between Aug 2023 and Feb 2024",
@@ -84,14 +90,15 @@
         "job_posts": "1 job posts since Apr 2023, newest on 2023-08-16"
       },
       "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
-      "momentum": "red"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "ok"
     },
     {
       "T": "2024-05-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "amber",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -103,6 +110,7 @@
       "summaries": {
         "profiles": "About 1,095 people worked at Bira 91 in Apr 2024",
         "joiner_rate": "392 joiners since May 2023 out of 1,095 profiles (35.8%)",
+        "hiring_momentum": "109 joiners in the 6 months to Mar 2024 vs 285 in the best 6 months of the year before (-62%)",
         "headcount_trend": "Headcount 1,095 (Apr 2024), +5% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Sep 2023 and Mar 2024",
         "finance_team_exits": "2 of about 53 finance staff (4%) left between Sep 2023 and Mar 2024",
@@ -112,14 +120,15 @@
         "job_posts": "1 job posts since May 2023, newest on 2023-08-16"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
-      "momentum": "ok"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "amber"
     },
     {
       "T": "2024-06-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "red",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -131,6 +140,7 @@
       "summaries": {
         "profiles": "About 1,127 people worked at Bira 91 in May 2024",
         "joiner_rate": "351 joiners since Jun 2023 out of 1,127 profiles (31.1%)",
+        "hiring_momentum": "85 joiners in the 6 months to Apr 2024 vs 296 in the best 6 months of the year before (-71%)",
         "headcount_trend": "Headcount 1,127 (May 2024), +8% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Oct 2023 and Apr 2024",
         "finance_team_exits": "1 of about 52 finance staff (2%) left between Oct 2023 and Apr 2024",
@@ -139,15 +149,16 @@
         "company_age": "Founded in 2015 (9 years old)",
         "job_posts": "1 job posts since Jun 2023, newest on 2023-08-16"
       },
-      "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
-      "momentum": "ok"
+      "band": "reduce_25 (R6)",
+      "band_without_momentum": "approve (R8)",
+      "momentum": "red"
     },
     {
       "T": "2024-07-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -159,6 +170,7 @@
       "summaries": {
         "profiles": "About 1,151 people worked at Bira 91 in Jul 2024",
         "joiner_rate": "351 joiners since Jul 2023 out of 1,151 profiles (30.5%)",
+        "hiring_momentum": "123 joiners in the 6 months to May 2024 vs 236 in the best 6 months of the year before (-48%)",
         "headcount_trend": "Headcount 1,151 (Jul 2024), +8% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Nov 2023 and May 2024",
         "finance_team_exits": "1 of about 55 finance staff (2%) left between Nov 2023 and May 2024",
@@ -168,7 +180,7 @@
         "job_posts": "1 job posts since Jul 2023, newest on 2023-08-16"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -176,6 +188,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -187,6 +200,7 @@
       "summaries": {
         "profiles": "About 1,151 people worked at Bira 91 in Jul 2024",
         "joiner_rate": "332 joiners since Aug 2023 out of 1,151 profiles (28.8%)",
+        "hiring_momentum": "147 joiners in the 6 months to Jun 2024 vs 210 in the best 6 months of the year before (-30%)",
         "headcount_trend": "Headcount 1,151 (Jul 2024), +8% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Dec 2023 and Jun 2024",
         "finance_team_exits": "1 of about 55 finance staff (2%) left between Dec 2023 and Jun 2024",
@@ -196,7 +210,7 @@
         "job_posts": "1 job posts since Aug 2023, newest on 2023-08-16"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -204,6 +218,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -215,6 +230,7 @@
       "summaries": {
         "profiles": "About 1,152 people worked at Bira 91 in Aug 2024",
         "joiner_rate": "293 joiners since Sep 2023 out of 1,152 profiles (25.4%)",
+        "hiring_momentum": "159 joiners in the 6 months to Jul 2024 vs 232 in the best 6 months of the year before (-31%)",
         "headcount_trend": "Headcount 1,152 (Aug 2024), +8% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
         "finance_team_exits": "1 of about 53 finance staff (2%) left between Jan 2024 and Jul 2024",
@@ -224,7 +240,7 @@
         "job_posts": "No job posts since Sep 2023, but people are still joining"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -232,6 +248,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -243,6 +260,7 @@
       "summaries": {
         "profiles": "About 1,152 people worked at Bira 91 in Sep 2024",
         "joiner_rate": "283 joiners since Oct 2023 out of 1,152 profiles (24.6%)",
+        "hiring_momentum": "168 joiners in the 6 months to Aug 2024 vs 251 in the best 6 months of the year before (-33%)",
         "headcount_trend": "Headcount 1,152 (Sep 2024), +5% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Feb 2024 and Aug 2024",
         "finance_team_exits": "1 of about 55 finance staff (2%) left between Feb 2024 and Aug 2024",
@@ -252,7 +270,7 @@
         "job_posts": "No job posts since Oct 2023, but people are still joining"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -260,6 +278,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -271,6 +290,7 @@
       "summaries": {
         "profiles": "About 1,161 people worked at Bira 91 in Oct 2024",
         "joiner_rate": "275 joiners since Nov 2023 out of 1,161 profiles (23.7%)",
+        "hiring_momentum": "174 joiners in the 6 months to Sep 2024 vs 285 in the best 6 months of the year before (-39%)",
         "headcount_trend": "Headcount 1,161 (Oct 2024), +6% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Mar 2024 and Sep 2024",
         "finance_team_exits": "2 of about 55 finance staff (4%) left between Mar 2024 and Sep 2024",
@@ -280,7 +300,7 @@
         "job_posts": "No job posts since Nov 2023, but people are still joining"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -288,6 +308,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -299,6 +320,7 @@
       "summaries": {
         "profiles": "About 1,153 people worked at Bira 91 in Nov 2024",
         "joiner_rate": "261 joiners since Dec 2023 out of 1,153 profiles (22.6%)",
+        "hiring_momentum": "179 joiners in the 6 months to Oct 2024 vs 296 in the best 6 months of the year before (-40%)",
         "headcount_trend": "Headcount 1,153 (Nov 2024), +2% in 6 months, 1% below its 24-month peak",
         "finance_head_exit": "No finance head left between Apr 2024 and Oct 2024",
         "finance_team_exits": "2 of about 54 finance staff (4%) left between Apr 2024 and Oct 2024",
@@ -308,7 +330,7 @@
         "job_posts": "No job posts since Dec 2023, but people are still joining"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -316,6 +338,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -327,6 +350,7 @@
       "summaries": {
         "profiles": "About 1,146 people worked at Bira 91 in Dec 2024",
         "joiner_rate": "261 joiners since Jan 2024 out of 1,146 profiles (22.8%)",
+        "hiring_momentum": "149 joiners in the 6 months to Nov 2024 vs 236 in the best 6 months of the year before (-37%)",
         "headcount_trend": "Headcount 1,146 (Dec 2024), -0% in 6 months, 1% below its 24-month peak",
         "finance_head_exit": "No finance head left between May 2024 and Nov 2024",
         "finance_team_exits": "2 of about 54 finance staff (4%) left between May 2024 and Nov 2024",
@@ -336,7 +360,7 @@
         "job_posts": "No job posts since Jan 2024, but people are still joining"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -344,6 +368,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "red",
         "finance_team_exits": "ok",
@@ -355,6 +380,7 @@
       "summaries": {
         "profiles": "About 1,131 people worked at Bira 91 in Jan 2025",
         "joiner_rate": "244 joiners since Feb 2024 out of 1,131 profiles (21.6%)",
+        "hiring_momentum": "120 joiners in the 6 months to Dec 2024 vs 188 in the best 6 months of the year before (-36%)",
         "headcount_trend": "Headcount 1,131 (Jan 2025), -2% in 6 months, 3% below its 24-month peak",
         "finance_head_exit": "Chief Financial Officer left in 2024-12",
         "finance_team_exits": "3 of about 55 finance staff (5%) left between Jun 2024 and Dec 2024",
@@ -364,12 +390,12 @@
         "job_posts": "No job posts since Feb 2024, but people are still joining"
       },
       "band": "reduce_25 (R6)",
-      "band_momentum": "reduce_25 (R6)",
-      "momentum": "amber"
+      "band_without_momentum": "reduce_25 (R6)",
+      "momentum": "ok"
     }
   ],
   "policy_months_flagged": 1,
   "policy_status_at_event": "reduce_25 (R6)",
-  "momentum_months_flagged": 1,
-  "momentum_status_at_event": "reduce_25 (R6)"
+  "nomom_months_flagged": 1,
+  "nomom_status_at_event": "reduce_25 (R6)"
 }

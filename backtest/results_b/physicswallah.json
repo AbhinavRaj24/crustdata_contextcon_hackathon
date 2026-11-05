@@ -8,6 +8,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -19,6 +20,7 @@
       "summaries": {
         "profiles": "About 7,589 people worked at PW (PhysicsWallah) in Feb 2023",
         "joiner_rate": "5407 joiners since Mar 2022 out of 7,589 profiles (71.2%)",
+        "hiring_momentum": "2678 joiners in the 6 months to Jan 2023 vs 1275 in the best 6 months of the year before (+110%)",
         "headcount_trend": "Headcount 7,589 (Feb 2023), +406% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
         "finance_team_exits": "0 of about 30 finance staff (0%) left between Jul 2022 and Dec 2022",
@@ -28,7 +30,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -36,6 +38,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -47,6 +50,7 @@
       "summaries": {
         "profiles": "About 12,387 people worked at PW (PhysicsWallah) in Aug 2023",
         "joiner_rate": "6613 joiners since Sep 2022 out of 12,387 profiles (53.4%)",
+        "hiring_momentum": "3811 joiners in the 6 months to Jul 2023 vs 2678 in the best 6 months of the year before (+42%)",
         "headcount_trend": "Headcount 12,387 (Aug 2023), +63% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
         "finance_team_exits": "5 of about 56 finance staff (9%) left between Jan 2023 and Jul 2023",
@@ -56,7 +60,7 @@
         "job_posts": "120 job posts since Sep 2022, newest on 2023-08-19"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -64,6 +68,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -75,6 +80,7 @@
       "summaries": {
         "profiles": "About 14,012 people worked at PW (PhysicsWallah) in Feb 2024",
         "joiner_rate": "5865 joiners since Mar 2023 out of 14,012 profiles (41.9%)",
+        "hiring_momentum": "2178 joiners in the 6 months to Jan 2024 vs 3811 in the best 6 months of the year before (-43%)",
         "headcount_trend": "Headcount 14,012 (Feb 2024), +13% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
         "finance_team_exits": "3 of about 67 finance staff (4%) left between Jul 2023 and Jan 2024",
@@ -84,7 +90,7 @@
         "job_posts": "131 job posts since Mar 2023, newest on 2024-02-17"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -92,6 +98,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -103,6 +110,7 @@
       "summaries": {
         "profiles": "About 17,811 people worked at PW (PhysicsWallah) in Aug 2024",
         "joiner_rate": "5148 joiners since Sep 2023 out of 17,811 profiles (28.9%)",
+        "hiring_momentum": "2906 joiners in the 6 months to Jul 2024 vs 3811 in the best 6 months of the year before (-24%)",
         "headcount_trend": "Headcount 17,811 (Aug 2024), +27% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
         "finance_team_exits": "1 of about 81 finance staff (1%) left between Jan 2024 and Jul 2024",
@@ -112,7 +120,7 @@
         "job_posts": "225 job posts since Sep 2023, newest on 2024-08-14"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -120,6 +128,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -131,6 +140,7 @@
       "summaries": {
         "profiles": "About 22,609 people worked at PW (PhysicsWallah) in Feb 2025",
         "joiner_rate": "5315 joiners since Mar 2024 out of 22,609 profiles (23.5%)",
+        "hiring_momentum": "1939 joiners in the 6 months to Jan 2025 vs 2906 in the best 6 months of the year before (-33%)",
         "headcount_trend": "Headcount 22,609 (Feb 2025), +27% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
         "finance_team_exits": "2 of about 89 finance staff (2%) left between Jul 2024 and Dec 2024",
@@ -140,7 +150,7 @@
         "job_posts": "386 job posts since Mar 2024, newest on 2024-12-31"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -148,6 +158,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -159,6 +170,7 @@
       "summaries": {
         "profiles": "About 30,299 people worked at PW (PhysicsWallah) in Sep 2025",
         "joiner_rate": "5094 joiners since Sep 2024 out of 30,299 profiles (16.8%)",
+        "hiring_momentum": "3059 joiners in the 6 months to Jul 2025 vs 2906 in the best 6 months of the year before (+5%)",
         "headcount_trend": "Headcount 30,299 (Sep 2025), +28% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
         "finance_team_exits": "2 of about 93 finance staff (2%) left between Jan 2025 and Jul 2025",
@@ -168,7 +180,7 @@
         "job_posts": "547 job posts since Sep 2024, newest on 2025-09-01"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -176,6 +188,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "amber",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -187,6 +200,7 @@
       "summaries": {
         "profiles": "About 32,245 people worked at PW (PhysicsWallah) in Feb 2026",
         "joiner_rate": "4261 joiners since Mar 2025 out of 32,245 profiles (13.2%)",
+        "hiring_momentum": "1315 joiners in the 6 months to Jan 2026 vs 3059 in the best 6 months of the year before (-57%)",
         "headcount_trend": "Headcount 32,245 (Feb 2026), +10% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
         "finance_team_exits": "5 of about 85 finance staff (6%) left between Jul 2025 and Dec 2025",
@@ -196,7 +210,7 @@
         "job_posts": "813 job posts since Mar 2025, newest on 2026-02-27"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "amber"
     },
     {
@@ -204,6 +218,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "red",
         "finance_team_exits": "ok",
@@ -215,6 +230,7 @@
       "summaries": {
         "profiles": "About 34,862 people worked at PW (PhysicsWallah) in Aug 2026",
         "joiner_rate": "2656 joiners since Sep 2025 out of 34,862 profiles (7.6%)",
+        "hiring_momentum": "1639 joiners in the 6 months to Jul 2026 vs 3059 in the best 6 months of the year before (-46%)",
         "headcount_trend": "Headcount 34,862 (Aug 2026), +6% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "Group Head of Financial Planning Analysis and Strategy (AVP- Finance) left in 2026-03",
         "finance_team_exits": "4 of about 73 finance staff (5%) left between Jan 2026 and Jul 2026",
@@ -224,11 +240,11 @@
         "job_posts": "626 job posts since Sep 2025, newest on 2026-09-01"
       },
       "band": "reduce_25 (R6)",
-      "band_momentum": "reduce_25 (R6)",
+      "band_without_momentum": "reduce_25 (R6)",
       "momentum": "ok"
     }
   ],
   "policy_false_alarms": 1,
   "points": 8,
-  "momentum_false_alarms": 1
+  "nomom_false_alarms": 1
 }

@@ -8,6 +8,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -19,6 +20,7 @@
       "summaries": {
         "profiles": "About 1,695 people worked at CRED in Feb 2023",
         "joiner_rate": "785 joiners since Mar 2022 out of 1,695 profiles (46.3%)",
+        "hiring_momentum": "347 joiners in the 6 months to Jan 2023 vs 374 in the best 6 months of the year before (-7%)",
         "headcount_trend": "Headcount 1,695 (Feb 2023), +8% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
         "finance_team_exits": "0 of about 31 finance staff (0%) left between Jul 2022 and Dec 2022",
@@ -28,7 +30,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -36,6 +38,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -47,6 +50,7 @@
       "summaries": {
         "profiles": "About 1,777 people worked at CRED in Aug 2023",
         "joiner_rate": "643 joiners since Sep 2022 out of 1,777 profiles (36.2%)",
+        "hiring_momentum": "357 joiners in the 6 months to Jul 2023 vs 352 in the best 6 months of the year before (+1%)",
         "headcount_trend": "Headcount 1,777 (Aug 2023), +5% in 6 months, 1% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
         "finance_team_exits": "1 of about 31 finance staff (3%) left between Jan 2023 and Jul 2023",
@@ -56,7 +60,7 @@
         "job_posts": "7 job posts since Sep 2022, newest on 2023-08-07"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -64,6 +68,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -75,6 +80,7 @@
       "summaries": {
         "profiles": "About 1,892 people worked at CRED in Feb 2024",
         "joiner_rate": "498 joiners since Mar 2023 out of 1,892 profiles (26.3%)",
+        "hiring_momentum": "213 joiners in the 6 months to Jan 2024 vs 357 in the best 6 months of the year before (-40%)",
         "headcount_trend": "Headcount 1,892 (Feb 2024), +6% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
         "finance_team_exits": "1 of about 30 finance staff (3%) left between Jul 2023 and Jan 2024",
@@ -84,7 +90,7 @@
         "job_posts": "8 job posts since Mar 2023, newest on 2024-02-27"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -92,6 +98,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -103,6 +110,7 @@
       "summaries": {
         "profiles": "About 1,994 people worked at CRED in Aug 2024",
         "joiner_rate": "490 joiners since Sep 2023 out of 1,994 profiles (24.6%)",
+        "hiring_momentum": "242 joiners in the 6 months to Jul 2024 vs 357 in the best 6 months of the year before (-32%)",
         "headcount_trend": "Headcount 1,994 (Aug 2024), +5% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
         "finance_team_exits": "3 of about 31 finance staff (10%) left between Jan 2024 and Jul 2024",
@@ -112,7 +120,7 @@
         "job_posts": "11 job posts since Sep 2023, newest on 2024-08-28"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -120,6 +128,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -131,6 +140,7 @@
       "summaries": {
         "profiles": "About 2,079 people worked at CRED in Feb 2025",
         "joiner_rate": "522 joiners since Mar 2024 out of 2,079 profiles (25.1%)",
+        "hiring_momentum": "272 joiners in the 6 months to Jan 2025 vs 242 in the best 6 months of the year before (+12%)",
         "headcount_trend": "Headcount 2,079 (Feb 2025), +4% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
         "finance_team_exits": "1 of about 26 finance staff (4%) left between Jul 2024 and Dec 2024",
@@ -140,7 +150,7 @@
         "job_posts": "12 job posts since Mar 2024, newest on 2024-11-15"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -148,6 +158,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -159,6 +170,7 @@
       "summaries": {
         "profiles": "About 2,156 people worked at CRED in Sep 2025",
         "joiner_rate": "555 joiners since Sep 2024 out of 2,156 profiles (25.7%)",
+        "hiring_momentum": "246 joiners in the 6 months to Jul 2025 vs 272 in the best 6 months of the year before (-10%)",
         "headcount_trend": "Headcount 2,156 (Sep 2025), +3% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
         "finance_team_exits": "3 of about 25 finance staff (12%) left between Jan 2025 and Jul 2025",
@@ -168,7 +180,7 @@
         "job_posts": "17 job posts since Sep 2024, newest on 2025-08-25"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -176,6 +188,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -187,6 +200,7 @@
       "summaries": {
         "profiles": "About 2,319 people worked at CRED in Feb 2026",
         "joiner_rate": "589 joiners since Mar 2025 out of 2,319 profiles (25.4%)",
+        "hiring_momentum": "283 joiners in the 6 months to Jan 2026 vs 272 in the best 6 months of the year before (+4%)",
         "headcount_trend": "Headcount 2,319 (Feb 2026), +9% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
         "finance_team_exits": "0 of about 21 finance staff (0%) left between Jul 2025 and Dec 2025",
@@ -196,7 +210,7 @@
         "job_posts": "31 job posts since Mar 2025, newest on 2026-01-29"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -204,6 +218,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -215,6 +230,7 @@
       "summaries": {
         "profiles": "About 2,259 people worked at CRED in Aug 2026",
         "joiner_rate": "469 joiners since Sep 2025 out of 2,259 profiles (20.8%)",
+        "hiring_momentum": "213 joiners in the 6 months to Jul 2026 vs 283 in the best 6 months of the year before (-25%)",
         "headcount_trend": "Headcount 2,259 (Aug 2026), -3% in 6 months, 3% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2026 and Jul 2026",
         "finance_team_exits": "1 of about 23 finance staff (4%) left between Jan 2026 and Jul 2026",
@@ -224,11 +240,11 @@
         "job_posts": "48 job posts since Sep 2025, newest on 2026-08-25"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     }
   ],
   "policy_false_alarms": 0,
   "points": 8,
-  "momentum_false_alarms": 0
+  "nomom_false_alarms": 0
 }

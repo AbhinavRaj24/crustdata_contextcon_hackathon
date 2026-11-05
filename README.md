@@ -86,11 +86,12 @@ Every state is saved to SQLite before the next step starts, so `resume(case_id)`
 
 A fresh case costs about 8–12 credits; a repeat the same day costs 0 (day cache).
 
-### The ten signals
+### The eleven signals
 
 | Signal | Red | Amber |
 | --- | --- | --- |
-| Joiner rate (joiners in 12 months / current profiles) | under 2% with 30+ profiles: **zombie** | under 6% |
+| Joiner rate (joiners in 12 months / current profiles) | under 1% with 30+ profiles: **zombie** | under 6% |
+| Hiring momentum (joiners in 6 months vs the best 6 months of the year before; windows end 2 months back) | -65% or worse | -50% or worse |
 | Headcount trend (our own maths on the history) | 6-month change -20% or worse, or 30%+ below the 24-month peak | -10% / 15% |
 | Finance head exit (CFO, Head of Finance, VP Finance) | left in 180 days | |
 | Finance team exits (share of the team) | 30%+ left in 180 days | 15%+ |
@@ -155,25 +156,30 @@ Code: [`backtest/`](backtest/); full tables: [`backtest/results_b/summary.md`](b
 - Funding rounds dated on or before T.
 - News and websites are not replayed.
 
-| Company | Event (cited) | Current policy at the event | + hiring momentum at the event |
+| Company | Event (cited) | Live policy v3.2 (with hiring momentum) | Without hiring momentum (v3.1) |
 | --- | --- | --- | --- |
-| Dunzo | [vendors demanding unpaid dues, Jul 2023](https://www.google.com/goto?url=CAESlQEBxCJF154SatXjCZGXOHuzt5bD8DGDkOlxudhf3bYqoPNLyPrQQSjuBhp-V-htfK7Q1AVJbaYRvg0TFS_PwqJJVITKOr7RnXb7rk2BzZY5v5_iH1_XWcJfNQic5h7P95Q51y-VrPso93yfJmmaUEizSW5OQf-WcFe4v5qKEg51dzUNpvur_Cuhgr-1bYWgNAUH9J5jEQ) | approve: missed | credit cut to 25%, flagged **6 months** early (in-sample) |
-| BYJU'S | [ex-staff allege PF unpaid, Jun 2023](https://timesofindia.indiatimes.com/business/india-business/byjus-ex-staff-allege-pf-unpaid-company-says-no-dues/articleshow/101293728.cms) | approve: missed | cut to 25%, flagged **4 months** early |
-| Koo | [shutdown, Jul 2024](https://techcrunch.com/2024/07/02/indian-social-network-koo-to-shut-down/) | approve: missed | cut to 25%, flagged **7 months** early (unreliable record) |
+| Dunzo | [vendors demanding unpaid dues, Jul 2023](https://www.google.com/goto?url=CAESlQEBxCJF154SatXjCZGXOHuzt5bD8DGDkOlxudhf3bYqoPNLyPrQQSjuBhp-V-htfK7Q1AVJbaYRvg0TFS_PwqJJVITKOr7RnXb7rk2BzZY5v5_iH1_XWcJfNQic5h7P95Q51y-VrPso93yfJmmaUEizSW5OQf-WcFe4v5qKEg51dzUNpvur_Cuhgr-1bYWgNAUH9J5jEQ) | credit cut to 25%, flagged **4 months** early (in-sample) | approve: missed |
+| BYJU'S | [ex-staff allege PF unpaid, Jun 2023](https://timesofindia.indiatimes.com/business/india-business/byjus-ex-staff-allege-pf-unpaid-company-says-no-dues/articleshow/101293728.cms) | cut to 25%, **2 months** early | approve: missed |
+| Koo | [shutdown, Jul 2024](https://techcrunch.com/2024/07/02/indian-social-network-koo-to-shut-down/) | cut to 25%, **7 months** early (unreliable record) | approve: missed |
 | BluSmart | [insolvency pleas, Jun 2025](https://www.livemint.com/companies/news/nclt-issues-notices-to-blusmart-mobility-and-gensol-on-three-fresh-insolvency-pleas-11748945362132.html) | cut to 25%, 2 months early | same |
 | Bira 91 | [salary and vendor payment delays, Feb 2025](https://www.business-standard.com/companies/news/bira-b9-beverages-tax-trouble-salary-vendor-payment-delays-financial-crisis-125021900251_1.html) | cut to 25%, 1 month early | same |
 | GoMechanic | [trouble mounting, Feb 2023](https://m.economictimes.com/tech/startups/how-founders-threw-a-spanner-in-the-works-of-gomechanic/articleshow/97844373.cms) | approve: missed (history starts 2 weeks before) | same |
 
+**Collapses flagged before the event: 5 of 6 with hiring momentum, against 2 of 6 without it.**
+
 **False alarms on healthy companies:** 7 healthy controls (Razorpay, Zerodha, Groww, Zepto, PhysicsWallah, CRED, Freshworks), checked every
-six months from Mar 2023 to Sep 2026. The current policy flags 7 of 56 checks (12.5%), and hiring momentum adds none. Our first backtest,
-with the rules before calibration, flagged 48 of 105 quarterly checks (46%).
+six months from Mar 2023 to Sep 2026.
+- Live policy v3.2: **9 of 56 checks (16%)**, every one a reduced limit, never a refusal.
+- Without hiring momentum: 7 of 56 (12.5%).
+- Our first backtest, with the rules before calibration: 48 of 105 quarterly checks (46%).
 
 **What we learned:**
 - **Headcount and joiner levels react late.** Dunzo still looked healthy in July 2023, because 22% of its headcount had joined in the
-  past year. What collapsed first was the *pace* of hiring. Joiners in the last 6 months fell 64-70% against the previous year's best
-  6 months, starting in January 2023.
-- **That "hiring momentum" signal** (red at -65%, amber at -50%) gives months of warning on BYJU'S and Koo, which we did not design it
-  on, and adds no false alarm on the controls.
+  past year. What collapsed first was the *pace* of hiring: joiners in 6 months fell 64-70% against the year before, from January 2023.
+- **Live data has a reporting lag; the past does not.** Our first momentum backtest looked perfect (no extra false alarm), but live
+  it flagged most healthy companies. People update profiles months after joining, so the latest months always look short of joiners,
+  while past months seen today are complete. The fix is to end the comparison windows 2 months back, live and in the backtest alike.
+  This cost some warning time (Dunzo 6 -> 4 months) and added 2 cautious flags on controls, and the numbers above are after the fix.
 - **Honest limits:**
   - 6 distressed companies and 7 controls are case studies, not an accuracy figure.
   - The companies were chosen with hindsight.
@@ -187,6 +193,8 @@ with the rules before calibration, flagged 48 of 105 quarterly checks (46%).
 | --- | --- | --- |
 | Policy v3 (first run) | 10 of 12 | Zomato ("City CEO" and "Cluster CEO" counted as C-level exits); Zerodha (1.7% joiners called dead) |
 | Policy v3.1 (regional titles excluded; zombie threshold 1%, while dead companies sit at 0-0.03%) | **12 of 12** | none. Zerodha gets the full amount on 30 days instead of 45 |
+| Policy v3.2, hiring momentum without lag | 11 of 12 | PhonePe (the latest months looked short of joiners: reporting lag) |
+| **Policy v3.2 with a 2-month lag (live)** | **12 of 12** | none |
 
 Full table in [NOTES.md](NOTES.md). Koo resolved to a different record ("Koo App USA") and fell under the thin-data rule.
 

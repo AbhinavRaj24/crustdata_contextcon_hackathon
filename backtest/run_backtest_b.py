@@ -75,14 +75,14 @@ def run(name: str, domain: str, months: list[dt.date], event: dt.date | None) ->
         finally:
             current_case.reset(token)
         levels = {r.signal: r.level for r in res}
-        mom = momentum(cid, T)
+        without = {k: v for k, v in levels.items() if k != "hiring_momentum"}
         row = {"T": T.isoformat(), "levels": levels, "summaries": {r.signal: r.summary for r in res},
-               "band": band(levels), "band_momentum": band({**levels, "hiring_momentum": mom}), "momentum": mom}
+               "band": band(levels), "band_without_momentum": band(without), "momentum": levels.get("hiring_momentum")}
         rows.append(row)
         flags = " ".join(f"{k[:10]}={v}" for k, v in levels.items() if v in ("red", "amber"))
-        print(f"  {row['T']}  policy={row['band']:18} +momentum={row['band_momentum']:18} {flags}", flush=True)
+        print(f"  {row['T']}  v3.2={row['band']:18} without momentum={row['band_without_momentum']:18} {flags}", flush=True)
     res = {"name": name, "crustdata_id": cid, "event_date": event.isoformat() if event else None, "rows": rows}
-    for ver, key in (("policy", "band"), ("momentum", "band_momentum")):
+    for ver, key in (("policy", "band"), ("nomom", "band_without_momentum")):
         if event:
             before = [r for r in rows if d(r["T"]) <= event]
             streak = 0
@@ -127,7 +127,7 @@ def write_summary() -> None:
              f"Policy {POL['version']} via `signals.collect(..., as_of=T)`: each month sees only data dated on or before it. "
              "News and websites are not replayed.", "",
              "## Distressed companies (12 months before the cited event)", "",
-             "| Company | Event (cited) | Policy: status at event | Policy: months flagged before event | + momentum: status | + momentum: months flagged |",
+             "| Company | Event (cited) | Policy (with momentum): status at event | months flagged before event | Without momentum: status | months flagged |",
              "| --- | --- | --- | --- | --- | --- |"]
     for co in cohort["distressed"]:
         p = OUT / f"{re.sub(r'[^a-z0-9]+', '_', co['name'].lower())}.json"
@@ -136,9 +136,9 @@ def write_summary() -> None:
         r = json.loads(p.read_text())
         src = co.get("event_source") or ((events.get(co["name"]) or {}).get("source") or {}).get("final_url") or ""
         lines.append(f"| {co['name']} | [{r['event_date']}]({src}) | {r['policy_status_at_event']} | {r['policy_months_flagged']} | "
-                     f"{r['momentum_status_at_event']} | {r['momentum_months_flagged']} |")
+                     f"{r['nomom_status_at_event']} | {r['nomom_months_flagged']} |")
     lines += ["", "## Healthy controls (every six months, Mar 2023 to Sep 2026)", "",
-              "| Company | Points | Policy false alarms | + momentum false alarms | First backtest (pre-calibration rules) |",
+              "| Company | Points | Policy (with momentum) false alarms | Without momentum | First backtest (pre-calibration rules) |",
               "| --- | --- | --- | --- | --- |"]
     for co in cohort["controls"]:
         p = OUT / f"{re.sub(r'[^a-z0-9]+', '_', co['name'].lower())}.json"
@@ -150,7 +150,7 @@ def write_summary() -> None:
         if o.exists():
             ro = json.loads(o.read_text())
             before = f"{ro.get('v2_false_alarms')} of {ro.get('points')} (quarterly)"
-        lines.append(f"| {co['name']} | {r['points']} | {r['policy_false_alarms']} | {r['momentum_false_alarms']} | {before} |")
+        lines.append(f"| {co['name']} | {r['points']} | {r['policy_false_alarms']} | {r['nomom_false_alarms']} | {before} |")
     lines += ["", "Caveats: small sample (case studies, not an accuracy figure); companies chosen with hindsight; profiles are "
               "updated late and deleted profiles are missing (survivorship); event dates are the earliest credible article we "
               "found. The momentum signal was designed after looking at Dunzo, so Dunzo is in-sample for it."]

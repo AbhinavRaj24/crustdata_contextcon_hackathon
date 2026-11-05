@@ -25,7 +25,7 @@ from . import config, llm, store
 from .contracts import Company, Evidence, SignalResult
 from .crustdata import BadRequest, Forbidden, Unavailable, all_of, any_of, client, cond
 
-SIGNALS = ["profiles", "joiner_rate", "headcount_trend", "finance_head_exit", "finance_team_exits", "clevel_exits",
+SIGNALS = ["profiles", "joiner_rate", "hiring_momentum", "headcount_trend", "finance_head_exit", "finance_team_exits", "clevel_exits",
            "funding_age", "company_age", "job_posts", "website", "distress_news"]
 
 CUR = "experience.employment_details.current"
@@ -275,6 +275,46 @@ def _profiles_and_joiners_at(ctx: Ctx) -> None:
                  f"person/search current/past.company_id={cid} + start_date in {since}..{T}", unit="share")
     ctx.joiner_level = level
     ctx.add("joiner_rate", level, text, [jid])
+
+
+def momentum_level(recent: int, prior_best: int, p: dict) -> tuple[str, Optional[float]]:
+    """Hiring pace: joiners in the last 6 months vs the best 6 months of the year before (v3.2, from the backtest)."""
+    if prior_best < p["min_prior_joiners"]:
+        return "na", None
+    change = recent / prior_best - 1
+    if change <= p["red_at_or_below"]:
+        return "red", change
+    if change <= p["amber_at_or_below"]:
+        return "amber", change
+    return "ok", change
+
+
+def s_momentum(ctx: Ctx) -> None:
+    """Backtest finding: the pace of hiring collapses months before headcount or the joiner level move
+    (Dunzo from Jan 2023, six months before vendors went unpaid). Works the same live and at a past date T."""
+    cid, T, c = ctx.company.crustdata_id, ctx.today, client()
+
+    def joins(lo: dt.date, hi: dt.date) -> int:  # job starts in [lo, hi): people still there + people who left since
+        last = (hi - dt.timedelta(days=1)).isoformat()
+        return sum(c.count_people(all_of(cond(f"{side}.company_id", "=", cid), cond(f"{side}.start_date", "=>", lo.isoformat()),
+                                         cond(f"{side}.start_date", "=<", last))) for side in (CUR, PAST))
+
+    # Profiles are updated weeks to months after people join, so the latest months always look short of joiners.
+    # Windows therefore end `lag_months` before T, live and in the backtest alike (calibration, 6 Nov).
+    lag = ctx.pol["hiring_momentum"].get("lag_months", 2)
+    t0, t6, t12, t18 = (_month_start(T, lag + k) for k in (0, 6, 12, 18))
+    recent, w1, w2 = joins(t6, t0), joins(t12, t6), joins(t18, t12)
+    best = max(w1, w2)
+    p = ctx.pol["hiring_momentum"]
+    level, change = momentum_level(recent, best, p)
+    eid = ctx.ev("hiring_momentum", {"joiners_last_6m": recent, "joiners_6_to_12m": w1, "joiners_12_to_18m": w2, "prior_best_6m": best,
+                                     "change": round(change, 3) if change is not None else None, "window_end": t0.isoformat()},
+                 f"person/search current+past.company_id={cid} + start_date windows to {t0}", unit="people")
+    if level == "na":
+        ctx.add("hiring_momentum", "na", f"Too few joiners before {t6:%b %Y} to judge the pace of hiring", [eid])
+    else:
+        ctx.add("hiring_momentum", level, f"{recent} joiners in the 6 months to {t0:%b %Y} vs {best} in the best 6 months of the "
+                                          f"year before ({change:+.0%})", [eid])
 
 
 def s_headcount(ctx: Ctx) -> None:
@@ -607,6 +647,7 @@ Step = tuple[str, Callable[[Ctx], None], str]
 STEPS: list[Step] = [
     ("headcount_trend", s_enrich, "company/enrich"),
     ("joiner_rate", s_profiles_and_joiners, "person/search counts"),
+    ("hiring_momentum", s_momentum, "person/search joiner windows"),
     ("headcount_trend", s_headcount, "headcount history"),
     ("finance_head_exit", s_exits, "person/search exits"),
     ("funding_age", s_funding_and_age, "funding and age"),
@@ -617,10 +658,10 @@ STEPS: list[Step] = [
 _BY_FN = {fn: (sig, fn, what) for sig, fn, what in STEPS}
 
 # Steps in a group run together; a group starts only after the previous one finished.
-GROUPS_LIVE = [[s_enrich, s_profiles_and_joiners, s_website, s_news],      # independent
+GROUPS_LIVE = [[s_enrich, s_profiles_and_joiners, s_momentum, s_website, s_news],      # independent
                [s_headcount, s_exits, s_job_posts],                         # need enrich / profiles / joiner level
                [s_funding_and_age]]                                         # needs the 6-month change
-GROUPS_PIT = [[s_enrich, s_news],
+GROUPS_PIT = [[s_enrich, s_news, s_momentum],
               [s_headcount, s_profiles_and_joiners],                        # profiles at T come from the series
               [s_exits, s_job_posts, s_funding_and_age]]
 

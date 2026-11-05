@@ -274,3 +274,12 @@ def test_regional_ceo_titles_are_not_c_level():
         assert not signals.is_clevel(t), t
     for t in ["CEO", "Chief Operating Officer", "Co-founder & CTO"]:
         assert signals.is_clevel(t), t
+
+
+def test_hiring_momentum_levels():
+    p = {"red_at_or_below": -0.65, "amber_at_or_below": -0.50, "min_prior_joiners": 20}
+    assert signals.momentum_level(446, 1236, p)[0] == "amber"    # Dunzo, Jan 2023 (-64%)
+    assert signals.momentum_level(395, 1155, p)[0] == "red"      # Dunzo, Feb 2023 (-66%)
+    assert signals.momentum_level(562, 980, p)[0] == "ok"        # Razorpay, Mar 2026 (-43%): seasonal, not distress
+    assert signals.momentum_level(450, 1000, p)[0] == "amber"
+    assert signals.momentum_level(5, 10, p)[0] == "na"           # too few joiners to judge

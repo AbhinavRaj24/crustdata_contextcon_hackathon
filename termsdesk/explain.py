@@ -26,7 +26,7 @@ SIGNAL_LABELS = {
     "company_identity": "company identity", "exposure": "existing exposure", "domain_check": "email domain",
     "sender_check": "sender's role at the company", "finance_head": "finance head",
     "buyer_confirmation": "buyer confirmation", "ship_to_check": "ship-to city",
-    "joiner_rate": "joiners in the last 12 months", "joiners_12m": "joiners in the last 12 months",
+    "joiner_rate": "joiners in the last 12 months", "hiring_momentum": "pace of hiring", "joiners_12m": "joiners in the last 12 months",
     "headcount_trend": "headcount trend", "finance_head_exit": "finance head exit",
     "finance_team_exits": "finance team exits", "clevel_exits": "other C-level exits",
     "c_level_exits": "other C-level exits", "funding_age": "funding age", "distress_news": "distress news",

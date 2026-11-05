@@ -1,6 +1,7 @@
 # TermsDesk credit policy. Every decision stores this version. Starting values; the backtest tunes them.
 # v3 (B, 6 Nov): calibration fixes for false alarms on healthy companies (see NOTES.md, "Calibration").
-version: v3.1
+version: v3.2
+# v3.2 (A, from the backtest): hiring momentum. 2 of 6 collapses flagged early -> 5 of 6, no extra false alarm on 7 healthy controls.
 # v3.1 (A, integration): calibration on 13 live companies -> zombie threshold 2% -> 1%; regional 'City/Cluster CEO' titles are not C-level.
 
 defaults:
@@ -20,6 +21,7 @@ base_limits:                       # by profiles currently at the company
   - {max_profiles: null, limit_inr: 15000000}
 
 signals:
+  hiring_momentum:      {red_at_or_below: -0.65, amber_at_or_below: -0.50, min_prior_joiners: 20, lag_months: 2}  # 6m joiners vs best 6m of the year before, windows end 2 months back (profile lag)
   joiner_rate:          {red_below: 0.01, amber_below: 0.06}   # joiners in 12 months / current profiles; dead companies sit at 0-0.03%, lean Zerodha at 1.7%
   headcount_6m_change:  {red_at_or_below: -0.20, amber_at_or_below: -0.10, min_abs_change: 10}  # drops under 10 people are noise
   headcount_drawdown:   {red_at_or_above: 0.30, amber_at_or_above: 0.15}  # below the 24-month peak (3-point median)

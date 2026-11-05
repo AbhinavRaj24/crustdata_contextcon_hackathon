@@ -96,3 +96,8 @@ that cannot reach the API, so the first run needs a teammate's key (about 7-10 c
 - 02:55 First live calibration (policy v3): 10 of 12 right. Zomato false alarm: "Cluster CEO", "City CEO", "City COO" counted as
   C-level exits -> regional titles excluded. Zerodha false alarm: 1.7% joiners called a zombie, while every dead company sat at
   0.0-0.03% -> zombie threshold 2% -> 1% (policy v3.1). Re-run: 12 of 12 right; Zerodha gets the full amount on 30 days (caution).
+- 03:15 Hiring momentum added to the live policy (v3.2). First live calibration with it: 11 of 12 (PhonePe red) and most healthy
+  companies amber: profiles are updated late, so the latest 6 months always look short of joiners. In the backtest, past windows
+  seen today are complete, so it hid this. Fix: windows end 2 months back (same as the 60-day exit lag), live and in the backtest.
+  Calibration back to 12 of 12. Honest backtest (v3.2 with lag): 5 of 6 collapses flagged early (2 of 6 without momentum);
+  healthy controls 9 of 56 flagged (7 of 56 without), all reduced limits, never refusals.

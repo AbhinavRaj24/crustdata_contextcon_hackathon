@@ -8,6 +8,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -19,6 +20,7 @@
       "summaries": {
         "profiles": "About 2,121 people worked at Dunzo in Apr 2022",
         "joiner_rate": "1676 joiners since Jul 2021 out of 2,121 profiles (79.0%)",
+        "hiring_momentum": "1037 joiners in the 6 months to May 2022 vs 298 in the best 6 months of the year before (+248%)",
         "headcount_trend": "Headcount 2,121 (Apr 2022), +81% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Nov 2021 and May 2022",
         "finance_team_exits": "0 of about 51 finance staff (0%) left between Nov 2021 and May 2022",
@@ -28,7 +30,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -36,6 +38,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -47,6 +50,7 @@
       "summaries": {
         "profiles": "About 2,121 people worked at Dunzo in Apr 2022",
         "joiner_rate": "1706 joiners since Aug 2021 out of 2,121 profiles (80.4%)",
+        "hiring_momentum": "1180 joiners in the 6 months to Jun 2022 vs 303 in the best 6 months of the year before (+289%)",
         "headcount_trend": "Headcount 2,121 (Apr 2022), +81% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Dec 2021 and Jun 2022",
         "finance_team_exits": "0 of about 53 finance staff (0%) left between Dec 2021 and Jun 2022",
@@ -56,7 +60,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -64,6 +68,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -75,6 +80,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Sep 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Sep 2022: no headcount history then",
+        "hiring_momentum": "1234 joiners in the 6 months to Jul 2022 vs 367 in the best 6 months of the year before (+236%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Jan 2022 and Jul 2022",
         "finance_team_exits": "0 of about 52 finance staff (0%) left between Jan 2022 and Jul 2022",
@@ -84,7 +90,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -92,6 +98,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -103,6 +110,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Oct 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Oct 2022: no headcount history then",
+        "hiring_momentum": "1153 joiners in the 6 months to Aug 2022 vs 496 in the best 6 months of the year before (+132%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Feb 2022 and Aug 2022",
         "finance_team_exits": "0 of about 52 finance staff (0%) left between Feb 2022 and Aug 2022",
@@ -112,7 +120,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -120,6 +128,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -131,6 +140,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Nov 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Nov 2022: no headcount history then",
+        "hiring_momentum": "1067 joiners in the 6 months to Sep 2022 vs 630 in the best 6 months of the year before (+69%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Mar 2022 and Sep 2022",
         "finance_team_exits": "0 of about 53 finance staff (0%) left between Mar 2022 and Sep 2022",
@@ -140,7 +150,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -148,6 +158,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -159,6 +170,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Dec 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Dec 2022: no headcount history then",
+        "hiring_momentum": "865 joiners in the 6 months to Oct 2022 vs 870 in the best 6 months of the year before (-1%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Apr 2022 and Oct 2022",
         "finance_team_exits": "0 of about 56 finance staff (0%) left between Apr 2022 and Oct 2022",
@@ -168,14 +180,15 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
-      "momentum": "amber"
+      "band_without_momentum": "thin_data (R5)",
+      "momentum": "ok"
     },
     {
       "T": "2023-01-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -187,6 +200,7 @@
       "summaries": {
         "profiles": "About 3,422 people worked at Dunzo in Dec 2022",
         "joiner_rate": "1674 joiners since Jan 2022 out of 3,422 profiles (48.9%)",
+        "hiring_momentum": "713 joiners in the 6 months to Nov 2022 vs 1037 in the best 6 months of the year before (-31%)",
         "headcount_trend": "Headcount 3,422 (Dec 2022), +61% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between May 2022 and Nov 2022",
         "finance_team_exits": "0 of about 57 finance staff (0%) left between May 2022 and Nov 2022",
@@ -196,14 +210,15 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
-      "momentum": "amber"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "ok"
     },
     {
       "T": "2023-02-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "amber",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -215,6 +230,7 @@
       "summaries": {
         "profiles": "About 3,416 people worked at Dunzo in Jan 2023",
         "joiner_rate": "1509 joiners since Feb 2022 out of 3,416 profiles (44.2%)",
+        "hiring_momentum": "556 joiners in the 6 months to Dec 2022 vs 1180 in the best 6 months of the year before (-53%)",
         "headcount_trend": "Headcount 3,416 (Jan 2023), +61% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jun 2022 and Dec 2022",
         "finance_team_exits": "0 of about 57 finance staff (0%) left between Jun 2022 and Dec 2022",
@@ -224,14 +240,15 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
-      "momentum": "red"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "amber"
     },
     {
       "T": "2023-03-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "amber",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -243,6 +260,7 @@
       "summaries": {
         "profiles": "About 3,376 people worked at Dunzo in Feb 2023",
         "joiner_rate": "1371 joiners since Mar 2022 out of 3,376 profiles (40.6%)",
+        "hiring_momentum": "446 joiners in the 6 months to Jan 2023 vs 1234 in the best 6 months of the year before (-64%)",
         "headcount_trend": "Headcount 3,376 (Feb 2023), +59% in 6 months, 1% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
         "finance_team_exits": "0 of about 56 finance staff (0%) left between Jul 2022 and Dec 2022",
@@ -252,14 +270,15 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
-      "momentum": "red"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "amber"
     },
     {
       "T": "2023-04-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "red",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -271,6 +290,7 @@
       "summaries": {
         "profiles": "About 3,330 people worked at Dunzo in Mar 2023",
         "joiner_rate": "1182 joiners since Apr 2022 out of 3,330 profiles (35.5%)",
+        "hiring_momentum": "395 joiners in the 6 months to Feb 2023 vs 1153 in the best 6 months of the year before (-66%)",
         "headcount_trend": "Headcount 3,330 (Mar 2023), +57% in 6 months, 3% below its 24-month peak",
         "finance_head_exit": "No finance head left between Aug 2022 and Jan 2023",
         "finance_team_exits": "0 of about 54 finance staff (0%) left between Aug 2022 and Jan 2023",
@@ -279,8 +299,8 @@
         "company_age": "Founded in 2015 (8 years old)",
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
-      "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "red"
     },
     {
@@ -288,6 +308,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "red",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -299,6 +320,7 @@
       "summaries": {
         "profiles": "About 3,220 people worked at Dunzo in May 2023",
         "joiner_rate": "1006 joiners since May 2022 out of 3,220 profiles (31.2%)",
+        "hiring_momentum": "325 joiners in the 6 months to Mar 2023 vs 1067 in the best 6 months of the year before (-70%)",
         "headcount_trend": "Headcount 3,220 (May 2023), +52% in 6 months, 6% below its 24-month peak",
         "finance_head_exit": "No finance head left between Sep 2022 and Mar 2023",
         "finance_team_exits": "2 of about 56 finance staff (4%) left between Sep 2022 and Mar 2023",
@@ -307,8 +329,8 @@
         "company_age": "Founded in 2015 (8 years old)",
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
-      "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "red"
     },
     {
@@ -316,6 +338,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "red",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -327,6 +350,7 @@
       "summaries": {
         "profiles": "About 3,154 people worked at Dunzo in May 2023",
         "joiner_rate": "824 joiners since Jun 2022 out of 3,154 profiles (26.1%)",
+        "hiring_momentum": "282 joiners in the 6 months to Apr 2023 vs 870 in the best 6 months of the year before (-68%)",
         "headcount_trend": "Headcount 3,154 (May 2023), +49% in 6 months, 8% below its 24-month peak",
         "finance_head_exit": "No finance head left between Oct 2022 and Apr 2023",
         "finance_team_exits": "2 of about 56 finance staff (4%) left between Oct 2022 and Apr 2023",
@@ -335,8 +359,8 @@
         "company_age": "Founded in 2015 (8 years old)",
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
-      "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "red"
     },
     {
@@ -344,6 +368,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "red",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -355,6 +380,7 @@
       "summaries": {
         "profiles": "About 3,088 people worked at Dunzo in Jun 2023",
         "joiner_rate": "697 joiners since Jul 2022 out of 3,088 profiles (22.6%)",
+        "hiring_momentum": "312 joiners in the 6 months to May 2023 vs 1037 in the best 6 months of the year before (-70%)",
         "headcount_trend": "Headcount 3,088 (Jun 2023), -10% in 6 months, 10% below its 24-month peak",
         "finance_head_exit": "No finance head left between Nov 2022 and May 2023",
         "finance_team_exits": "2 of about 58 finance staff (3%) left between Nov 2022 and May 2023",
@@ -363,13 +389,13 @@
         "company_age": "Founded in 2015 (8 years old)",
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
-      "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "red"
     }
   ],
-  "policy_months_flagged": 0,
-  "policy_status_at_event": "approve (R8)",
-  "momentum_months_flagged": 6,
-  "momentum_status_at_event": "reduce_25 (R6)"
+  "policy_months_flagged": 4,
+  "policy_status_at_event": "reduce_25 (R6)",
+  "nomom_months_flagged": 0,
+  "nomom_status_at_event": "approve (R8)"
 }

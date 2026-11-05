@@ -8,6 +8,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -19,6 +20,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Jun 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Jun 2022: no headcount history then",
+        "hiring_momentum": "17978 joiners in the 6 months to Apr 2022 vs 12037 in the best 6 months of the year before (+49%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Oct 2021 and Apr 2022",
         "finance_team_exits": "0 of about 240 finance staff (0%) left between Oct 2021 and Apr 2022",
@@ -28,7 +30,7 @@
         "job_posts": "5181 job posts since Jun 2021, newest on 2022-06-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -36,6 +38,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -47,6 +50,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Jul 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Jul 2022: no headcount history then",
+        "hiring_momentum": "18091 joiners in the 6 months to May 2022 vs 12725 in the best 6 months of the year before (+42%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Nov 2021 and May 2022",
         "finance_team_exits": "0 of about 244 finance staff (0%) left between Nov 2021 and May 2022",
@@ -56,7 +60,7 @@
         "job_posts": "5855 job posts since Jul 2021, newest on 2022-07-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -64,6 +68,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -75,6 +80,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Aug 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Aug 2022: no headcount history then",
+        "hiring_momentum": "17716 joiners in the 6 months to Jun 2022 vs 13564 in the best 6 months of the year before (+31%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Dec 2021 and Jun 2022",
         "finance_team_exits": "0 of about 244 finance staff (0%) left between Dec 2021 and Jun 2022",
@@ -84,7 +90,7 @@
         "job_posts": "5902 job posts since Aug 2021, newest on 2022-08-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -92,6 +98,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -103,6 +110,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Sep 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Sep 2022: no headcount history then",
+        "hiring_momentum": "16897 joiners in the 6 months to Jul 2022 vs 14432 in the best 6 months of the year before (+17%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Jan 2022 and Jul 2022",
         "finance_team_exits": "0 of about 246 finance staff (0%) left between Jan 2022 and Jul 2022",
@@ -112,7 +120,7 @@
         "job_posts": "6184 job posts since Sep 2021, newest on 2022-09-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -120,6 +128,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -131,6 +140,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Oct 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Oct 2022: no headcount history then",
+        "hiring_momentum": "15169 joiners in the 6 months to Aug 2022 vs 15868 in the best 6 months of the year before (-4%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Feb 2022 and Aug 2022",
         "finance_team_exits": "1 of about 247 finance staff (0%) left between Feb 2022 and Aug 2022",
@@ -140,7 +150,7 @@
         "job_posts": "6749 job posts since Oct 2021, newest on 2022-10-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -148,6 +158,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -159,6 +170,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Nov 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Nov 2022: no headcount history then",
+        "hiring_momentum": "13436 joiners in the 6 months to Sep 2022 vs 17168 in the best 6 months of the year before (-22%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Mar 2022 and Sep 2022",
         "finance_team_exits": "1 of about 242 finance staff (0%) left between Mar 2022 and Sep 2022",
@@ -168,7 +180,7 @@
         "job_posts": "7775 job posts since Nov 2021, newest on 2022-11-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "ok"
     },
     {
@@ -176,6 +188,7 @@
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -187,6 +200,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Dec 2022: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Dec 2022: no headcount history then",
+        "hiring_momentum": "11602 joiners in the 6 months to Oct 2022 vs 17978 in the best 6 months of the year before (-35%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Apr 2022 and Oct 2022",
         "finance_team_exits": "3 of about 237 finance staff (1%) left between Apr 2022 and Oct 2022",
@@ -196,14 +210,15 @@
         "job_posts": "8434 job posts since Dec 2021, newest on 2022-12-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
-      "momentum": "amber"
+      "band_without_momentum": "thin_data (R5)",
+      "momentum": "ok"
     },
     {
       "T": "2023-01-01",
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "ok",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -215,6 +230,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Jan 2023: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Jan 2023: no headcount history then",
+        "hiring_momentum": "9913 joiners in the 6 months to Nov 2022 vs 18091 in the best 6 months of the year before (-45%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between May 2022 and Nov 2022",
         "finance_team_exits": "3 of about 234 finance staff (1%) left between May 2022 and Nov 2022",
@@ -224,14 +240,15 @@
         "job_posts": "8917 job posts since Jan 2022, newest on 2023-01-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
-      "momentum": "amber"
+      "band_without_momentum": "thin_data (R5)",
+      "momentum": "ok"
     },
     {
       "T": "2023-02-01",
       "levels": {
         "profiles": "na",
         "joiner_rate": "na",
+        "hiring_momentum": "amber",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -243,6 +260,7 @@
       "summaries": {
         "profiles": "Could not verify company size in Feb 2023: no headcount history then",
         "joiner_rate": "Could not verify joiner rate in Feb 2023: no headcount history then",
+        "hiring_momentum": "8367 joiners in the 6 months to Dec 2022 vs 17716 in the best 6 months of the year before (-53%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Jun 2022 and Dec 2022",
         "finance_team_exits": "3 of about 236 finance staff (1%) left between Jun 2022 and Dec 2022",
@@ -252,7 +270,7 @@
         "job_posts": "8973 job posts since Feb 2022, newest on 2023-02-01"
       },
       "band": "thin_data (R5)",
-      "band_momentum": "thin_data (R5)",
+      "band_without_momentum": "thin_data (R5)",
       "momentum": "amber"
     },
     {
@@ -260,6 +278,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "amber",
         "headcount_trend": "na",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -271,6 +290,7 @@
       "summaries": {
         "profiles": "About 35,480 people worked at BYJU'S in Feb 2023",
         "joiner_rate": "18720 joiners since Mar 2022 out of 35,480 profiles (52.8%)",
+        "hiring_momentum": "7106 joiners in the 6 months to Jan 2023 vs 16897 in the best 6 months of the year before (-58%)",
         "headcount_trend": "Could not verify headcount trend: no usable history",
         "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
         "finance_team_exits": "3 of about 233 finance staff (1%) left between Jul 2022 and Dec 2022",
@@ -280,14 +300,15 @@
         "job_posts": "8469 job posts since Mar 2022, newest on 2023-02-05"
       },
       "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
-      "momentum": "red"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "amber"
     },
     {
       "T": "2023-04-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "amber",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -299,6 +320,7 @@
       "summaries": {
         "profiles": "About 34,613 people worked at BYJU'S in Mar 2023",
         "joiner_rate": "16330 joiners since Apr 2022 out of 34,613 profiles (47.2%)",
+        "hiring_momentum": "6263 joiners in the 6 months to Feb 2023 vs 15868 in the best 6 months of the year before (-61%)",
         "headcount_trend": "Headcount 34,613 (Mar 2023), -2% in 6 months, 2% below its 24-month peak",
         "finance_head_exit": "No finance head left between Aug 2022 and Jan 2023",
         "finance_team_exits": "3 of about 228 finance staff (1%) left between Aug 2022 and Jan 2023",
@@ -308,14 +330,15 @@
         "job_posts": "7466 job posts since Apr 2022, newest on 2023-02-05"
       },
       "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
-      "momentum": "red"
+      "band_without_momentum": "approve (R8)",
+      "momentum": "amber"
     },
     {
       "T": "2023-05-01",
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "red",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -327,6 +350,7 @@
       "summaries": {
         "profiles": "About 34,081 people worked at BYJU'S in May 2023",
         "joiner_rate": "14451 joiners since May 2022 out of 34,081 profiles (42.4%)",
+        "hiring_momentum": "5281 joiners in the 6 months to Mar 2023 vs 17168 in the best 6 months of the year before (-69%)",
         "headcount_trend": "Headcount 34,081 (May 2023), -4% in 6 months, 4% below its 24-month peak",
         "finance_head_exit": "No finance head left between Sep 2022 and Mar 2023",
         "finance_team_exits": "3 of about 225 finance staff (1%) left between Sep 2022 and Mar 2023",
@@ -335,8 +359,8 @@
         "company_age": "Founded in 2011 (12 years old)",
         "job_posts": "6759 job posts since May 2022, newest on 2023-02-05"
       },
-      "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "red"
     },
     {
@@ -344,6 +368,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "red",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -355,6 +380,7 @@
       "summaries": {
         "profiles": "About 33,485 people worked at BYJU'S in May 2023",
         "joiner_rate": "12804 joiners since Jun 2022 out of 33,485 profiles (38.2%)",
+        "hiring_momentum": "4633 joiners in the 6 months to Apr 2023 vs 17978 in the best 6 months of the year before (-74%)",
         "headcount_trend": "Headcount 33,485 (May 2023), -6% in 6 months, 6% below its 24-month peak",
         "finance_head_exit": "No finance head left between Oct 2022 and Apr 2023",
         "finance_team_exits": "1 of about 224 finance staff (0%) left between Oct 2022 and Apr 2023",
@@ -363,13 +389,13 @@
         "company_age": "Founded in 2011 (12 years old)",
         "job_posts": "6152 job posts since Jun 2022, newest on 2023-02-05"
       },
-      "band": "approve (R8)",
-      "band_momentum": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "red"
     }
   ],
-  "policy_months_flagged": 0,
-  "policy_status_at_event": "approve (R8)",
-  "momentum_months_flagged": 4,
-  "momentum_status_at_event": "reduce_25 (R6)"
+  "policy_months_flagged": 2,
+  "policy_status_at_event": "reduce_25 (R6)",
+  "nomom_months_flagged": 0,
+  "nomom_status_at_event": "approve (R8)"
 }

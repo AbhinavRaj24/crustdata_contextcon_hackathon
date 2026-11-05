@@ -8,6 +8,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -19,6 +20,7 @@
       "summaries": {
         "profiles": "About 3,067 people worked at Razorpay in Feb 2023",
         "joiner_rate": "1932 joiners since Mar 2022 out of 3,067 profiles (63.0%)",
+        "hiring_momentum": "839 joiners in the 6 months to Jan 2023 vs 1251 in the best 6 months of the year before (-33%)",
         "headcount_trend": "Headcount 3,067 (Feb 2023), +12% in 6 months, 3% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
         "finance_team_exits": "0 of about 122 finance staff (0%) left between Jul 2022 and Dec 2022",
@@ -28,7 +30,7 @@
         "job_posts": "Could not verify hiring posts: no job-post history for this company"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -36,6 +38,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -47,6 +50,7 @@
       "summaries": {
         "profiles": "About 3,203 people worked at Razorpay in Aug 2023",
         "joiner_rate": "1605 joiners since Sep 2022 out of 3,203 profiles (50.1%)",
+        "hiring_momentum": "839 joiners in the 6 months to Jul 2023 vs 1251 in the best 6 months of the year before (-33%)",
         "headcount_trend": "Headcount 3,203 (Aug 2023), +4% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
         "finance_team_exits": "0 of about 133 finance staff (0%) left between Jan 2023 and Jul 2023",
@@ -56,7 +60,7 @@
         "job_posts": "32 job posts since Sep 2022, newest on 2023-08-25"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -64,6 +68,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -75,6 +80,7 @@
       "summaries": {
         "profiles": "About 3,243 people worked at Razorpay in Feb 2024",
         "joiner_rate": "1605 joiners since Mar 2023 out of 3,243 profiles (49.5%)",
+        "hiring_momentum": "687 joiners in the 6 months to Jan 2024 vs 839 in the best 6 months of the year before (-18%)",
         "headcount_trend": "Headcount 3,243 (Feb 2024), +1% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
         "finance_team_exits": "0 of about 141 finance staff (0%) left between Jul 2023 and Jan 2024",
@@ -84,7 +90,7 @@
         "job_posts": "64 job posts since Mar 2023, newest on 2024-02-29"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -92,6 +98,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -103,6 +110,7 @@
       "summaries": {
         "profiles": "About 3,561 people worked at Razorpay in Aug 2024",
         "joiner_rate": "1699 joiners since Sep 2023 out of 3,561 profiles (47.7%)",
+        "hiring_momentum": "807 joiners in the 6 months to Jul 2024 vs 839 in the best 6 months of the year before (-4%)",
         "headcount_trend": "Headcount 3,561 (Aug 2024), +10% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
         "finance_team_exits": "2 of about 152 finance staff (1%) left between Jan 2024 and Jul 2024",
@@ -112,7 +120,7 @@
         "job_posts": "238 job posts since Sep 2023, newest on 2024-08-30"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -120,6 +128,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -131,6 +140,7 @@
       "summaries": {
         "profiles": "About 3,966 people worked at Razorpay in Feb 2025",
         "joiner_rate": "2004 joiners since Mar 2024 out of 3,966 profiles (50.5%)",
+        "hiring_momentum": "978 joiners in the 6 months to Jan 2025 vs 807 in the best 6 months of the year before (+21%)",
         "headcount_trend": "Headcount 3,966 (Feb 2025), +11% in 6 months, 0% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
         "finance_team_exits": "0 of about 147 finance staff (0%) left between Jul 2024 and Dec 2024",
@@ -140,7 +150,7 @@
         "job_posts": "372 job posts since Mar 2024, newest on 2025-02-23"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -148,6 +158,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -159,6 +170,7 @@
       "summaries": {
         "profiles": "About 4,177 people worked at Razorpay in Sep 2025",
         "joiner_rate": "1951 joiners since Sep 2024 out of 4,177 profiles (46.7%)",
+        "hiring_momentum": "957 joiners in the 6 months to Jul 2025 vs 978 in the best 6 months of the year before (-2%)",
         "headcount_trend": "Headcount 4,177 (Sep 2025), +3% in 6 months, 1% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
         "finance_team_exits": "0 of about 141 finance staff (0%) left between Jan 2025 and Jul 2025",
@@ -168,7 +180,7 @@
         "job_posts": "322 job posts since Sep 2024, newest on 2025-08-29"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -176,6 +188,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -187,6 +200,7 @@
       "summaries": {
         "profiles": "About 4,080 people worked at Razorpay in Feb 2026",
         "joiner_rate": "1516 joiners since Mar 2025 out of 4,080 profiles (37.2%)",
+        "hiring_momentum": "646 joiners in the 6 months to Jan 2026 vs 978 in the best 6 months of the year before (-34%)",
         "headcount_trend": "Headcount 4,080 (Feb 2026), -2% in 6 months, 3% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
         "finance_team_exits": "0 of about 129 finance staff (0%) left between Jul 2025 and Dec 2025",
@@ -196,7 +210,7 @@
         "job_posts": "274 job posts since Mar 2025, newest on 2025-12-16"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     },
     {
@@ -204,6 +218,7 @@
       "levels": {
         "profiles": "ok",
         "joiner_rate": "ok",
+        "hiring_momentum": "ok",
         "headcount_trend": "ok",
         "finance_head_exit": "ok",
         "finance_team_exits": "ok",
@@ -215,6 +230,7 @@
       "summaries": {
         "profiles": "About 4,019 people worked at Razorpay in Aug 2026",
         "joiner_rate": "1191 joiners since Sep 2025 out of 4,019 profiles (29.6%)",
+        "hiring_momentum": "579 joiners in the 6 months to Jul 2026 vs 957 in the best 6 months of the year before (-39%)",
         "headcount_trend": "Headcount 4,019 (Aug 2026), -2% in 6 months, 5% below its 24-month peak",
         "finance_head_exit": "No finance head left between Jan 2026 and Jul 2026",
         "finance_team_exits": "4 of about 114 finance staff (4%) left between Jan 2026 and Jul 2026",
@@ -224,11 +240,11 @@
         "job_posts": "240 job posts since Sep 2025, newest on 2026-09-01"
       },
       "band": "approve (R8)",
-      "band_momentum": "approve (R8)",
+      "band_without_momentum": "approve (R8)",
       "momentum": "ok"
     }
   ],
   "policy_false_alarms": 0,
   "points": 8,
-  "momentum_false_alarms": 0
+  "nomom_false_alarms": 0
 }
