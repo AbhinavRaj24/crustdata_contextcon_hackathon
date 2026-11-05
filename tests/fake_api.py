@@ -1,7 +1,7 @@
-"""A fake Crustdata client for Part C tests: real response shapes, made-up people.
+"""A fake Crustdata client for the buyer-check tests: real response shapes, made-up people.
 
 Company records copy the shape and values of live /company/identify replies (6 Nov 2026).
-People are fictional. Person Search here understands the filters Part C sends:
+People are fictional. Person Search here understands the filters verify.py sends:
 company_id '=', name '(.)', title '(.)' (optionally inside an 'or' group) and seniority 'in'.
 """
 from __future__ import annotations

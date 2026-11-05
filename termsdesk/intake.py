@@ -1,4 +1,4 @@
-"""C · Intake: a request in the customer's words becomes a contracts.Request.
+"""Intake: a request in the customer's words becomes a contracts.Request.
 
 Rules run first and are deterministic, so a reworded case parses the same way.
 An optional Claude Haiku pass (only when ANTHROPIC_API_KEY is set) fills fields the
@@ -578,7 +578,7 @@ LAST_MODEL: dict = {"name": None}
 
 def _model_extract(text: str) -> Optional[dict]:
     """Gemini via termsdesk.llm (fallback chain, timeout, cache). None when no key or every model fails."""
-    from . import llm  # integration: Part C called Claude; the team uses Gemini
+    from . import llm  # Gemini, through the shared client
     if not llm.available():
         return None
     out, model = llm.generate("parse_request_c_v1", _MODEL_SYSTEM + "\n\n<request>\n" + text[:4000] + "\n</request>", _MODEL_SCHEMA)
@@ -698,7 +698,7 @@ def decision_fields(req: Request) -> tuple:
             req.amount_inr, req.terms_days)
 
 
-# --------------------------------------------------------------------------- pipeline adapter (role A)
+# --------------------------------------------------------------------------- pipeline adapter
 
 FREE_MAIL = FREE_EMAIL_DOMAINS  # older name used elsewhere
 

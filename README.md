@@ -147,7 +147,7 @@ Fault injection: `FAULT=enrich:timeout`, `FAULT=person_search:429`, `FAULT=enric
 
 We replayed the policy month by month before real collapses, using **only data dated on or before each month**, through the live
 signal code (`signals.collect(case_id, company, as_of=T)`). Each event date is the earliest credible article we found and fetched.
-Code: [`backtest/`](backtest/); full tables: [`backtest/results_b/summary.md`](backtest/results_b/summary.md).
+Code: [`backtest/`](backtest/); full tables: [`backtest/results_live/summary.md`](backtest/results_live/summary.md).
 
 **Point-in-time rules:**
 - Headcount from history points dated on or before T.

@@ -1,6 +1,6 @@
-"""C · Explain: the terms letter and the decision note, with a citation guard.
+"""Explain: the terms letter and the decision note, with a citation guard.
 
-The letter is drafted (by Claude Sonnet when a key is set, otherwise by a fixed template)
+The letter is drafted (by Gemini when a key is set, otherwise by a fixed template)
 from a JSON of the decision, the evidence ledger and the parsed request fields, and
 nothing else: the raw request text never reaches the model.
 
@@ -336,7 +336,7 @@ def _cite(e: dict) -> str:
 
 
 def verification_reasons(evidence: Iterable[Any], company_name: Optional[str]) -> list[dict]:
-    """Case-page lines for the buyer checks (Part C's own evidence)."""
+    """Case-page lines for the buyer checks."""
     out = []
     rows = {e.get("signal"): e for e in _evidence_rows(evidence)}
     sc, dc = rows.get("sender_check"), rows.get("domain_check")
@@ -488,7 +488,7 @@ LAST_LETTER_MODEL: dict = {"name": None}
 
 
 def _model_letter(payload: dict, feedback: Optional[list[str]] = None) -> Optional[tuple[str, str]]:
-    """Gemini via termsdesk.llm (integration: Part C called Claude; the team uses Gemini)."""
+    """Gemini via termsdesk.llm (fallback chain, timeout, cache)."""
     from . import llm
     if not llm.available():
         return None
@@ -585,7 +585,7 @@ def explain(decision: Any, evidence: Iterable[Any], request: Any = None, company
     return Explanation(letter=letter, note=note, guard_log=log)
 
 
-# --------------------------------------------------------------------------- pipeline adapter (role A)
+# --------------------------------------------------------------------------- pipeline adapter
 
 def write(case_id: str, req: Any, company: Any, decision: Any) -> tuple[str, str, str]:
     """Called by pipeline.step_explain. Returns (subject, body, written_by)."""

@@ -1,4 +1,4 @@
-"""C · Resolve: one Crustdata company per request, aliases merged, exposure summed.
+"""Resolve: one Crustdata company per request, aliases merged, exposure summed.
 
 Order of evidence, strongest first:
   1. The request's domain equals a company's primary_domain (identify by domain, free).
@@ -32,7 +32,7 @@ SIZE_DOMINANCE = 10          # largest same-name company must be this many times
 
 
 def call_api(client: Any, path: str, body: dict) -> Any:
-    """Call role A's Crustdata client. Accepts an object with .post(path, body) or a callable."""
+    """Call the Crustdata client. Accepts an object with .post(path, body) or a callable."""
     if hasattr(client, "post"):
         return client.post(path, body)
     if callable(client):
@@ -194,7 +194,7 @@ def resolve_company(client: Any, req: Request, lookup: Optional[Callable[[int], 
     for d in domains:
         try:
             parsed = parse_identify(call_api(client, IDENTIFY, {"domains": [d]}))
-        except Exception as exc:                       # A's client already retried
+        except Exception as exc:                       # the client already retried
             api_failed = True
             notes.append(f"Company Identify failed for {d}: {exc}")
             continue
@@ -324,7 +324,7 @@ def save_company(conn, res: Resolution, confirmed_domains: Optional[list[str]] =
                      (res.name, json.dumps(domains), json.dumps(res.aliases), res.company_id))
 
 
-# --------------------------------------------------------------------------- pipeline adapter (role A)
+# --------------------------------------------------------------------------- pipeline adapter
 
 class NeedsHuman(Exception):
     pass

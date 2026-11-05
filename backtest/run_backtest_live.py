@@ -1,11 +1,11 @@
-"""Backtest on the LIVE signal code: signals.collect(..., as_of=T) from Module B, month by month.
+"""Backtest on the LIVE signal code: signals.collect(..., as_of=T), month by month.
 
 Same cohort, events and metrics as run_backtest.py (which re-implemented the first, pre-calibration rules).
-Comparing the two shows what B's false-alarm fixes changed. News is not replayed (search results carry no
+Comparing the two shows what the false-alarm fixes changed. News is not replayed (search results carry no
 reliable dates for the past); websites cannot be fetched as they were. Both count as "could not verify".
 
 Bands mirror decide.py rules R3-R8. "+momentum" adds the hiring-momentum candidate (see run_backtest.py).
-Usage: python -m backtest.run_backtest_b [Company ...]  -> backtest/results_b/*.json + summary.md
+Usage: python -m backtest.run_backtest_live [Company ...]  -> backtest/results_live/*.json + summary.md
 """
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ from termsdesk.crustdata import Unavailable, client, current_case
 from .run_backtest import MOMENTUM, d, joins, month_start, months_between
 
 HERE = Path(__file__).parent
-OUT = HERE / "results_b"
+OUT = HERE / "results_live"
 POL = yaml.safe_load(config.POLICY_PATH.read_text())
 
 # Backtest only: no news replay (cost, and dates are unreliable for the past).

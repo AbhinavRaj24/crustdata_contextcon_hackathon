@@ -5,7 +5,7 @@ from pathlib import Path
 
 from fakes import FakeClient, healthy_world, zombie_world
 
-spec = importlib.util.spec_from_file_location("calibrate_b", Path(__file__).resolve().parents[2] / "scripts" / "calibrate_b.py")
+spec = importlib.util.spec_from_file_location("calibrate", Path(__file__).resolve().parents[2] / "scripts" / "calibrate.py")
 cal = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(cal)
 

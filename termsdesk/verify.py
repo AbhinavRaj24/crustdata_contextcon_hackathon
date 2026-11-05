@@ -1,4 +1,4 @@
-"""C · Verify: is the buyer real? Domain check, sender check, finance head, hold-and-verify.
+"""Verify: is the buyer real? Domain check, sender check, finance head, hold-and-verify.
 
 A buyer passes only if the email domain is the company's primary_domain (or a subdomain)
 and the sender is a current employee in a buying role, with company, title and "current"
@@ -129,7 +129,7 @@ def check_domain(sender: Optional[str], primary_domain: Optional[str],
             if len(sl) >= 3 and 0 < edit_distance(sl, pl) <= limit:
                 kind = "changed_letters"
     if kind == "different_ending":
-        # Integration (team decision): dunzo.in is Dunzo's real second domain, so the same name with another
+        # dunzo.in is Dunzo's real second domain, so the same name with another
         # ending is unverified (held and verified for Rs 5 lakh and above), never fraud.
         return DomainCheck("unverified", kind, sd, pd,
                            f"{sd} has the company's name but not its known domain {pd}; it may be theirs or a copy.")
@@ -470,7 +470,7 @@ def verify_buyer(client: Any, req: Request, res: Resolution, case_date: Optional
 
 def apply_verification_answer(case_id: str, answer: str, reviewer: str, sender_domain: Optional[str] = None,
                               at: Optional[str] = None) -> dict:
-    """The finance head (played by a teammate) clicked Confirm or Deny."""
+    """The finance head clicked Confirm or Deny (in the demo, someone on our team plays this role)."""
     at = at or date.today().isoformat()
     confirmed = answer.strip().lower() in ("confirm", "confirmed", "yes")
     ev = Evidence(
@@ -502,7 +502,7 @@ def check_ship_to(ship_to_city: Optional[str], hq_city: Optional[str],
     return {"status": "amber", "detail": f"The company lists no employees in {city}."}
 
 
-# --------------------------------------------------------------------------- pipeline adapter (role A)
+# --------------------------------------------------------------------------- pipeline adapter
 
 def domain_check(sender_domain: Optional[str], primary: Optional[str]) -> tuple[str, str]:
     """Short form used in tests: exact | lookalike | alt_domain | free_mail | unrelated | missing."""

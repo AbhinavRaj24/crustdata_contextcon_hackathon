@@ -1,12 +1,12 @@
-"""Run Part C (intake -> resolve -> verify -> explain) on one request, live or from recordings.
+"""Run the buyer checks (intake -> resolve -> verify -> explain) on one request, live or from recordings.
 
-    python scripts/c_try.py --case 3                 # one of the 12 test requests, live API
-    python scripts/c_try.py --text "Need ₹20 lakh ..."
-    python scripts/c_try.py --all --parse-only       # parse all 12 requests, no API calls
-    python scripts/c_try.py --case 3 --replay        # use responses saved in fixtures/c/
+    python scripts/try_buyer_checks.py --case 3                 # one of the 12 test requests, live API
+    python scripts/try_buyer_checks.py --text "Need ₹20 lakh ..."
+    python scripts/try_buyer_checks.py --all --parse-only       # parse all 12 requests, no API calls
+    python scripts/try_buyer_checks.py --case 3 --replay        # use responses saved in fixtures/c/
 
-Needs CRUSTDATA_API_KEY for live runs. This tiny client is for Part C's own testing only;
-the product uses role A's crustdata.py (throttle, cache, cost log, FAULT injection).
+Needs CRUSTDATA_API_KEY for live runs. This tiny client is for quick local testing only;
+the product uses crustdata.py (throttle, cache, cost log, FAULT injection).
 The decision printed here is a PLACEHOLDER until decide.py is merged.
 """
 from __future__ import annotations
@@ -24,7 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "tests")]
 
-from c_cases import CASES  # noqa: E402
+from request_cases import CASES  # noqa: E402
 from termsdesk.contracts import Decision, Reason  # noqa: E402
 from termsdesk.explain import explain  # noqa: E402
 from termsdesk.intake import parse_request  # noqa: E402

@@ -1,4 +1,4 @@
-"""A fake Crustdata client for B's tests. It evaluates the same filter trees signals.py sends, at the level of
+"""A fake Crustdata client for the signal tests. It evaluates the same filter trees signals.py sends, at the level of
 one job entry (company, title and dates on the same entry), so the tests exercise the real query logic offline.
 
 Two made-up worlds: a healthy company (with the traps that caused false alarms) and a zombie that looks alive.

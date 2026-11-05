@@ -1,10 +1,10 @@
-"""Calibrate Module B on real companies, with your own key (CRUSTDATA_API_KEY in .env).
+"""Calibrate the signals and policy on real companies, with your own key (CRUSTDATA_API_KEY in .env).
 
-  python scripts/calibrate_b.py                          # default cohort, as of today
-  python scripts/calibrate_b.py --as-of 2023-10-01       # only what was knowable then (backtest cohort)
-  python scripts/calibrate_b.py --only Dunzo,Razorpay    # a subset of the cohort
-  python scripts/calibrate_b.py --add "Acme:acme.com:healthy" --add "Oldco:#1234:distressed"
-  python scripts/calibrate_b.py --write-notes            # also append the table to NOTES.md
+  python scripts/calibrate.py                          # default cohort, as of today
+  python scripts/calibrate.py --as-of 2023-10-01       # only what was knowable then (backtest cohort)
+  python scripts/calibrate.py --only Dunzo,Razorpay    # a subset of the cohort
+  python scripts/calibrate.py --add "Acme:acme.com:healthy" --add "Oldco:#1234:distressed"
+  python scripts/calibrate.py --write-notes            # also append the table to NOTES.md
 
 Each company costs about 7-10 credits the first time; a re-run on the same day is served from the cache.
 The run stops before a company that would take the total over --max-credits (default 120).

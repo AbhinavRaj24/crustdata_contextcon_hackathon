@@ -1,8 +1,8 @@
 # TermsDesk credit policy. Every decision stores this version. Starting values; the backtest tunes them.
-# v3 (B, 6 Nov): calibration fixes for false alarms on healthy companies (see NOTES.md, "Calibration").
+# v3: calibration fixes for false alarms on healthy companies (see NOTES.md, "Calibration").
 version: v3.2
-# v3.2 (A, from the backtest): hiring momentum. 2 of 6 collapses flagged early -> 5 of 6, no extra false alarm on 7 healthy controls.
-# v3.1 (A, integration): calibration on 13 live companies -> zombie threshold 2% -> 1%; regional 'City/Cluster CEO' titles are not C-level.
+# v3.2 (from the backtest): hiring momentum. 2 of 6 collapses flagged early -> 5 of 6, no extra false alarm on 7 healthy controls.
+# v3.1: calibration on 13 live companies -> zombie threshold 2% -> 1%; regional 'City/Cluster CEO' titles are not C-level.
 
 defaults:
   terms_days: 30

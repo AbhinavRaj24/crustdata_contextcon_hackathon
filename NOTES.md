@@ -31,9 +31,9 @@ returned 503 under load and one call hung 76 s, so: chain flash-lite -> 2.5-flas
   Fixes: finance head = CFO / Head of Finance / VP Finance only; finance exits measured as a share of the team; funding age counts only when
   shrinking or nobody joining; website checked on the primary domain. Result: Razorpay approved Rs 30 lakh on 45 days; Dunzo still advance-only.
 
-## Calibration (B, policy v3)
+## Calibration (policy v3)
 
-False alarms on healthy companies came from these traps. Each fix has a test in `tests/test_signals.py`.
+False alarms on healthy companies came from these traps. Each fix has a test in `tests/signals/test_signals.py`.
 
 | Trap | Fix |
 |---|---|
@@ -63,15 +63,14 @@ Reference: the Dunzo-shaped test company at 2023-10-01 gets joiner rate red, hea
 The finance head's exit (Sep 2023) shows up only from Dec 2023, because of the 60-day lag.
 
 ### Real companies
-`python scripts/calibrate_b.py --write-notes` (today) and `python scripts/calibrate_b.py --as-of 2023-10-01 --write-notes` (backtest)
-append a table here: company, profiles, joiner rate, job posts, decision, right or wrong. Not run yet: B was built on a machine
-that cannot reach the API, so the first run needs a teammate's key (about 7-10 credits per company, cached for the day).
+`python scripts/calibrate.py --write-notes` (today) and `python scripts/calibrate.py --as-of 2023-10-01 --write-notes` (backtest)
+append a table here: company, profiles, joiner rate, job posts, decision, right or wrong (about 7-10 credits per company, cached for the day).
 
-## Integration log (A)
-- 02:40 Part B integrated as delivered (signals.py, policy.yaml v3, 63 tests in tests/b/, scripts/calibrate_b.py). Only change to B's
-  files: test path fixes for the tests/b/ folder. store.add_evidence now gives random ids to rows without one (B's finding:
-  count-based ids could be reused after clear_evidence and overwrite a row an older decision cites).
-- Full suite after integration: 210 offline tests and 13 live end-to-end tests pass.
+## Build log (continued)
+- 02:40 Calibrated signals in place: point-in-time `collect(..., as_of=T)`, parallel steps, policy v3, signal tests in tests/signals/.
+  store.add_evidence now gives random ids to rows without one: count-based ids could be reused after clear_evidence and overwrite a
+  row an older decision still cites.
+- Full suite: 210 offline tests and 13 live end-to-end tests pass.
 
 ### Calibration run (live, 2026-11-06, policy v3.1, ask Rs 20 lakh on 45 days)
 

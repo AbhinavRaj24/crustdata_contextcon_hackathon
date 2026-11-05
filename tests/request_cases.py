@@ -1,6 +1,6 @@
-"""Part C test inputs: the 12 case requests and the 15 rewordings, with what intake must extract.
+"""Test inputs: the 12 case requests and the 15 rewordings, with what intake must extract.
 
-People's names here are made up. For the live demo, D swaps in the real procurement
+People's names here are made up. For the live demo we use the real procurement
 employee chosen for case 1; the agent never contacts anyone (every email goes to the sandbox).
 """
 

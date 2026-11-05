@@ -1,6 +1,6 @@
 import pytest
 
-from c_cases import CASES, REWORDINGS
+from request_cases import CASES, REWORDINGS
 from termsdesk.intake import (decision_fields, normalise_amount, normalise_terms, parse_request,
                               strip_instructions)
 

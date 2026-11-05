@@ -1,6 +1,6 @@
 import pytest
 
-from c_cases import CASES
+from request_cases import CASES
 from fake_api import FakeClient
 from termsdesk.contracts import Request
 from termsdesk.intake import parse_request
@@ -117,9 +117,9 @@ def test_evidence_rows_have_sources_and_dates():
 
 
 def test_verification_answers():
-    ok = apply_verification_answer("c3", "confirm", "teammate", "razorpay-payments.co")
+    ok = apply_verification_answer("c3", "confirm", "reviewer", "razorpay-payments.co")
     assert ok["state"] == "VERIFIED" and ok["confirmed_domain"] == "razorpay-payments.co"
-    no = apply_verification_answer("c3", "deny", "teammate", "razorpay-payments.co")
+    no = apply_verification_answer("c3", "deny", "reviewer", "razorpay-payments.co")
     assert no["state"] == "DECLINED" and no["fraud_attempt"]["sender_domain"] == "razorpay-payments.co"
 
 
