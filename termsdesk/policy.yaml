@@ -9,6 +9,7 @@ defaults:
   max_terms_days: 60
   refer_above_inr: 5000000        # Rs 50 lakh -> a human decides
   unverified_hold_from_inr: 500000 # sender unverified and >= Rs 5 lakh -> hold and verify
+  unverified_cap_inr: 400000       # sender unverified, smaller or unstated amount -> at most Rs 4 lakh until verified
   thin_data_cap_inr: 100000        # Rs 1 lakh
   thin_data_terms_days: 15
   min_profiles: 30                 # fewer profiles than this = thin data

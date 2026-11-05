@@ -110,6 +110,12 @@ def check_domain(sender: Optional[str], primary_domain: Optional[str],
     if sd.endswith("." + pd):
         return DomainCheck("pass", "subdomain", sd, pd, f"{sd} is a subdomain of {pd}.")
 
+    secondary = {clean_domain(d) for d in (all_domains or [])}
+    if sd in secondary:
+        # The company's own domain list (zeptonow.com for Zepto, whose primary is zepto.com) is never "fraud";
+        # it also cannot pass on its own, because these lists hold junk (bitly.com for Razorpay).
+        return DomainCheck("unverified", "listed_secondary_domain", sd, pd,
+                           f"{sd} is listed among the company's domains but is not its primary domain {pd}")
     _, sl, sx = split_domain(sd)
     _, pl, px = split_domain(pd)
     kind = None

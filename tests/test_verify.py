@@ -128,3 +128,10 @@ def test_ship_to():
     assert check_ship_to("Kolkata", "Bengaluru", regions)["status"] == "amber"
     assert check_ship_to("Bangalore", None, regions)["status"] == "match"
     assert check_ship_to(None, None, regions)["status"] == "unavailable"
+
+
+def test_companys_own_listed_domain_is_not_fraud():
+    """Live UI run, 6 Nov: zeptonow.com (Zepto's real domain, listed as secondary; primary zepto.com) was called a lookalike."""
+    d = check_domain("ravi@zeptonow.com", "zepto.com", ["zeptonow.com", "zepto.com"])
+    assert (d.status, d.kind) == ("unverified", "listed_secondary_domain")
+    assert check_domain("ravi@zeptonow.com", "zepto.com", ["zepto.com"]).status == "lookalike"   # not listed: still a lookalike

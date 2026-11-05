@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Accounts</h1>
+<p class="muted small">One account per Crustdata company: "ABC Foods" and "ABC Foods Pvt Ltd" are the same buyer, and limits apply to total exposure.</p>
+<div class="card"><table>
+  <tr><th>Buyer</th><th>Also known as</th><th>Credit limit</th><th>Terms</th><th>Owed</th><th>Status</th><th>Last case</th></tr>
+  {% for a in accounts %}
+  <tr><td><b>{{ a.name or a.company_id }}</b> <span class="muted small">#{{ a.company_id }}</span></td><td class="small">{{ a.aliases }}</td>
+      <td>{{ a.limit_inr|inr }}</td><td>{{ a.terms_days }} days</td><td>{{ a.outstanding_inr|inr }}</td>
+      <td><span class="pill {{ 'ok' if a.status == 'approve' else 'amber' if a.status == 'reduce' else 'red' }}">{{ a.status.replace('_',' ') }}</span></td>
+      <td><a class="mono" href="/case/{{ a.last_case_id }}">{{ a.last_case_id }}</a></td></tr>
+  {% else %}<tr><td colspan="7" class="muted">No accounts yet.</td></tr>{% endfor %}
+</table></div>
+{% endblock %}

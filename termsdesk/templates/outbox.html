@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Outbox (sandbox)</h1>
+<p class="muted small">Every message has a send-once key, so a crash and resume never sends twice. Recipients outside the team are delivered
+  to <span class="mono">{{ sandbox }}</span> instead (event rule: agents only talk to our team).</p>
+{% for m in messages %}
+<div class="card">
+  <div class="small"><span class="pill {{ 'ok' if m.status == 'sent' else 'amber' }}">{{ m.status }}</span> <b>{{ m.action }}</b> ·
+    <a class="mono" href="/case/{{ m.case_id }}">{{ m.case_id }}</a> · key <span class="mono">{{ m.key }}</span> · {{ m.created_at }}</div>
+  <div class="small" style="margin-top:4px">Intended for: {{ m.to_intended }} · delivered to: <span class="mono">{{ m.to_actual }}</span></div>
+  <details style="margin-top:6px"><summary><b>{{ m.subject }}</b></summary><pre class="letter">{{ m.body }}</pre></details>
+</div>
+{% else %}<div class="card muted">No messages yet.</div>{% endfor %}
+{% endblock %}

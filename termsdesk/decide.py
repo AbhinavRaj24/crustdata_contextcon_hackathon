@@ -97,8 +97,9 @@ def decide(req: Request, company: Company, vr: Optional[VerifyResult], sigs: lis
         reasons += [Reason(text=s.summary, evidence_ids=s.evidence_ids) for s in oks[:4]]
 
     # Unverified sender on a small request: cap below the hold threshold until verified.
-    if vr and vr.status == "unverified" and allowed > d["unverified_hold_from_inr"] - 1:
-        allowed = d["unverified_hold_from_inr"] - 1
+    cap = d.get("unverified_cap_inr", d["unverified_hold_from_inr"] - 1)
+    if vr and vr.status == "unverified" and allowed > cap:
+        allowed = cap
         rule += " + capped (sender unverified)"
 
     available = max(0, allowed - outstanding)

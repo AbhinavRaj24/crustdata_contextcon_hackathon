@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Review queue</h1>
+<p class="muted small">TermsDesk asks a person only when the answer changes the result: a held buyer to confirm with the finance head
+  (found independently, never the sender), a request over Rs 50 lakh, or a company it could not identify with confidence.</p>
+{% for row in items %}{% set q = row.item %}{% set c = row.case %}
+<div class="card">
+  <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+    <div>
+      <span class="pill {{ 'red' if q.kind == 'hold_verify' else 'amber' }}">{{ {'hold_verify':'hold: verify buyer','refer':'referral','identity':'identity'}.get(q.kind, q.kind) }}</span>
+      <a href="/case/{{ q.case_id }}" class="mono">{{ q.case_id }}</a> · {{ (c.company or {}).get('name') or (c.request or {}).get('company_name') or 'unknown buyer' }}
+      {% if c.request and c.request.amount_inr %} · {{ c.request.amount_inr|inr }}{% endif %}
+      <div class="small" style="margin-top:6px">{{ q.reason }}</div>
+    </div>
+    <form method="post" action="/queue/{{ q.id }}" style="display:flex; gap:8px; align-items:start">
+      <input type="hidden" name="reviewer" value="{{ 'Finance head (demo)' if q.kind == 'hold_verify' else 'Credit reviewer' }}">
+      {% if q.kind == 'hold_verify' %}
+        <button class="good" name="action" value="confirm">Confirmed by finance head</button>
+        <button class="bad" name="action" value="deny">Denied</button>
+      {% else %}
+        <button class="good" name="action" value="approve">Approve</button>
+        <button class="bad" name="action" value="reject">Advance only</button>
+      {% endif %}
+    </form>
+  </div>
+</div>
+{% else %}<div class="card muted">Nothing waiting for a person.</div>{% endfor %}
+{% endblock %}

@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block title %}Case {{ case.id }} · TermsDesk{% endblock %}
+{% block head %}{% if running %}<meta http-equiv="refresh" content="2">{% endif %}{% endblock %}
+{% block body %}
+{% set req = case.request or {} %}{% set co = case.company or {} %}{% set vr = case.verify or {} %}
+<h1>Case <span class="mono">{{ case.id }}</span> · {{ co.get('name') or req.get('company_name') or 'buyer not identified yet' }}
+  {% if running %}<span class="running small"> · working ({{ case.state }})…</span>{% endif %}</h1>
+
+{% if decision %}
+  {% set k = decision.decision %}
+  <div class="banner {{ k }}">
+    <div class="big">
+      {% if k == 'approve' %}Approved: {{ decision.limit_inr|inr }} on {{ decision.terms_days }} days
+      {% elif k == 'reduce' %}Approved with a lower limit: {{ decision.limit_inr|inr }} on {{ decision.terms_days }} days
+      {% elif k == 'advance_only' %}Advance payment only: no credit
+      {% elif k == 'hold_verify' %}On hold: verify the buyer before any credit
+      {% elif k == 'decline' %}Declined
+      {% else %}{{ k }}{% endif %}
+      {% if decision.needs_human %} · waiting for a reviewer{% endif %}
+    </div>
+    <div class="why">Requested {{ decision.requested_inr|inr if decision.requested_inr else 'no amount' }}{% if decision.requested_terms %} on {{ decision.requested_terms }} days{% endif %}
+      · rule {{ decision.rule }} · policy {{ decision.policy_version }} · decision v{{ version }} · {{ '%.1f'|format(cost) }} Crustdata credits spent (replies cached earlier today are free)</div>
+  </div>
+{% elif case.state == 'REFERRED' %}
+  <div class="banner refer"><div class="big">Referred to a person</div><div class="why">{{ queue[0].reason if queue else '' }}</div></div>
+{% else %}
+  <div class="banner pending"><div class="big">Working…</div><div class="why">State: {{ case.state }}</div></div>
+{% endif %}
+
+{% if queue %}
+<div class="card" style="border-color:#7b2cbf">
+  <h2>Needs a person</h2>
+  {% for q in queue %}
+  <form method="post" action="/queue/{{ q.id }}" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:6px">
+    <span class="small">{{ q.reason }}</span>
+    <input type="hidden" name="reviewer" value="{{ 'Finance head (demo)' if q.kind == 'hold_verify' else 'Credit reviewer' }}">
+    {% if q.kind == 'hold_verify' %}
+      <button class="good" name="action" value="confirm">Finance head confirms the order</button>
+      <button class="bad" name="action" value="deny">Finance head denies it</button>
+    {% else %}
+      <button class="good" name="action" value="approve">Approve the recommendation</button>
+      <button class="bad" name="action" value="reject">Advance payment only</button>
+    {% endif %}
+  </form>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="two">
+  <div>
+    {% if case.signals %}
+    <div class="card">
+      <h2>Evidence: live signals from Crustdata</h2>
+      <div class="grid">
+        {% for s in case.signals %}
+        <div class="sig {{ s.level }}">
+          <div class="name">{{ s.signal.replace('_', ' ') }} <span class="pill {{ s.level }}" style="float:right">{{ {'red':'red','amber':'amber','ok':'clear','na':'could not verify'}[s.level] }}</span></div>
+          <div style="margin-top:4px">{{ s.summary }}</div>
+          {% for eid in s.evidence_ids %}{% set e = evidence.get(eid) %}{% if e %}
+            <div class="src">{{ e.source }}{% if e.as_of %} · as of {{ e.as_of }}{% endif %}{% if e.status != 'verified' %} · <b>{{ e.status }}</b>{% endif %}
+              {% if e.url %} · <a href="{{ e.url }}" target="_blank">source</a>{% endif %}</div>
+          {% endif %}{% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if letter or outbox %}
+    <div class="card">
+      <h2>Letter and outbox</h2>
+      {% for m in outbox %}
+        <div class="small" style="margin-bottom:6px">
+          <span class="pill {{ 'ok' if m.status == 'sent' else 'amber' }}">{{ m.status }}</span>
+          <b>{{ m.action }}</b> · send-once key <span class="mono">{{ m.key }}</span><br>
+          Intended for: {{ m.to_intended }}<br>Actually delivered to: <span class="mono">{{ m.to_actual }}</span> (sandbox: agents only talk to our team)
+        </div>
+        {% if m.action == 'verify' %}<pre class="letter"><b>{{ m.subject }}</b>
+
+{{ m.body }}</pre>{% endif %}
+      {% endfor %}
+      {% if letter %}
+        <div class="small muted" style="margin-top:8px">Letter v{{ letter.version }} · written by: {{ letter.written_by }}</div>
+        <pre class="letter"><b>{{ letter.subject }}</b>
+
+{{ letter.body }}</pre>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+
+  <div>
+    <div class="card">
+      <h2>Request</h2>
+      <div class="small muted" style="white-space:pre-wrap">{{ case.raw_text }}</div>
+      {% if req %}
+      <table style="margin-top:8px" class="small">
+        <tr><td class="muted">Buyer</td><td>{{ req.company_name or '—' }}{% if req.company_domain %} · {{ req.company_domain }}{% endif %}</td></tr>
+        <tr><td class="muted">Sender</td><td>{{ req.sender_name or '—' }}{% if req.sender_email %} · {{ req.sender_email }}{% endif %}</td></tr>
+        <tr><td class="muted">Amount</td><td>{{ req.amount_inr|inr if req.amount_inr else 'not stated' }}</td></tr>
+        <tr><td class="muted">Terms</td><td>{{ (req.terms_days|string + ' days') if req.terms_days else 'not stated (policy default)' }}</td></tr>
+        <tr><td class="muted">Goods</td><td>{{ req.goods or '—' }}{% if req.ship_to_city %} · ship to {{ req.ship_to_city }}{% endif %}</td></tr>
+        <tr><td class="muted">Parsed by</td><td>{{ req.parsed_by }}</td></tr>
+      </table>
+      {% endif %}
+    </div>
+
+    {% if co %}
+    <div class="card">
+      <h2>Company</h2>
+      <div><b>{{ co.name }}</b> <span class="muted small">Crustdata #{{ co.crustdata_id }} · {{ co.primary_domain or 'no domain' }} · {{ co.employee_count_range or '' }}</span></div>
+      <div class="small muted">Matched by {{ co.matched_on.replace('_', ' ') }}{% if co.aliases %} · also known as {{ co.aliases|join(', ') }}{% endif %}</div>
+    </div>
+    {% endif %}
+
+    {% if vr %}
+    <div class="card">
+      <h2>Is the buyer real? <span class="pill {{ 'ok' if vr.status == 'pass' else 'red' if vr.status == 'fraud' else 'amber' }}">{{ {'pass':'verified','fraud':'possible fraud','unverified':'unverified'}[vr.status] }}</span></h2>
+      <ul class="small" style="margin:0; padding-left:18px">{% for s in vr.summary %}<li>{{ s }}</li>{% endfor %}</ul>
+      {% if vr.finance_head %}<div class="small" style="margin-top:6px">Finance head found independently: <b>{{ vr.finance_head.name }}</b>, {{ vr.finance_head.title }}</div>{% endif %}
+    </div>
+    {% endif %}
+
+    <div class="card">
+      <h2>What happened</h2>
+      <ul class="timeline">
+        {% for e in events %}
+        <li class="{{ 'err' if e.kind == 'ERROR' else 'retry' if e.kind in ('RETRY','FAULT') else '' }}"><b>{{ e.kind.replace('_', ' ').title() }}</b> · {{ e.message }} <span class="muted small">{{ e.at[11:19] }}</span></li>
+        {% endfor %}
+      </ul>
+      <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+        {% if case.state == 'MONITORING' %}
+        <form method="post" action="/case/{{ case.id }}/simulate"><button class="secondary" title="Replays a labelled, simulated watcher event">Simulate: finance head left</button></form>
+        {% endif %}
+        {% if not running and case.state in ('RECEIVED','PARSED','RESOLVED','VERIFIED','EVIDENCE_DONE','DECIDED','EXPLAINED') %}
+        <form method="post" action="/case/{{ case.id }}/resume"><button>Resume</button></form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

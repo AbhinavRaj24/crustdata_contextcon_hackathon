@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Backtest: would TermsDesk have warned in time?</h1>
+<div class="card">
+  <p class="small">The live policy replayed month by month before real collapses, seeing only data dated on or before each month.
+  <b>5 of 6</b> collapses were flagged before the cited news event (2 of 6 without the hiring-momentum signal); healthy companies were
+  flagged in 9 of 56 checks, always a reduced limit, never a refusal.</p>
+  <div class="small">{{ summary|safe }}</div>
+</div>
+{% endblock %}

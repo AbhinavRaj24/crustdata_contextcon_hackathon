@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}TermsDesk{% endblock %}</title>
+{% block head %}{% endblock %}
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "Segoe UI", Inter, Roboto, Arial, sans-serif; color: #1d1d1f; background: #f6f7f9; font-size: 15px; line-height: 1.45; }
+  header { background: #14213d; color: #fff; padding: 12px 28px; display: flex; align-items: center; gap: 28px; }
+  header .brand { font-weight: 700; font-size: 18px; letter-spacing: .2px; }
+  header .brand small { font-weight: 400; opacity: .7; margin-left: 8px; font-size: 13px; }
+  header nav a { color: #dfe6f3; text-decoration: none; margin-right: 18px; font-size: 14px; }
+  header nav a:hover { color: #fff; }
+  .badge { background: #e63946; color: #fff; border-radius: 10px; padding: 1px 7px; font-size: 12px; margin-left: 4px; }
+  main { max-width: 1180px; margin: 22px auto; padding: 0 22px; }
+  h1 { font-size: 22px; margin: 4px 0 14px; } h2 { font-size: 17px; margin: 0 0 10px; }
+  .card { background: #fff; border: 1px solid #e3e6ea; border-radius: 10px; padding: 16px 18px; margin-bottom: 16px; }
+  .muted { color: #6b7280; } .small { font-size: 13px; } .mono { font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid #eef0f3; vertical-align: top; }
+  th { color: #6b7280; font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: .3px; }
+  textarea { width: 100%; min-height: 110px; padding: 10px; font: inherit; border: 1px solid #cfd5dd; border-radius: 8px; }
+  button, .btn { background: #14213d; color: #fff; border: 0; border-radius: 7px; padding: 8px 14px; font: inherit; font-size: 14px; cursor: pointer; text-decoration: none; display: inline-block; }
+  button.secondary, .btn.secondary { background: #fff; color: #14213d; border: 1px solid #c7cdd6; }
+  button.good { background: #2a9d5c; } button.bad { background: #c0392b; }
+  select { padding: 7px; border-radius: 7px; border: 1px solid #cfd5dd; font: inherit; font-size: 14px; }
+  .pill { display: inline-block; padding: 2px 9px; border-radius: 12px; font-size: 12.5px; font-weight: 600; }
+  .red { background: #fde2e2; color: #a61b1b; } .amber { background: #fff1d6; color: #8a5a00; }
+  .ok { background: #dff3e6; color: #1e6b3d; } .na { background: #eceff3; color: #555; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 12px; }
+  .sig { border: 1px solid #e3e6ea; border-left: 5px solid #ccc; border-radius: 8px; padding: 10px 12px; background: #fff; }
+  .sig.red { border-left-color: #d64545; background: #fff; color: inherit; } .sig.amber { border-left-color: #e0a100; background: #fff; color: inherit; }
+  .sig.ok { border-left-color: #2a9d5c; background: #fff; color: inherit; } .sig.na { border-left-color: #9aa3ad; background: #fff; color: inherit; }
+  .sig .name { font-weight: 600; font-size: 13.5px; text-transform: capitalize; }
+  .sig .src { font-size: 12px; color: #6b7280; margin-top: 6px; word-break: break-word; }
+  .banner { border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; color: #fff; }
+  .banner.approve { background: #1e7a46; } .banner.reduce { background: #b7791f; } .banner.advance_only { background: #a61b1b; }
+  .banner.hold_verify { background: #7b2cbf; } .banner.refer, .banner.decline { background: #4a5568; } .banner.pending { background: #4a5568; }
+  .banner .big { font-size: 22px; font-weight: 700; } .banner .why { opacity: .92; margin-top: 4px; }
+  .two { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; } @media (max-width: 900px) { .two { grid-template-columns: 1fr; } }
+  .timeline { list-style: none; margin: 0; padding: 0; font-size: 13.5px; }
+  .timeline li { padding: 5px 0 5px 14px; border-left: 2px solid #d5dae1; margin-left: 4px; }
+  .timeline li b { color: #14213d; } .timeline li.err b { color: #c0392b; } .timeline li.retry b { color: #b7791f; }
+  pre.letter { white-space: pre-wrap; font-family: inherit; background: #fbfbfc; border: 1px solid #eceff3; border-radius: 8px; padding: 12px; margin: 8px 0 0; font-size: 14px; }
+  .samples button { margin: 0 6px 6px 0; }
+  .running { color: #b7791f; font-weight: 600; }
+  a { color: #1d4ed8; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">TermsDesk <small>AI credit desk · Acme Supplies</small></div>
+  <nav>
+    <a href="/">New request</a>
+    <a href="/queue">Review queue{% if queue_count %}<span class="badge">{{ queue_count }}</span>{% endif %}</a>
+    <a href="/accounts">Accounts</a>
+    <a href="/outbox">Outbox (sandbox)</a>
+    <a href="/backtest">Backtest</a>
+  </nav>
+</header>
+<main>
+{% block body %}{% endblock %}
+</main>
+</body>
+</html>

@@ -75,7 +75,7 @@ def test_unverified_sender_is_capped_below_the_hold_threshold():
     d = run(clean(), amount=400_000, vr=VerifyResult(status="unverified", summary=["Sender: not found"]))
     assert d.limit_inr == 400_000
     d2 = run(clean(), amount=None, vr=VerifyResult(status="unverified", summary=["Sender: not found"]), case="c2")
-    assert d2.limit_inr == 499_999 and "capped" in d2.rule
+    assert d2.limit_inr == 400_000 and "capped" in d2.rule   # policy unverified_cap_inr: a clean Rs 4 lakh
 
 
 def test_limits_apply_to_total_exposure():

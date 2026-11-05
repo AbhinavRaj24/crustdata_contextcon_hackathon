@@ -121,11 +121,14 @@ Python 3.13, SQLite, httpx, Pydantic, pytest. Gemini only for language: `gemini-
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 cp .env.example .env     # CRUSTDATA_API_KEY and GEMINI_API_KEY
+.venv/bin/uvicorn termsdesk.app:app --port 8000          # web UI at http://127.0.0.1:8000
 .venv/bin/python -m termsdesk.cli "Need 50 laptops, Rs 20 lakh on 60 days. procurement@dunzo.com"
 .venv/bin/python -m termsdesk.cli --resume <case_id>      # resume after a crash
 ```
 
-Fault injection: `FAULT=enrich:timeout`, `FAULT=person_search:429`, `FAULT=enrich:garbage`. Offline replay from the cache: `REPLAY=1`.
+The web UI has a request form with sample requests, a live case page (signals with sources, buyer check, decision, letter,
+sandboxed outbox, timeline), a review queue for holds and referrals, the account ledger, the outbox and the backtest.
+Its "inject a failure" switch applies to one case only. From the command line, fault injection is: `FAULT=enrich:timeout`, `FAULT=person_search:429`, `FAULT=enrich:garbage`. Offline replay from the cache: `REPLAY=1`.
 
 ## How we tested it
 

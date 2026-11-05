@@ -80,9 +80,13 @@ class _Throttle:
 _throttle = _Throttle()
 
 
+current_fault: contextvars.ContextVar[str] = contextvars.ContextVar("current_fault", default="")
+
+
 def faults() -> dict[str, str]:
+    """FAULT from the environment, plus a per-case override (the web UI's "inject a failure" switch)."""
     out = {}
-    for part in os.environ.get("FAULT", "").split(","):
+    for part in (os.environ.get("FAULT", "") + "," + current_fault.get()).split(","):
         if ":" in part:
             k, v = part.split(":", 1)
             out[k.strip()] = v.strip()

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card">
+  <h1>New credit request</h1>
+  <p class="muted small">Paste a buyer's request exactly as it arrived: English, Hinglish, an email. TermsDesk checks the buyer is real,
+    collects live evidence from Crustdata, decides the terms with fixed rules, and sends a letter where every reason is cited.</p>
+  <form method="post" action="/request" id="f">
+    <textarea name="text" id="text" placeholder="e.g. Need 40 laptops, Rs 30 lakh on 45 days credit. Paul (paul@company.com)" required></textarea>
+    <div style="margin-top:10px; display:flex; gap:12px; align-items:center; flex-wrap:wrap">
+      <button type="submit">Run TermsDesk</button>
+      <label class="small muted">Inject a failure (demo):
+        <select name="fault">{% for k, v in faults.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select>
+      </label>
+    </div>
+  </form>
+  <div class="samples" style="margin-top:12px">
+    <span class="small muted">Try a sample:</span><br>
+    {% for label, text in samples %}
+      <button class="secondary" type="button" onclick="document.getElementById('text').value = {{ text|tojson|forceescape }}">{{ label }}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="card">
+  <h2>Recent cases</h2>
+  <table>
+    <tr><th>Case</th><th>Buyer</th><th>Asked</th><th>State</th><th>Decision</th></tr>
+    {% for row in cases %}{% set c = row.case %}{% set d = row.decision %}
+    <tr>
+      <td><a href="/case/{{ c.id }}" class="mono">{{ c.id }}</a></td>
+      <td>{{ (c.company or {}).get('name') or (c.request or {}).get('company_name') or '—' }}</td>
+      <td>{% if c.request and c.request.amount_inr %}{{ c.request.amount_inr|inr }}{% else %}—{% endif %}</td>
+      <td class="small">{{ c.state }}</td>
+      <td>{% if d %}<span class="pill {{ 'ok' if d.decision == 'approve' else 'amber' if d.decision == 'reduce' else 'red' if d.decision in ('advance_only','decline') else 'na' }}">{{ d.decision.replace('_', ' ') }}</span>
+          {% if d.decision in ('approve','reduce') %} {{ d.limit_inr|inr }} / {{ d.terms_days }}d{% endif %}{% endif %}</td>
+    </tr>
+    {% else %}<tr><td colspan="5" class="muted">No cases yet.</td></tr>{% endfor %}
+  </table>
+</div>
+{% endblock %}

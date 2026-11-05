@@ -459,7 +459,7 @@ def s_exits(ctx: Ctx) -> None:
     cl = ctx.ev("clevel_exits", {"count": len(clevel), "people": clevel[:10], "large_company": large,
                                  "red_at": red_at, "amber_at": amber_at}, src, unit="people")
     lvl = "red" if len(clevel) >= red_at else "amber" if len(clevel) >= amber_at else "ok"
-    ctx.add("clevel_exits", lvl, f"{len(clevel)} founders or C-level leaders left {span}", [cl])
+    ctx.add("clevel_exits", lvl, f"{len(clevel)} founder or C-level exit{'' if len(clevel) == 1 else 's'} {span}", [cl])
 
 
 def _rounds_until(funding: dict, T: dt.date) -> list[tuple[dt.date, dict]]:
