@@ -32,7 +32,7 @@ A request in the customer's own words goes in (English, Hinglish, or a form). A 
 1. **Read the request.** Rules extract amounts, terms, emails and domains exactly ("₹40L", "4,00,000", "ek mahine ka credit"); Gemini fills only the gaps (company, sender, goods, city).
 2. **Find the company.** Resolve to one Crustdata company ID. Aliases ("ABC Foods", "ABC Foods Pvt Ltd") merge into one account, and limits apply to total exposure.
 3. **Verify the buyer.** Is the email domain the company's own? Is the sender a current employee in a buying role? A lookalike domain (`razorpay-payments.co`) means **hold**. We then find the company's finance head ourselves and ask them, never the sender.
-4. **Collect evidence.** Ten signals from live Crustdata data. Each fact is saved with its source, URL and as-of date.
+4. **Collect evidence.** Eleven signals from live Crustdata data. Each fact is saved with its source, URL and as-of date.
 5. **Decide.** Fixed rules in [`termsdesk/policy.yaml`](termsdesk/policy.yaml): approve, reduce, advance-only, hold or refer. No model makes this call.
 6. **Explain.** A terms letter built only from the evidence. The model may re-word it; a citation guard rejects any number not in the evidence.
 7. **Act.** Send the letter exactly once, open or update the account, register a watch.
@@ -144,8 +144,8 @@ Its "inject a failure" switch applies to one case only. From the command line, f
 
 ## How we tested it
 
-- **147 offline tests** (`pytest`, no network): amounts in lakh/crore/Hinglish, terms ("ek mahine", "net 45", delivery time vs credit), lookalike domains (changed letters, extra words, hidden real domains, look-alike characters), company matching (legal names, four companies called "Dunzo"), sender and finance-head checks on a fake Crustdata, the citation guard, send-once.
-- **13 live case tests** (`pytest -m live`), all passing:
+- **213 offline tests** (`pytest`, no network): amounts in lakh/crore/Hinglish, terms ("ek mahine", "net 45", delivery time vs credit), lookalike domains (changed letters, extra words, hidden real domains, look-alike characters), company matching (legal names, four companies called "Dunzo"), sender and finance-head checks on a fake Crustdata, the citation guard, send-once.
+- **15 live case tests** (`pytest -m live`), all passing:
   - healthy buyer approved;
   - dead company advance-only;
   - fraud held, with the email going to the finance head and not the sender;
@@ -155,7 +155,9 @@ Its "inject a failure" switch applies to one case only. From the command line, f
   - an injected timeout becomes "Could not verify";
   - injected garbage values are marked invalid;
   - every number, date and name in the sent letter is in the evidence;
-  - the same words with no email address are held (nothing ties them to the company).
+  - the same words with no email address are held (nothing ties them to the company);
+  - a watched change (the finance head leaves) cuts the terms and sends exactly one new letter, and the same event again sends nothing;
+  - a crash right after the finance-head verification email never emails them twice.
 - **Backtest on past collapses:** see below.
 
 ## Backtest: would it have warned in time?
@@ -173,14 +175,16 @@ Code: [`backtest/`](backtest/); full tables: [`backtest/results_live/summary.md`
 
 | Company | Event (cited) | Live policy v3.2 (with hiring momentum) | Without hiring momentum (v3.1) |
 | --- | --- | --- | --- |
-| Dunzo | [vendors demanding unpaid dues, Jul 2023](https://www.google.com/goto?url=CAESlQEBxCJF154SatXjCZGXOHuzt5bD8DGDkOlxudhf3bYqoPNLyPrQQSjuBhp-V-htfK7Q1AVJbaYRvg0TFS_PwqJJVITKOr7RnXb7rk2BzZY5v5_iH1_XWcJfNQic5h7P95Q51y-VrPso93yfJmmaUEizSW5OQf-WcFe4v5qKEg51dzUNpvur_Cuhgr-1bYWgNAUH9J5jEQ) | credit cut to 25%, flagged **4 months** early (in-sample) | approve: missed |
+| Dunzo | [vendors demanding unpaid dues, Jul 2023](https://editorji.com/amp/business-news/more-trouble-for-dunzo-legal-notices-by-facebook-nilenso-over-unpaid-dues-1689853237898) | credit cut to 25%, flagged **4 months** early (in-sample) | approve: missed |
 | BYJU'S | [ex-staff allege PF unpaid, Jun 2023](https://timesofindia.indiatimes.com/business/india-business/byjus-ex-staff-allege-pf-unpaid-company-says-no-dues/articleshow/101293728.cms) | cut to 25%, **2 months** early | approve: missed |
 | Koo | [shutdown, Jul 2024](https://techcrunch.com/2024/07/02/indian-social-network-koo-to-shut-down/) | cut to 25%, **7 months** early (unreliable record) | approve: missed |
 | BluSmart | [insolvency pleas, Jun 2025](https://www.livemint.com/companies/news/nclt-issues-notices-to-blusmart-mobility-and-gensol-on-three-fresh-insolvency-pleas-11748945362132.html) | cut to 25%, 2 months early | same |
 | Bira 91 | [salary and vendor payment delays, Feb 2025](https://www.business-standard.com/companies/news/bira-b9-beverages-tax-trouble-salary-vendor-payment-delays-financial-crisis-125021900251_1.html) | cut to 25%, 1 month early | same |
 | GoMechanic | [trouble mounting, Feb 2023](https://m.economictimes.com/tech/startups/how-founders-threw-a-spanner-in-the-works-of-gomechanic/articleshow/97844373.cms) | approve: missed (history starts 2 weeks before) | same |
 
-**Collapses flagged before the event: 5 of 6 with hiring momentum, against 2 of 6 without it.**
+**Collapses flagged before the event:**
+- **Out of sample** (companies with reliable records that we did not look at while designing the signal: BYJU'S, BluSmart, Bira 91, GoMechanic): **3 of 4** flagged, against 2 of 4 without hiring momentum.
+- **Including Dunzo** (in-sample, used to design the signal) and **Koo** (unreliable record): 5 of 6, against 2 of 6.
 
 **False alarms on healthy companies:** 7 healthy controls (Razorpay, Zerodha, Groww, Zepto, PhysicsWallah, CRED, Freshworks), checked every
 six months from Mar 2023 to Sep 2026.
@@ -209,7 +213,8 @@ six months from Mar 2023 to Sep 2026.
 | Policy v3 (first run) | 10 of 12 | Zomato ("City CEO" and "Cluster CEO" counted as C-level exits); Zerodha (1.7% joiners called dead) |
 | Policy v3.1 (regional titles excluded; zombie threshold 1%, while dead companies sit at 0-0.03%) | **12 of 12** | none. Zerodha gets the full amount on 30 days instead of 45 |
 | Policy v3.2, hiring momentum without lag | 11 of 12 | PhonePe (the latest months looked short of joiners: reporting lag) |
-| **Policy v3.2 with a 2-month lag (live)** | **12 of 12** | none |
+| Policy v3.2 with a 2-month lag | 12 of 12 | none |
+| **Policy v3.3 (live; own listed domains are unverified, not fraud)** | **12 of 12** | none (table in NOTES.md) |
 
 Full table in [NOTES.md](NOTES.md). Koo resolved to a different record ("Koo App USA") and fell under the thin-data rule.
 

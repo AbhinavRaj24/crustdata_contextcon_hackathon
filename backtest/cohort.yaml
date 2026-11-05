@@ -1,7 +1,7 @@
 # Backtest cohort. Distressed = publicly reported unpaid salaries/vendors, insolvency or shutdown.
 # event_date + event_source are filled from cited news (see backtest/events.py); never from memory.
 distressed:
-  - {name: Dunzo, domain: dunzo.com}
+  - {name: Dunzo, domain: dunzo.com, event_date: "2023-07-20", event_source: "https://editorji.com/amp/business-news/more-trouble-for-dunzo-legal-notices-by-facebook-nilenso-over-unpaid-dues-1689853237898"}  # reviewed: free report of unpaid vendor dues, same day as The Morning Context's
   - {name: "BYJU'S", search_before: "2024-06-01", domain: byjus.com, event_date: "2023-06-27", event_source: "https://timesofindia.indiatimes.com/business/india-business/byjus-ex-staff-allege-pf-unpaid-company-says-no-dues/articleshow/101293728.cms"}  # reviewed: auto-pick (2022 centre closure reversal) was not unpaid dues
   - {name: GoMechanic, search_before: "2023-12-31", domain: gomechanic.in}
   - {name: BluSmart, search_before: "2025-07-01", domain: blu-smart.com}

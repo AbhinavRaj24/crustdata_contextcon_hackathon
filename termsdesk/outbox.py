@@ -33,7 +33,7 @@ def start_hold(case_id: str, version: int, req: Request, company: Company, vr: V
     if not head:
         store.queue_human(case_id, "hold_verify", f"No finance head found at {company.name}; verify the order by phone")
         return
-    key = f"{case_id}:verify:v{version}"
+    key = f"{case_id}:verify"  # one verification per case: a crash and resume must not email the finance head twice
     if vr.verification_email:  # verify.py's email: confirm/deny links + the domain check detail
         em = vr.verification_email
         store.outbox_enqueue(key, case_id, "verify", em["to_intended"], route(None), em["subject"], em["body"])

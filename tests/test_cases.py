@@ -105,3 +105,36 @@ def test_no_email_means_unverified_and_large_orders_are_held():
     """Same words without any email: nothing ties the request to Razorpay, so Rs 30 lakh is held."""
     text = "Paul Dinakar from Razorpay, procurement. Order: 40 laptops, Rs 30,00,000. Terms requested: 45 days."
     assert outcome(pipeline.submit(text))[1] == "hold_verify"
+
+
+def test_watch_event_cuts_terms_and_sends_one_new_letter():
+    """Spec case 9: a watched fact changes (finance head leaves): re-decide, letter v2 once; the same event again sends nothing."""
+    from termsdesk import monitor
+    cid = pipeline.submit(HEALTHY)
+    company_id = store.get_case(cid)["company_id"]
+    event = {"name": "Finance head", "title": "Head of Finance", "left": "2026-11"}
+    monitor.simulate(company_id, "finance_head_left", event)
+    _, d = store.latest_decision(cid)
+    assert d.decision == "reduce" and d.terms_days == 30 and "finance_head_exit" in d.red
+    monitor.simulate(company_id, "finance_head_left", event)
+    letters = [o for o in store.list_outbox(cid) if o["action"] == "decision"]
+    assert len(letters) == 2  # v1 (approve) and v2 (reduce); the repeat event sent nothing
+    store.conn().execute("DELETE FROM watch_events WHERE company_id = ?", (company_id,))  # keep other tests clean
+
+
+def test_crash_after_verification_email_does_not_email_twice(monkeypatch):
+    calls = {"n": 0}
+    real = store.queue_human
+
+    def crash_once(*a, **k):  # the finance-head email is queued and sent, then the process "dies"
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise RuntimeError("simulated crash after the verification email")
+        return real(*a, **k)
+
+    monkeypatch.setattr(store, "queue_human", crash_once)
+    cid = pipeline.submit(FRAUD)
+    pipeline.resume(cid)
+    pipeline.resume(cid)
+    assert store.get_case(cid)["state"] == "HOLD_VERIFY"
+    assert len([o for o in store.list_outbox(cid) if o["action"] == "verify"]) == 1

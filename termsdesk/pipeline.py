@@ -88,6 +88,12 @@ def step_act(case: dict) -> None:
         store.set_state(case["id"], State.REFERRED, f"Referred to a human ({decision.rule})")
         return
     letter = store.latest_letter(case["id"])
+    prev = _previous_sent_terms(case["id"], version)
+    now = (decision.decision, decision.limit_inr, decision.terms_days, decision.advance_pct)
+    if prev == now:
+        # A re-decision that changes nothing (e.g. the same watch event twice) sends no new letter.
+        store.set_state(case["id"], State.MONITORING, f"Re-decided (v{version}): terms unchanged, no new letter sent")
+        return
     sent = outbox.send_decision(case["id"], version, req, letter)
     store.upsert_account(company.crustdata_id, limit_inr=decision.limit_inr, terms_days=decision.terms_days,
                          advance_pct=decision.advance_pct, status=decision.decision, last_case_id=case["id"])
@@ -95,6 +101,18 @@ def step_act(case: dict) -> None:
                     f"; account set to Rs {decision.limit_inr:,} on {decision.terms_days} days")
     monitor.register(case["id"], company)
     store.set_state(case["id"], State.MONITORING, f"Watching {company.name} for changes")
+
+
+def _previous_sent_terms(case_id: str, version: int):
+    """Terms of the latest earlier decision that was actually sent to the buyer, or None."""
+    sent_versions = {int(o["key"].rsplit(":v", 1)[1]) for o in store.list_outbox(case_id)
+                     if o["action"] == "decision" and o["status"] == "sent" and ":v" in o["key"]}
+    earlier = [v for v in sent_versions if v < version]
+    if not earlier:
+        return None
+    row = store.conn().execute("SELECT decision_json FROM decisions WHERE case_id = ? AND version = ?", (case_id, max(earlier))).fetchone()
+    d = Decision.model_validate_json(row["decision_json"])
+    return (d.decision, d.limit_inr, d.terms_days, d.advance_pct)
 
 
 STEPS = {

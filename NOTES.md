@@ -103,3 +103,24 @@ append a table here: company, profiles, joiner rate, job posts, decision, right 
 - 04:25 Same Zepto request gave hold (04:01) and approve (04:05, 04:13): not randomness but code changes in between (the zeptonow.com
   domain fix and the Rs 4 lakh cap), while every decision still said "policy v3.2". Lesson: any change to decision rules bumps the
   policy version, so a reviewer can always tell why two decisions differ. Now policy v3.3.
+
+
+### Calibration run (live, 2026-11-06, policy v3.3, ask Rs 20 lakh on 45 days)
+
+| Company | Label | Profiles | Joiners 12m | Job posts 12m | Red / amber | Could not verify | Decision | Right? | Credits |
+|---|---|---|---|---|---|---|---|---|---|
+| Razorpay #897127 | healthy | 3582 | 829 (23.1%) | 202 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 0 |
+| Zerodha #7275 | healthy | 2113 | 36 (1.7%) | 0 | joiner_rate amber, hiring_momentum amber, finance_team_exits amber, job_posts amber | funding_age | reduce Rs 20 lakh / 30d (R7 two or more amber signals) | right (caution) | 0 |
+| Freshworks #6042422 | healthy | 7531 | 1024 (13.6%) | 1388 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 0 |
+| Swiggy #5702 | healthy | 16466 | 2173 (13.2%) | 2030 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 0 |
+| Zomato #6162764 | healthy | 13434 | 1245 (9.3%) | 1 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 0 |
+| Groww #5894 | healthy | 2119 | 437 (20.6%) | 97 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 1.0 |
+| Meesho #5300979 | healthy | 6300 | 1101 (17.5%) | 306 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 0 |
+| PhonePe #5729 | healthy | 9909 | 1021 (10.3%) | 540 | hiring_momentum amber | none | approve Rs 20 lakh / 45d (R8 clean) | right | 0 |
+| Dunzo #5721 | distressed | 1490 | 0 (0.0%) | 0 | joiner_rate red, funding_age amber | hiring_momentum, job_posts | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 0 |
+| BYJU'S #5705 | distressed | 10682 | 3 (0.0%) | 0 | joiner_rate red, job_posts red, distress_news red, funding_age amber | hiring_momentum | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 0 |
+| Koo App USA #609146 | distressed | 0 | 0 (0.0%) | 0 | none | profiles, joiner_rate, hiring_momentum, funding_age, job_posts | reduce Rs 1 lakh / 15d (R5 thin data) | thin data | 0 |
+| BluSmart #6214 | distressed | 738 | 0 (0.0%) | 0 | joiner_rate red, job_posts red, headcount_trend amber, funding_age amber | hiring_momentum | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 0 |
+| Builder.ai #632808 | distressed | 471 | 0 (0.0%) | 0 | joiner_rate red, hiring_momentum red, job_posts red, headcount_trend amber, funding_age amber, website amber | none | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 0 |
+
+12 of 12 right. False alarms: none. Missed: none.

@@ -1,12 +1,12 @@
 # Backtest on the live signal code
 
-Policy v3.2 via `signals.collect(..., as_of=T)`: each month sees only data dated on or before it. News and websites are not replayed.
+Policy v3.2 via `signals.collect(..., as_of=T)`: each month sees only data dated on or before it. News and websites are not replayed. (v3.3 changed only the buyer checks, not the signals, so these results stand.)
 
 ## Distressed companies (12 months before the cited event)
 
 | Company | Event (cited) | Policy (with momentum): status at event | months flagged before event | Without momentum: status | months flagged |
 | --- | --- | --- | --- | --- | --- |
-| Dunzo | [2023-07-20](https://www.google.com/goto?url=CAESlQEBxCJF154SatXjCZGXOHuzt5bD8DGDkOlxudhf3bYqoPNLyPrQQSjuBhp-V-htfK7Q1AVJbaYRvg0TFS_PwqJJVITKOr7RnXb7rk2BzZY5v5_iH1_XWcJfNQic5h7P95Q51y-VrPso93yfJmmaUEizSW5OQf-WcFe4v5qKEg51dzUNpvur_Cuhgr-1bYWgNAUH9J5jEQ) | reduce_25 (R6) | 4 | approve (R8) | 0 |
+| Dunzo | [2023-07-20](https://editorji.com/amp/business-news/more-trouble-for-dunzo-legal-notices-by-facebook-nilenso-over-unpaid-dues-1689853237898) | reduce_25 (R6) | 4 | approve (R8) | 0 |
 | BYJU'S | [2023-06-27](https://timesofindia.indiatimes.com/business/india-business/byjus-ex-staff-allege-pf-unpaid-company-says-no-dues/articleshow/101293728.cms) | reduce_25 (R6) | 2 | approve (R8) | 0 |
 | GoMechanic | [2023-02-13](https://m.economictimes.com/tech/startups/how-founders-threw-a-spanner-in-the-works-of-gomechanic/articleshow/97844373.cms) | approve (R8) | 0 | approve (R8) | 0 |
 | BluSmart | [2025-06-03](https://www.livemint.com/companies/news/nclt-issues-notices-to-blusmart-mobility-and-gensol-on-three-fresh-insolvency-pleas-11748945362132.html) | reduce_25 (R6) | 2 | reduce_25 (R6) | 2 |

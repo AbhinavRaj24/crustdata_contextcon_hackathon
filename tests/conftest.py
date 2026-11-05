@@ -11,7 +11,8 @@ _src = ROOT / "termsdesk.db"
 if _src.exists():
     src, dst = sqlite3.connect(_src), sqlite3.connect(_tmp)
     src.backup(dst)  # consistent copy even while the app or backtest is writing
-    dst.execute("DELETE FROM cases"), dst.execute("DELETE FROM outbox"), dst.execute("DELETE FROM accounts")
+    for table in ("cases", "outbox", "accounts", "watch_events", "human_queue", "decisions", "letters"):
+        dst.execute(f"DELETE FROM {table}")  # simulated watch events must never leak into other tests
     dst.commit()
     src.close(), dst.close()
 os.environ["TERMSDESK_DB"] = str(_tmp)

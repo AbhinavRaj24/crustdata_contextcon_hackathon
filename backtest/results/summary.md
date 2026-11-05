@@ -1,3 +1,5 @@
+> **Superseded.** This first backtest re-implemented the signal rules as they were before calibration ("v2"/"v3" below are that run's own labels, not the live policy versions). The current results are in [`../results_live/summary.md`](../results_live/summary.md).
+
 # Backtest summary
 
 Policy v2. Each month uses only data dated on or before that month.

@@ -1,3 +1,5 @@
+> **Superseded:** policy v3 before the hiring-momentum signal. Current results: [`summary.md`](summary.md).
+
 # Backtest on the live signal code
 
 Policy v3 via `signals.collect(..., as_of=T)`: each month sees only data dated on or before it. News and websites are not replayed.

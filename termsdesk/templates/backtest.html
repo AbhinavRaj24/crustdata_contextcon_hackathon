@@ -3,8 +3,9 @@
 <h1>Backtest: would TermsDesk have warned in time?</h1>
 <div class="card">
   <p class="small">The live policy replayed month by month before real collapses, seeing only data dated on or before each month.
-  <b>5 of 6</b> collapses were flagged before the cited news event (2 of 6 without the hiring-momentum signal); healthy companies were
-  flagged in 9 of 56 checks, always a reduced limit, never a refusal.</p>
+  Out of sample (reliable records, not used to design the signals): <b>3 of 4</b> collapses flagged before the cited news event
+  (2 of 4 without the hiring-momentum signal). Healthy companies were flagged in 9 of 56 checks, always a reduced limit, never a refusal.
+  Dunzo was used to design the hiring-momentum signal and Koo's record is unreliable, so they are shown but not counted.</p>
   <div class="small">{{ summary|safe }}</div>
 </div>
 {% endblock %}
