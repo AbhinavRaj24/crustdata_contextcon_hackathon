@@ -44,7 +44,7 @@ def test_purchase_order_fraud_is_held_and_sender_never_contacted():
 @pytest.mark.parametrize("text", [
     "Razorpay here (Paul Dinakar, paul.dinakar@razorpay.com). 40 laptops, total ₹30L, need 45-day payment terms.",
     "Request from paul.dinakar@razorpay.com: please quote 40 laptops worth 30 lakh rupees on net 45. Regards, Paul Dinakar, Razorpay",
-    "Paul Dinakar from Razorpay, procurement. Order: 40 laptops, Rs 30,00,000. Terms requested: 45 days.",
+    "Paul Dinakar from Razorpay, procurement (paul.dinakar@razorpay.com). Order: 40 laptops, Rs 30,00,000. Terms requested: 45 days.",
     "hi, Paul here from razorpay (paul.dinakar@razorpay.com) - 40 laptop chahiye, 30 lakh ka order, 45 din ka credit",
 ])
 def test_same_case_same_answer(text):
@@ -90,11 +90,18 @@ def test_garbage_values_are_marked_invalid(monkeypatch):
     assert any(e.status == "invalid" for e in store.list_evidence(cid))
 
 
-def test_letters_only_contain_numbers_from_the_evidence():
+def test_letters_only_contain_facts_from_the_evidence():
     cid = pipeline.submit(HEALTHY)
     letter = store.latest_letter(cid)
-    _, d = store.latest_decision(cid)
+    assert "WARNING" not in letter["written_by"], letter["written_by"]
     from termsdesk.contracts import Company, Request
     case = store.get_case(cid)
-    _, template_body = explain.template(Request(**case["request"]), Company(**case["company"]), d)
-    assert explain.citation_guard(letter["body"], template_body) == []
+    _, d = store.latest_decision(cid)
+    payload = explain._payload(d, store.list_evidence(cid), Request(**case["request"]), Company(**case["company"]).name)
+    assert explain.citation_guard(letter["subject"] + "\n" + letter["body"], explain.build_facts(payload)).ok
+
+
+def test_no_email_means_unverified_and_large_orders_are_held():
+    """Same words without any email: nothing ties the request to Razorpay, so Rs 30 lakh is held."""
+    text = "Paul Dinakar from Razorpay, procurement. Order: 40 laptops, Rs 30,00,000. Terms requested: 45 days."
+    assert outcome(pipeline.submit(text))[1] == "hold_verify"

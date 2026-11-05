@@ -34,6 +34,11 @@ def start_hold(case_id: str, version: int, req: Request, company: Company, vr: V
         store.queue_human(case_id, "hold_verify", f"No finance head found at {company.name}; verify the order by phone")
         return
     key = f"{case_id}:verify:v{version}"
+    if vr.verification_email:  # Part C's email: confirm/deny links + the domain check detail
+        em = vr.verification_email
+        store.outbox_enqueue(key, case_id, "verify", em["to_intended"], route(None), em["subject"], em["body"])
+        _deliver(key)
+        return
     intended = f"{head['name']} ({head['title']}, {company.name}); email not looked up"
     subject = f"Please confirm an order placed in {company.name}'s name"
     body = "\n".join([

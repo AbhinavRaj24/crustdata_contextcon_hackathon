@@ -2,7 +2,7 @@
 import pytest
 
 from termsdesk import store
-from termsdesk.explain import citation_guard
+from termsdesk.explain import build_facts, citation_guard
 from termsdesk.intake import parse_amount, parse_terms, rules_parse
 from termsdesk.money import inr
 from termsdesk.verify import domain_check
@@ -25,7 +25,9 @@ def test_amounts(text, expected):
 
 @pytest.mark.parametrize("text,expected", [
     ("on 60 days credit", 60), ("net 45", 45), ("net-30", 30), ("30 din ke credit pe", 30),
-    ("ek mahine ka credit", 30), ("2 months", 60), ("do mahine", 60), ("no terms here", None),
+    ("ek mahine ka credit", 30), ("2 months credit", 60), ("do mahine ka credit", 60), ("no terms here", None),
+    ("deliver in 2 months, pay in 30 days", 30),     # delivery time is not credit
+    ("dispatch within 15 days", None),
 ])
 def test_terms(text, expected):
     assert parse_terms(text) == expected
@@ -70,9 +72,11 @@ def test_money_format():
 
 
 def test_citation_guard_rejects_invented_numbers():
-    source = "We offer Rs 18 lakh on 30 days. 829 joiners since Nov 2025."
-    assert citation_guard("You get Rs 18 lakh on 30-day terms; 829 people joined since Nov 2025.", source) == []
-    assert citation_guard("You get Rs 25 lakh on 30 days.", source) == ["25"]
+    facts = build_facts({"decision": {"limit_inr": 1_800_000, "terms_days": 30},
+                         "evidence": [{"value": {"joiners": 829, "since": "2025-11-01"}}]})
+    assert citation_guard("We offer ₹18 lakh on 30-day terms; 829 people joined since Nov 2025.", facts).ok
+    bad = citation_guard("We offer ₹25 lakh on 30 days.", facts)
+    assert not bad.ok and bad.bad
 
 
 def test_outbox_sends_once():
@@ -83,3 +87,8 @@ def test_outbox_sends_once():
     store.outbox_mark_sent(key)
     rows = [o for o in store.list_outbox("ctest") if o["key"] == key]
     assert len(rows) == 1 and rows[0]["status"] == "sent"
+
+
+def test_sender_first_name_is_not_taken_as_the_company():
+    r = rules_parse("t", "hi, Paul here from razorpay (paul.dinakar@razorpay.com) - 40 laptop chahiye, 30 lakh ka order, 45 din ka credit")
+    assert r.company_name != "Paul" and r.company_domain == "razorpay.com" and r.amount_inr == 3_000_000 and r.terms_days == 45

@@ -148,6 +148,11 @@ def confirm_hold(case_id: str, confirmed: bool, reviewer: str) -> str:
     for item in store.list_queue():
         if item["case_id"] == case_id and item["kind"] == "hold_verify":
             store.resolve_queue_item(item["id"], reviewer, "confirmed" if confirmed else "denied")
+    from .verify import apply_verification_answer
+    req = Request(**case["request"]) if case.get("request") else None
+    ans = apply_verification_answer(case_id, "confirm" if confirmed else "deny", reviewer,
+                                    req.sender_email if req else None)
+    store.add_evidence(ans["evidence"])
     if not confirmed:
         decision = Decision(decision="decline", rule="hold denied by finance head", policy_version=decide.policy()["version"],
                             reasons=[], fraud_flags=(VerifyResult(**case["verify"]).flags if case.get("verify") else []))

@@ -36,9 +36,14 @@ def _call(model: str, prompt: str, schema: Optional[dict]) -> Optional[str]:
     if r.status_code != 200:
         return None
     try:
-        return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        cand = r.json()["candidates"][0]
+        parts = cand["content"]["parts"]
     except (KeyError, IndexError, ValueError):
         return None
+    if cand.get("finishReason") not in (None, "STOP"):
+        return None  # cut off (MAX_TOKENS, SAFETY...): never use a partial answer
+    text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+    return text or None
 
 
 def generate(task: str, prompt: str, schema: Optional[dict] = None) -> tuple[Any, Optional[str]]:

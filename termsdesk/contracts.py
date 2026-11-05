@@ -25,7 +25,7 @@ class State(str, Enum):
 
 class Request(BaseModel):
     case_id: str
-    raw_text: str
+    raw_text: str = ""
     company_name: Optional[str] = None
     company_domain: Optional[str] = None
     sender_name: Optional[str] = None
@@ -44,8 +44,12 @@ class Company(BaseModel):
     website: Optional[str] = None
     employee_count_range: Optional[str] = None
     match_confidence: float = 0.0
-    matched_on: str = ""  # "domain" or "name"
+    matched_on: str = ""  # domain_exact | name_exact | name_largest | name_confident
     candidates: list[dict] = Field(default_factory=list)
+    all_domains: list[str] = Field(default_factory=list)   # never trusted for verification (holds junk)
+    aliases: list[str] = Field(default_factory=list)
+    year_founded: Optional[int] = None
+    flags: list[str] = Field(default_factory=list)         # name_collision | name_domain_mismatch (from resolve)
 
 
 EvidenceStatus = Literal["verified", "unavailable", "invalid", "conflict"]
@@ -78,7 +82,9 @@ class VerifyResult(BaseModel):
     flags: list[str] = Field(default_factory=list)
     summary: list[str] = Field(default_factory=list)
     evidence_ids: list[str] = Field(default_factory=list)
-    finance_head: Optional[dict] = None  # {"name","title","crustdata_person_id"} found independently
+    finance_head: Optional[dict] = None  # {"name","title","since","crustdata_person_id"} found independently
+    verification_email: Optional[dict] = None  # {"subject","body","to_intended"} for the finance head
+    notes: list[str] = Field(default_factory=list)
 
 
 class Reason(BaseModel):
@@ -91,9 +97,9 @@ DecisionKind = Literal["approve", "reduce", "advance_only", "hold_verify", "refe
 
 class Decision(BaseModel):
     decision: DecisionKind
-    limit_inr: int = 0
-    terms_days: int = 0
-    advance_pct: int = 0
+    limit_inr: Optional[int] = 0
+    terms_days: Optional[int] = 0
+    advance_pct: Optional[int] = 0
     fraud_flags: list[str] = Field(default_factory=list)
     red: list[str] = Field(default_factory=list)
     amber: list[str] = Field(default_factory=list)
@@ -101,7 +107,7 @@ class Decision(BaseModel):
     could_not_verify: list[str] = Field(default_factory=list)
     requested_inr: Optional[int] = None
     requested_terms: Optional[int] = None
-    exposure_inr: int = 0
+    exposure_inr: Optional[int] = 0
     base_limit_inr: int = 0
     rule: str = ""
     policy_version: str = ""
