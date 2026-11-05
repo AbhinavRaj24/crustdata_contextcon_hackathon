@@ -19,9 +19,9 @@ SIGNALS = ["profiles", "joiner_rate", "headcount_trend", "finance_head_exit", "f
            "funding_age", "company_age", "job_posts", "website", "distress_news"]
 
 FINANCE = re.compile(r"financ|\bcfo\b|controller|accounts?\b|accounting|treasur", re.IGNORECASE)
-FINANCE_HEAD = re.compile(r"\bcfo\b|chief financial|head.{0,15}financ|financ\w* head|vp,? financ|vice president,? financ|"
-                          r"financ\w* controller|director,? financ|financ\w* director", re.IGNORECASE)
-CLEVEL = re.compile(r"\bceo\b|\bcoo\b|\bcto\b|\bcbo\b|\bcro\b|\bcmo\b|\bcpo\b|chief|co-?founder|\bfounder\b|president", re.IGNORECASE)
+FINANCE_HEAD = re.compile(r"\bcfo\b|chief financial|head of (core )?financ|financ\w* head|\bvp\b,?\s*-?\s*financ|vice president,?\s*-?\s*financ",
+                          re.IGNORECASE)
+CLEVEL = re.compile(r"\bceo\b|\bcoo\b|\bcto\b|\bcbo\b|\bcro\b|\bcmo\b|\bcpo\b|chief \w+ officer|co-?founder|\bfounder\b", re.IGNORECASE)
 JUNK_NEWS = re.compile(r"tracxn|crunchbase|zoominfo|cbinsights|pitchbook|owler|glassdoor|ambitionbox|linkedin|markhub", re.IGNORECASE)
 
 
@@ -205,9 +205,23 @@ def s_exits(ctx: Ctx) -> None:
     else:
         ctx.add("finance_head_exit", "ok", f"No finance head left in the last {days} days", [hid])
     pf = ctx.pol["finance_team_exits"]
-    fid = ctx.ev("finance_team_exits", {"count": len(fin), "people": fin[:10]}, src, unit="people")
-    lvl = "red" if len(fin) >= pf["red_at_or_above"] else "amber" if len(fin) >= pf["amber_at_or_above"] else "ok"
-    ctx.add("finance_team_exits", lvl, f"{len(fin)} finance staff left in the last {days} days", [fid])
+    try:
+        current_fin = client().count_people(all_of(cond("experience.employment_details.current.company_id", "=", cid),
+                                                   any_of(*[cond("experience.employment_details.current.title", "(.)", t)
+                                                            for t in ("finance", "accounts", "controller", "CFO")])))
+    except Unavailable:
+        current_fin = None
+    team = (current_fin or 0) + len(fin)
+    share = len(fin) / team if team else 0.0
+    fid = ctx.ev("finance_team_exits", {"left": len(fin), "current_finance_staff": current_fin, "share_left": round(share, 3),
+                                        "people": fin[:10]}, src, unit="people")
+    if len(fin) >= pf["min_people"] and share >= pf["red_share"]:
+        lvl = "red"
+    elif len(fin) >= pf["min_people"] and share >= pf["amber_share"]:
+        lvl = "amber"
+    else:
+        lvl = "ok"
+    ctx.add("finance_team_exits", lvl, f"{len(fin)} of about {team} finance staff ({share:.0%}) left in the last {days} days", [fid])
     pc = ctx.pol["clevel_exits"]
     cl = ctx.ev("clevel_exits", {"count": len(clevel), "people": clevel[:10]}, src, unit="people")
     lvl = "red" if len(clevel) >= pc["red_at_or_above"] else "amber" if len(clevel) >= pc["amber_at_or_above"] else "ok"
@@ -232,7 +246,8 @@ def s_funding_and_age(ctx: Ctx) -> None:
                                      "amount_usd": f.get("last_round_amount_usd")}, src + " funding", as_of=last.isoformat())
         p = ctx.pol["funding_age_months"]
         shrinking = ctx.change_6m is not None and ctx.change_6m < -0.05
-        lvl = "red" if months > p["red_above"] and shrinking else "amber" if months > p["amber_above"] else "ok"
+        stalling = shrinking or ctx.joiner_level in ("red", "amber")
+        lvl = "red" if months > p["red_above"] and shrinking else "amber" if months > p["amber_above"] and stalling else "ok"
         ctx.add("funding_age", lvl, f"Last funding {months} months ago ({last:%b %Y}" + (f", {f.get('last_round_type')}" if f.get("last_round_type") else "") + ")", [eid])
     else:
         eid = ctx.ev("funding_age", None, src + " funding", status="unavailable", note="No funding record")
@@ -266,7 +281,7 @@ def s_job_posts(ctx: Ctx) -> None:
 
 
 def s_website(ctx: Ctx) -> None:
-    url = ctx.company.website or (f"https://{ctx.company.primary_domain}" if ctx.company.primary_domain else None)
+    url = f"https://{ctx.company.primary_domain}" if ctx.company.primary_domain else ctx.company.website
     if not url:
         return
     url = url.split("?")[0]

@@ -22,7 +22,7 @@ signals:
   headcount_6m_change:  {red_at_or_below: -0.20, amber_at_or_below: -0.10}
   headcount_drawdown:   {red_at_or_above: 0.30, amber_at_or_above: 0.15}  # below the 24-month peak
   finance_head_exit:    {red: true, window_days: 180}
-  finance_team_exits:   {red_at_or_above: 5, amber_at_or_above: 3, window_days: 180}
+  finance_team_exits:   {red_share: 0.30, amber_share: 0.15, min_people: 3, window_days: 180}  # share of the finance team that left
   clevel_exits:         {red_at_or_above: 2, amber_at_or_above: 1, window_days: 180}
   funding_age_months:   {red_above: 24, amber_above: 18}       # red only while headcount is falling
   company_age_years:    {amber_below: 1}
