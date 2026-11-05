@@ -142,7 +142,54 @@ Fault injection: `FAULT=enrich:timeout`, `FAULT=person_search:429`, `FAULT=enric
   - the same words with no email address are held (nothing ties them to the company).
 - **Backtest on past collapses:** see below.
 
-<!-- BACKTEST -->
+## Backtest: would it have warned in time?
+
+We replayed the policy month by month before real collapses, using **only data dated on or before each month**, through the live
+signal code (`signals.collect(case_id, company, as_of=T)`). Each event date is the earliest credible article we found and fetched.
+Code: [`backtest/`](backtest/); full tables: [`backtest/results_b/summary.md`](backtest/results_b/summary.md).
+
+**Point-in-time rules:**
+- Headcount from history points dated on or before T.
+- Joiners whose job started in the 12 months before T.
+- Exits only if the job ended at least 60 days before T, because profiles are updated late.
+- Funding rounds dated on or before T.
+- News and websites are not replayed.
+
+| Company | Event (cited) | Current policy at the event | + hiring momentum at the event |
+| --- | --- | --- | --- |
+| Dunzo | [vendors demanding unpaid dues, Jul 2023](https://www.google.com/goto?url=CAESlQEBxCJF154SatXjCZGXOHuzt5bD8DGDkOlxudhf3bYqoPNLyPrQQSjuBhp-V-htfK7Q1AVJbaYRvg0TFS_PwqJJVITKOr7RnXb7rk2BzZY5v5_iH1_XWcJfNQic5h7P95Q51y-VrPso93yfJmmaUEizSW5OQf-WcFe4v5qKEg51dzUNpvur_Cuhgr-1bYWgNAUH9J5jEQ) | approve: missed | credit cut to 25%, flagged **6 months** early (in-sample) |
+| BYJU'S | [ex-staff allege PF unpaid, Jun 2023](https://timesofindia.indiatimes.com/business/india-business/byjus-ex-staff-allege-pf-unpaid-company-says-no-dues/articleshow/101293728.cms) | approve: missed | cut to 25%, flagged **4 months** early |
+| Koo | [shutdown, Jul 2024](https://techcrunch.com/2024/07/02/indian-social-network-koo-to-shut-down/) | approve: missed | cut to 25%, flagged **7 months** early (unreliable record) |
+| BluSmart | [insolvency pleas, Jun 2025](https://www.livemint.com/companies/news/nclt-issues-notices-to-blusmart-mobility-and-gensol-on-three-fresh-insolvency-pleas-11748945362132.html) | cut to 25%, 2 months early | same |
+| Bira 91 | [salary and vendor payment delays, Feb 2025](https://www.business-standard.com/companies/news/bira-b9-beverages-tax-trouble-salary-vendor-payment-delays-financial-crisis-125021900251_1.html) | cut to 25%, 1 month early | same |
+| GoMechanic | [trouble mounting, Feb 2023](https://m.economictimes.com/tech/startups/how-founders-threw-a-spanner-in-the-works-of-gomechanic/articleshow/97844373.cms) | approve: missed (history starts 2 weeks before) | same |
+
+**False alarms on healthy companies:** 7 healthy controls (Razorpay, Zerodha, Groww, Zepto, PhysicsWallah, CRED, Freshworks), checked every
+six months from Mar 2023 to Sep 2026. The current policy flags 7 of 56 checks (12.5%), and hiring momentum adds none. Our first backtest,
+with the rules before calibration, flagged 48 of 105 quarterly checks (46%).
+
+**What we learned:**
+- **Headcount and joiner levels react late.** Dunzo still looked healthy in July 2023, because 22% of its headcount had joined in the
+  past year. What collapsed first was the *pace* of hiring. Joiners in the last 6 months fell 64-70% against the previous year's best
+  6 months, starting in January 2023.
+- **That "hiring momentum" signal** (red at -65%, amber at -50%) gives months of warning on BYJU'S and Koo, which we did not design it
+  on, and adds no false alarm on the controls.
+- **Honest limits:**
+  - 6 distressed companies and 7 controls are case studies, not an accuracy figure.
+  - The companies were chosen with hindsight.
+  - Deleted profiles are missing (survivorship).
+  - Builder.ai and Hike were dropped: no dated, citable event.
+  - Meesho was dropped: it resolves to the wrong legal entity.
+
+### Live calibration (13 companies today)
+
+| Run | Right | False alarms |
+| --- | --- | --- |
+| Policy v3 (first run) | 10 of 12 | Zomato ("City CEO" and "Cluster CEO" counted as C-level exits); Zerodha (1.7% joiners called dead) |
+| Policy v3.1 (regional titles excluded; zombie threshold 1%, while dead companies sit at 0-0.03%) | **12 of 12** | none. Zerodha gets the full amount on 30 days instead of 45 |
+
+Full table in [NOTES.md](NOTES.md). Koo resolved to a different record ("Koo App USA") and fell under the thin-data rule.
+
 
 ## Approaches we considered
 

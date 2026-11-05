@@ -1,0 +1,234 @@
+{
+  "name": "CRED",
+  "crustdata_id": 5726,
+  "event_date": null,
+  "rows": [
+    {
+      "T": "2023-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 1,695 people worked at CRED in Feb 2023",
+        "joiner_rate": "785 joiners since Mar 2022 out of 1,695 profiles (46.3%)",
+        "headcount_trend": "Headcount 1,695 (Feb 2023), +8% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
+        "finance_team_exits": "0 of about 31 finance staff (0%) left between Jul 2022 and Dec 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2022 and Dec 2022",
+        "funding_age": "Last funding 9 months ago (Jun 2022, series_f)",
+        "company_age": "Founded in 2018 (5 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,777 people worked at CRED in Aug 2023",
+        "joiner_rate": "643 joiners since Sep 2022 out of 1,777 profiles (36.2%)",
+        "headcount_trend": "Headcount 1,777 (Aug 2023), +5% in 6 months, 1% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
+        "finance_team_exits": "1 of about 31 finance staff (3%) left between Jan 2023 and Jul 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2023 and Jul 2023",
+        "funding_age": "Last funding 15 months ago (Jun 2022, series_f)",
+        "company_age": "Founded in 2018 (5 years old)",
+        "job_posts": "7 job posts since Sep 2022, newest on 2023-08-07"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,892 people worked at CRED in Feb 2024",
+        "joiner_rate": "498 joiners since Mar 2023 out of 1,892 profiles (26.3%)",
+        "headcount_trend": "Headcount 1,892 (Feb 2024), +6% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
+        "finance_team_exits": "1 of about 30 finance staff (3%) left between Jul 2023 and Jan 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Jul 2023 and Jan 2024",
+        "funding_age": "Last funding 21 months ago (Jun 2022, series_f)",
+        "company_age": "Founded in 2018 (6 years old)",
+        "job_posts": "8 job posts since Mar 2023, newest on 2024-02-27"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,994 people worked at CRED in Aug 2024",
+        "joiner_rate": "490 joiners since Sep 2023 out of 1,994 profiles (24.6%)",
+        "headcount_trend": "Headcount 1,994 (Aug 2024), +5% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
+        "finance_team_exits": "3 of about 31 finance staff (10%) left between Jan 2024 and Jul 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2024 and Jul 2024",
+        "funding_age": "Last funding 27 months ago (Jun 2022, series_f)",
+        "company_age": "Founded in 2018 (6 years old)",
+        "job_posts": "11 job posts since Sep 2023, newest on 2024-08-28"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,079 people worked at CRED in Feb 2025",
+        "joiner_rate": "522 joiners since Mar 2024 out of 2,079 profiles (25.1%)",
+        "headcount_trend": "Headcount 2,079 (Feb 2025), +4% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
+        "finance_team_exits": "1 of about 26 finance staff (4%) left between Jul 2024 and Dec 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2024 and Dec 2024",
+        "funding_age": "Last funding 33 months ago (Jun 2022, series_f)",
+        "company_age": "Founded in 2018 (7 years old)",
+        "job_posts": "12 job posts since Mar 2024, newest on 2024-11-15"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,156 people worked at CRED in Sep 2025",
+        "joiner_rate": "555 joiners since Sep 2024 out of 2,156 profiles (25.7%)",
+        "headcount_trend": "Headcount 2,156 (Sep 2025), +3% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
+        "finance_team_exits": "3 of about 25 finance staff (12%) left between Jan 2025 and Jul 2025",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2025 and Jul 2025",
+        "funding_age": "Last funding 3 months ago (Jun 2025, series_g)",
+        "company_age": "Founded in 2018 (7 years old)",
+        "job_posts": "17 job posts since Sep 2024, newest on 2025-08-25"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2026-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,319 people worked at CRED in Feb 2026",
+        "joiner_rate": "589 joiners since Mar 2025 out of 2,319 profiles (25.4%)",
+        "headcount_trend": "Headcount 2,319 (Feb 2026), +9% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
+        "finance_team_exits": "0 of about 21 finance staff (0%) left between Jul 2025 and Dec 2025",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2025 and Dec 2025",
+        "funding_age": "Last funding 9 months ago (Jun 2025, series_g)",
+        "company_age": "Founded in 2018 (8 years old)",
+        "job_posts": "31 job posts since Mar 2025, newest on 2026-01-29"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2026-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,259 people worked at CRED in Aug 2026",
+        "joiner_rate": "469 joiners since Sep 2025 out of 2,259 profiles (20.8%)",
+        "headcount_trend": "Headcount 2,259 (Aug 2026), -3% in 6 months, 3% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2026 and Jul 2026",
+        "finance_team_exits": "1 of about 23 finance staff (4%) left between Jan 2026 and Jul 2026",
+        "clevel_exits": "1 founders or C-level leaders left between Jan 2026 and Jul 2026",
+        "funding_age": "Last funding 3 months ago (Jun 2026, secondary_market)",
+        "company_age": "Founded in 2018 (8 years old)",
+        "job_posts": "48 job posts since Sep 2025, newest on 2026-08-25"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    }
+  ],
+  "policy_false_alarms": 0,
+  "points": 8,
+  "momentum_false_alarms": 0
+}

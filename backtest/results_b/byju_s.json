@@ -1,0 +1,375 @@
+{
+  "name": "BYJU'S",
+  "crustdata_id": 5705,
+  "event_date": "2023-06-27",
+  "rows": [
+    {
+      "T": "2022-06-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Jun 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Jun 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Oct 2021 and Apr 2022",
+        "finance_team_exits": "0 of about 240 finance staff (0%) left between Oct 2021 and Apr 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Oct 2021 and Apr 2022",
+        "funding_age": "Last funding 3 months ago (Mar 2022, private_equity)",
+        "company_age": "Founded in 2011 (11 years old)",
+        "job_posts": "5181 job posts since Jun 2021, newest on 2022-06-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-07-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Jul 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Jul 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Nov 2021 and May 2022",
+        "finance_team_exits": "0 of about 244 finance staff (0%) left between Nov 2021 and May 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Nov 2021 and May 2022",
+        "funding_age": "Last funding 4 months ago (Mar 2022, private_equity)",
+        "company_age": "Founded in 2011 (11 years old)",
+        "job_posts": "5855 job posts since Jul 2021, newest on 2022-07-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-08-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Aug 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Aug 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Dec 2021 and Jun 2022",
+        "finance_team_exits": "0 of about 244 finance staff (0%) left between Dec 2021 and Jun 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Dec 2021 and Jun 2022",
+        "funding_age": "Last funding 5 months ago (Mar 2022, private_equity)",
+        "company_age": "Founded in 2011 (11 years old)",
+        "job_posts": "5902 job posts since Aug 2021, newest on 2022-08-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-09-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Sep 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Sep 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jan 2022 and Jul 2022",
+        "finance_team_exits": "0 of about 246 finance staff (0%) left between Jan 2022 and Jul 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2022 and Jul 2022",
+        "funding_age": "Last funding 6 months ago (Mar 2022, private_equity)",
+        "company_age": "Founded in 2011 (11 years old)",
+        "job_posts": "6184 job posts since Sep 2021, newest on 2022-09-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-10-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Oct 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Oct 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Feb 2022 and Aug 2022",
+        "finance_team_exits": "1 of about 247 finance staff (0%) left between Feb 2022 and Aug 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Feb 2022 and Aug 2022",
+        "funding_age": "Last funding 7 months ago (Mar 2022, private_equity)",
+        "company_age": "Founded in 2011 (11 years old)",
+        "job_posts": "6749 job posts since Oct 2021, newest on 2022-10-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-11-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Nov 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Nov 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Mar 2022 and Sep 2022",
+        "finance_team_exits": "1 of about 242 finance staff (0%) left between Mar 2022 and Sep 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Mar 2022 and Sep 2022",
+        "funding_age": "Last funding 1 months ago (Oct 2022, debt_financing)",
+        "company_age": "Founded in 2011 (11 years old)",
+        "job_posts": "7775 job posts since Nov 2021, newest on 2022-11-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-12-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Dec 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Dec 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Apr 2022 and Oct 2022",
+        "finance_team_exits": "3 of about 237 finance staff (1%) left between Apr 2022 and Oct 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Apr 2022 and Oct 2022",
+        "funding_age": "Last funding 2 months ago (Oct 2022, debt_financing)",
+        "company_age": "Founded in 2011 (11 years old)",
+        "job_posts": "8434 job posts since Dec 2021, newest on 2022-12-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-01-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Jan 2023: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Jan 2023: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between May 2022 and Nov 2022",
+        "finance_team_exits": "3 of about 234 finance staff (1%) left between May 2022 and Nov 2022",
+        "clevel_exits": "1 founders or C-level leaders left between May 2022 and Nov 2022",
+        "funding_age": "Last funding 3 months ago (Oct 2022, debt_financing)",
+        "company_age": "Founded in 2011 (12 years old)",
+        "job_posts": "8917 job posts since Jan 2022, newest on 2023-01-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-02-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Feb 2023: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Feb 2023: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jun 2022 and Dec 2022",
+        "finance_team_exits": "3 of about 236 finance staff (1%) left between Jun 2022 and Dec 2022",
+        "clevel_exits": "1 founders or C-level leaders left between Jun 2022 and Dec 2022",
+        "funding_age": "Last funding 4 months ago (Oct 2022, debt_financing)",
+        "company_age": "Founded in 2011 (12 years old)",
+        "job_posts": "8973 job posts since Feb 2022, newest on 2023-02-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 35,480 people worked at BYJU'S in Feb 2023",
+        "joiner_rate": "18720 joiners since Mar 2022 out of 35,480 profiles (52.8%)",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
+        "finance_team_exits": "3 of about 233 finance staff (1%) left between Jul 2022 and Dec 2022",
+        "clevel_exits": "1 founders or C-level leaders left between Jul 2022 and Dec 2022",
+        "funding_age": "Last funding 5 months ago (Oct 2022, debt_financing)",
+        "company_age": "Founded in 2011 (12 years old)",
+        "job_posts": "8469 job posts since Mar 2022, newest on 2023-02-05"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-04-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 34,613 people worked at BYJU'S in Mar 2023",
+        "joiner_rate": "16330 joiners since Apr 2022 out of 34,613 profiles (47.2%)",
+        "headcount_trend": "Headcount 34,613 (Mar 2023), -2% in 6 months, 2% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Aug 2022 and Jan 2023",
+        "finance_team_exits": "3 of about 228 finance staff (1%) left between Aug 2022 and Jan 2023",
+        "clevel_exits": "1 founders or C-level leaders left between Aug 2022 and Jan 2023",
+        "funding_age": "Last funding 6 months ago (Oct 2022, debt_financing)",
+        "company_age": "Founded in 2011 (12 years old)",
+        "job_posts": "7466 job posts since Apr 2022, newest on 2023-02-05"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-05-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 34,081 people worked at BYJU'S in May 2023",
+        "joiner_rate": "14451 joiners since May 2022 out of 34,081 profiles (42.4%)",
+        "headcount_trend": "Headcount 34,081 (May 2023), -4% in 6 months, 4% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Sep 2022 and Mar 2023",
+        "finance_team_exits": "3 of about 225 finance staff (1%) left between Sep 2022 and Mar 2023",
+        "clevel_exits": "1 founders or C-level leaders left between Sep 2022 and Mar 2023",
+        "funding_age": "Last funding 7 months ago (Oct 2022, debt_financing)",
+        "company_age": "Founded in 2011 (12 years old)",
+        "job_posts": "6759 job posts since May 2022, newest on 2023-02-05"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-06-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 33,485 people worked at BYJU'S in May 2023",
+        "joiner_rate": "12804 joiners since Jun 2022 out of 33,485 profiles (38.2%)",
+        "headcount_trend": "Headcount 33,485 (May 2023), -6% in 6 months, 6% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Oct 2022 and Apr 2023",
+        "finance_team_exits": "1 of about 224 finance staff (0%) left between Oct 2022 and Apr 2023",
+        "clevel_exits": "1 founders or C-level leaders left between Oct 2022 and Apr 2023",
+        "funding_age": "Last funding 1 months ago (May 2023, debt_financing)",
+        "company_age": "Founded in 2011 (12 years old)",
+        "job_posts": "6152 job posts since Jun 2022, newest on 2023-02-05"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    }
+  ],
+  "policy_months_flagged": 0,
+  "policy_status_at_event": "approve (R8)",
+  "momentum_months_flagged": 4,
+  "momentum_status_at_event": "reduce_25 (R6)"
+}

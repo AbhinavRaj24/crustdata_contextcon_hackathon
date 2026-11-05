@@ -1,0 +1,234 @@
+{
+  "name": "Zepto",
+  "crustdata_id": 622940,
+  "event_date": null,
+  "rows": [
+    {
+      "T": "2023-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,017 people worked at Zepto in Feb 2023",
+        "joiner_rate": "1588 joiners since Mar 2022 out of 3,017 profiles (52.6%)",
+        "headcount_trend": "Headcount 3,017 (Feb 2023), +10% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
+        "finance_team_exits": "0 of about 36 finance staff (0%) left between Jul 2022 and Dec 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2022 and Dec 2022",
+        "funding_age": "Last funding 10 months ago (May 2022, series_d)",
+        "company_age": "Founded in 2021 (2 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 3,375 people worked at Zepto in Aug 2023",
+        "joiner_rate": "1524 joiners since Sep 2022 out of 3,375 profiles (45.2%)",
+        "headcount_trend": "Headcount 3,375 (Aug 2023), +12% in 6 months, 1% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
+        "finance_team_exits": "3 of about 53 finance staff (6%) left between Jan 2023 and Jul 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2023 and Jul 2023",
+        "funding_age": "Last funding 1 months ago (Aug 2023, series_e)",
+        "company_age": "Founded in 2021 (2 years old)",
+        "job_posts": "16 job posts since Sep 2022, newest on 2023-08-04"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "red",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 4,386 people worked at Zepto in Feb 2024",
+        "joiner_rate": "1843 joiners since Mar 2023 out of 4,386 profiles (42.0%)",
+        "headcount_trend": "Headcount 4,386 (Feb 2024), +30% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "Senior Vice President Finance left in 2023-12",
+        "finance_team_exits": "2 of about 64 finance staff (3%) left between Jul 2023 and Jan 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2023 and Jan 2024",
+        "funding_age": "Last funding 4 months ago (Nov 2023, series_e)",
+        "company_age": "Founded in 2021 (3 years old)",
+        "job_posts": "20 job posts since Mar 2023, newest on 2024-03-01"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 7,026 people worked at Zepto in Aug 2024",
+        "joiner_rate": "3473 joiners since Sep 2023 out of 7,026 profiles (49.4%)",
+        "headcount_trend": "Headcount 7,026 (Aug 2024), +60% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
+        "finance_team_exits": "1 of about 83 finance staff (1%) left between Jan 2024 and Jul 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2024 and Jul 2024",
+        "funding_age": "Last funding 1 months ago (Aug 2024, series_g)",
+        "company_age": "Founded in 2021 (3 years old)",
+        "job_posts": "60 job posts since Sep 2023, newest on 2024-08-14"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 13,043 people worked at Zepto in Feb 2025",
+        "joiner_rate": "5972 joiners since Mar 2024 out of 13,043 profiles (45.8%)",
+        "headcount_trend": "Headcount 13,043 (Feb 2025), +86% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
+        "finance_team_exits": "3 of about 105 finance staff (3%) left between Jul 2024 and Dec 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2024 and Dec 2024",
+        "funding_age": "Last funding 4 months ago (Nov 2024, series_g)",
+        "company_age": "Founded in 2021 (4 years old)",
+        "job_posts": "117 job posts since Mar 2024, newest on 2024-12-05"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 15,923 people worked at Zepto in Sep 2025",
+        "joiner_rate": "5496 joiners since Sep 2024 out of 15,923 profiles (34.5%)",
+        "headcount_trend": "Headcount 15,923 (Sep 2025), +18% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
+        "finance_team_exits": "1 of about 116 finance staff (1%) left between Jan 2025 and Jul 2025",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2025 and Jul 2025",
+        "funding_age": "Last funding 1 months ago (Aug 2025, secondary_market)",
+        "company_age": "Founded in 2021 (4 years old)",
+        "job_posts": "100 job posts since Sep 2024, newest on 2025-08-28"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2026-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 17,391 people worked at Zepto in Feb 2026",
+        "joiner_rate": "3300 joiners since Mar 2025 out of 17,391 profiles (19.0%)",
+        "headcount_trend": "Headcount 17,391 (Feb 2026), +11% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
+        "finance_team_exits": "4 of about 115 finance staff (3%) left between Jul 2025 and Dec 2025",
+        "clevel_exits": "1 founders or C-level leaders left between Jul 2025 and Dec 2025",
+        "funding_age": "Last funding 5 months ago (Oct 2025, series_h)",
+        "company_age": "Founded in 2021 (5 years old)",
+        "job_posts": "50 job posts since Mar 2025, newest on 2026-02-27"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2026-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 19,514 people worked at Zepto in Aug 2026",
+        "joiner_rate": "3392 joiners since Sep 2025 out of 19,514 profiles (17.4%)",
+        "headcount_trend": "Headcount 19,514 (Aug 2026), +10% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2026 and Jul 2026",
+        "finance_team_exits": "3 of about 102 finance staff (3%) left between Jan 2026 and Jul 2026",
+        "clevel_exits": "1 founders or C-level leaders left between Jan 2026 and Jul 2026",
+        "funding_age": "Last funding 11 months ago (Oct 2025, series_h)",
+        "company_age": "Founded in 2021 (5 years old)",
+        "job_posts": "75 job posts since Sep 2025, newest on 2026-08-27"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    }
+  ],
+  "policy_false_alarms": 1,
+  "points": 8,
+  "momentum_false_alarms": 1
+}

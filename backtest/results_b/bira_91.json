@@ -1,0 +1,375 @@
+{
+  "name": "Bira 91",
+  "crustdata_id": 5885,
+  "event_date": "2025-02-19",
+  "rows": [
+    {
+      "T": "2024-02-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,069 people worked at Bira 91 in Jan 2024",
+        "joiner_rate": "402 joiners since Feb 2023 out of 1,069 profiles (37.6%)",
+        "headcount_trend": "Headcount 1,069 (Jan 2024), +6% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jun 2023 and Dec 2023",
+        "finance_team_exits": "1 of about 55 finance staff (2%) left between Jun 2023 and Dec 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Jun 2023 and Dec 2023",
+        "funding_age": "Last funding 11 months ago (Mar 2023, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "2 job posts since Feb 2023, newest on 2023-08-16"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,066 people worked at Bira 91 in Feb 2024",
+        "joiner_rate": "394 joiners since Mar 2023 out of 1,066 profiles (37.0%)",
+        "headcount_trend": "Headcount 1,066 (Feb 2024), +3% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
+        "finance_team_exits": "1 of about 52 finance staff (2%) left between Jul 2023 and Jan 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2023 and Jan 2024",
+        "funding_age": "Last funding 1 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "1 job posts since Mar 2023, newest on 2023-08-16"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2024-04-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,095 people worked at Bira 91 in Apr 2024",
+        "joiner_rate": "425 joiners since Apr 2023 out of 1,095 profiles (38.8%)",
+        "headcount_trend": "Headcount 1,095 (Apr 2024), +5% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Aug 2023 and Feb 2024",
+        "finance_team_exits": "2 of about 52 finance staff (4%) left between Aug 2023 and Feb 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Aug 2023 and Feb 2024",
+        "funding_age": "Last funding 2 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "1 job posts since Apr 2023, newest on 2023-08-16"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2024-05-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,095 people worked at Bira 91 in Apr 2024",
+        "joiner_rate": "392 joiners since May 2023 out of 1,095 profiles (35.8%)",
+        "headcount_trend": "Headcount 1,095 (Apr 2024), +5% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Sep 2023 and Mar 2024",
+        "finance_team_exits": "2 of about 53 finance staff (4%) left between Sep 2023 and Mar 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Sep 2023 and Mar 2024",
+        "funding_age": "Last funding 3 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "1 job posts since May 2023, newest on 2023-08-16"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-06-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,127 people worked at Bira 91 in May 2024",
+        "joiner_rate": "351 joiners since Jun 2023 out of 1,127 profiles (31.1%)",
+        "headcount_trend": "Headcount 1,127 (May 2024), +8% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Oct 2023 and Apr 2024",
+        "finance_team_exits": "1 of about 52 finance staff (2%) left between Oct 2023 and Apr 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Oct 2023 and Apr 2024",
+        "funding_age": "Last funding 4 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "1 job posts since Jun 2023, newest on 2023-08-16"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-07-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,151 people worked at Bira 91 in Jul 2024",
+        "joiner_rate": "351 joiners since Jul 2023 out of 1,151 profiles (30.5%)",
+        "headcount_trend": "Headcount 1,151 (Jul 2024), +8% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Nov 2023 and May 2024",
+        "finance_team_exits": "1 of about 55 finance staff (2%) left between Nov 2023 and May 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Nov 2023 and May 2024",
+        "funding_age": "Last funding 5 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "1 job posts since Jul 2023, newest on 2023-08-16"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-08-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,151 people worked at Bira 91 in Jul 2024",
+        "joiner_rate": "332 joiners since Aug 2023 out of 1,151 profiles (28.8%)",
+        "headcount_trend": "Headcount 1,151 (Jul 2024), +8% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Dec 2023 and Jun 2024",
+        "finance_team_exits": "1 of about 55 finance staff (2%) left between Dec 2023 and Jun 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Dec 2023 and Jun 2024",
+        "funding_age": "Last funding 6 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "1 job posts since Aug 2023, newest on 2023-08-16"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,152 people worked at Bira 91 in Aug 2024",
+        "joiner_rate": "293 joiners since Sep 2023 out of 1,152 profiles (25.4%)",
+        "headcount_trend": "Headcount 1,152 (Aug 2024), +8% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
+        "finance_team_exits": "1 of about 53 finance staff (2%) left between Jan 2024 and Jul 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2024 and Jul 2024",
+        "funding_age": "Last funding 7 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "No job posts since Sep 2023, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-10-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,152 people worked at Bira 91 in Sep 2024",
+        "joiner_rate": "283 joiners since Oct 2023 out of 1,152 profiles (24.6%)",
+        "headcount_trend": "Headcount 1,152 (Sep 2024), +5% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Feb 2024 and Aug 2024",
+        "finance_team_exits": "1 of about 55 finance staff (2%) left between Feb 2024 and Aug 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Feb 2024 and Aug 2024",
+        "funding_age": "Last funding 8 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "No job posts since Oct 2023, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-11-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,161 people worked at Bira 91 in Oct 2024",
+        "joiner_rate": "275 joiners since Nov 2023 out of 1,161 profiles (23.7%)",
+        "headcount_trend": "Headcount 1,161 (Oct 2024), +6% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Mar 2024 and Sep 2024",
+        "finance_team_exits": "2 of about 55 finance staff (4%) left between Mar 2024 and Sep 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Mar 2024 and Sep 2024",
+        "funding_age": "Last funding 9 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "No job posts since Nov 2023, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-12-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,153 people worked at Bira 91 in Nov 2024",
+        "joiner_rate": "261 joiners since Dec 2023 out of 1,153 profiles (22.6%)",
+        "headcount_trend": "Headcount 1,153 (Nov 2024), +2% in 6 months, 1% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Apr 2024 and Oct 2024",
+        "finance_team_exits": "2 of about 54 finance staff (4%) left between Apr 2024 and Oct 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Apr 2024 and Oct 2024",
+        "funding_age": "Last funding 10 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (9 years old)",
+        "job_posts": "No job posts since Dec 2023, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-01-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,146 people worked at Bira 91 in Dec 2024",
+        "joiner_rate": "261 joiners since Jan 2024 out of 1,146 profiles (22.8%)",
+        "headcount_trend": "Headcount 1,146 (Dec 2024), -0% in 6 months, 1% below its 24-month peak",
+        "finance_head_exit": "No finance head left between May 2024 and Nov 2024",
+        "finance_team_exits": "2 of about 54 finance staff (4%) left between May 2024 and Nov 2024",
+        "clevel_exits": "0 founders or C-level leaders left between May 2024 and Nov 2024",
+        "funding_age": "Last funding 11 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (10 years old)",
+        "job_posts": "No job posts since Jan 2024, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-02-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "red",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,131 people worked at Bira 91 in Jan 2025",
+        "joiner_rate": "244 joiners since Feb 2024 out of 1,131 profiles (21.6%)",
+        "headcount_trend": "Headcount 1,131 (Jan 2025), -2% in 6 months, 3% below its 24-month peak",
+        "finance_head_exit": "Chief Financial Officer left in 2024-12",
+        "finance_team_exits": "3 of about 55 finance staff (5%) left between Jun 2024 and Dec 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jun 2024 and Dec 2024",
+        "funding_age": "Last funding 12 months ago (Feb 2024, series_d)",
+        "company_age": "Founded in 2015 (10 years old)",
+        "job_posts": "No job posts since Feb 2024, but people are still joining"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "amber"
+    }
+  ],
+  "policy_months_flagged": 1,
+  "policy_status_at_event": "reduce_25 (R6)",
+  "momentum_months_flagged": 1,
+  "momentum_status_at_event": "reduce_25 (R6)"
+}

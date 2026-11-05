@@ -1,0 +1,375 @@
+{
+  "name": "BluSmart",
+  "crustdata_id": 6214,
+  "event_date": "2025-06-03",
+  "rows": [
+    {
+      "T": "2024-06-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 999 people worked at BluSmart in May 2024",
+        "joiner_rate": "296 joiners since Jun 2023 out of 999 profiles (29.6%)",
+        "headcount_trend": "Headcount 999 (May 2024), +27% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Oct 2023 and Apr 2024",
+        "finance_team_exits": "1 of about 21 finance staff (5%) left between Oct 2023 and Apr 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Oct 2023 and Apr 2024",
+        "funding_age": "Last funding 1 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (5 years old)",
+        "job_posts": "17 job posts since Jun 2023, newest on 2024-05-29"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-07-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,109 people worked at BluSmart in Jul 2024",
+        "joiner_rate": "294 joiners since Jul 2023 out of 1,109 profiles (26.5%)",
+        "headcount_trend": "Headcount 1,109 (Jul 2024), +27% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Nov 2023 and May 2024",
+        "finance_team_exits": "1 of about 20 finance staff (5%) left between Nov 2023 and May 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Nov 2023 and May 2024",
+        "funding_age": "Last funding 2 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (5 years old)",
+        "job_posts": "24 job posts since Jul 2023, newest on 2024-06-20"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-08-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,109 people worked at BluSmart in Jul 2024",
+        "joiner_rate": "281 joiners since Aug 2023 out of 1,109 profiles (25.3%)",
+        "headcount_trend": "Headcount 1,109 (Jul 2024), +27% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Dec 2023 and Jun 2024",
+        "finance_team_exits": "1 of about 20 finance staff (5%) left between Dec 2023 and Jun 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Dec 2023 and Jun 2024",
+        "funding_age": "Last funding 3 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (5 years old)",
+        "job_posts": "29 job posts since Aug 2023, newest on 2024-07-15"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,166 people worked at BluSmart in Aug 2024",
+        "joiner_rate": "285 joiners since Sep 2023 out of 1,166 profiles (24.4%)",
+        "headcount_trend": "Headcount 1,166 (Aug 2024), +29% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
+        "finance_team_exits": "1 of about 21 finance staff (5%) left between Jan 2024 and Jul 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Jan 2024 and Jul 2024",
+        "funding_age": "Last funding 4 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (5 years old)",
+        "job_posts": "28 job posts since Sep 2023, newest on 2024-07-15"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-10-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,228 people worked at BluSmart in Sep 2024",
+        "joiner_rate": "298 joiners since Oct 2023 out of 1,228 profiles (24.3%)",
+        "headcount_trend": "Headcount 1,228 (Sep 2024), +28% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Feb 2024 and Aug 2024",
+        "finance_team_exits": "0 of about 20 finance staff (0%) left between Feb 2024 and Aug 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Feb 2024 and Aug 2024",
+        "funding_age": "Last funding 5 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (5 years old)",
+        "job_posts": "30 job posts since Oct 2023, newest on 2024-09-17"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-11-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,258 people worked at BluSmart in Oct 2024",
+        "joiner_rate": "287 joiners since Nov 2023 out of 1,258 profiles (22.8%)",
+        "headcount_trend": "Headcount 1,258 (Oct 2024), +31% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Mar 2024 and Sep 2024",
+        "finance_team_exits": "0 of about 20 finance staff (0%) left between Mar 2024 and Sep 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Mar 2024 and Sep 2024",
+        "funding_age": "Last funding 6 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (5 years old)",
+        "job_posts": "30 job posts since Nov 2023, newest on 2024-09-17"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-12-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,278 people worked at BluSmart in Nov 2024",
+        "joiner_rate": "278 joiners since Dec 2023 out of 1,278 profiles (21.8%)",
+        "headcount_trend": "Headcount 1,278 (Nov 2024), +28% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Apr 2024 and Oct 2024",
+        "finance_team_exits": "1 of about 20 finance staff (5%) left between Apr 2024 and Oct 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Apr 2024 and Oct 2024",
+        "funding_age": "Last funding 7 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (5 years old)",
+        "job_posts": "30 job posts since Dec 2023, newest on 2024-09-17"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-01-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,280 people worked at BluSmart in Dec 2024",
+        "joiner_rate": "277 joiners since Jan 2024 out of 1,280 profiles (21.6%)",
+        "headcount_trend": "Headcount 1,280 (Dec 2024), +15% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between May 2024 and Nov 2024",
+        "finance_team_exits": "1 of about 20 finance staff (5%) left between May 2024 and Nov 2024",
+        "clevel_exits": "0 founders or C-level leaders left between May 2024 and Nov 2024",
+        "funding_age": "Last funding 8 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (6 years old)",
+        "job_posts": "30 job posts since Jan 2024, newest on 2024-09-17"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-02-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,288 people worked at BluSmart in Jan 2025",
+        "joiner_rate": "281 joiners since Feb 2024 out of 1,288 profiles (21.8%)",
+        "headcount_trend": "Headcount 1,288 (Jan 2025), +16% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jun 2024 and Dec 2024",
+        "finance_team_exits": "2 of about 20 finance staff (10%) left between Jun 2024 and Dec 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jun 2024 and Dec 2024",
+        "funding_age": "Last funding 9 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (6 years old)",
+        "job_posts": "30 job posts since Feb 2024, newest on 2024-09-17"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,303 people worked at BluSmart in Feb 2025",
+        "joiner_rate": "270 joiners since Mar 2024 out of 1,303 profiles (20.7%)",
+        "headcount_trend": "Headcount 1,303 (Feb 2025), +12% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
+        "finance_team_exits": "2 of about 20 finance staff (10%) left between Jul 2024 and Dec 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2024 and Dec 2024",
+        "funding_age": "Last funding 10 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (6 years old)",
+        "job_posts": "30 job posts since Mar 2024, newest on 2024-09-17"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-04-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "amber",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,282 people worked at BluSmart in Mar 2025",
+        "joiner_rate": "254 joiners since Apr 2024 out of 1,282 profiles (19.8%)",
+        "headcount_trend": "Headcount 1,282 (Mar 2025), +4% in 6 months, 2% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Aug 2024 and Jan 2025",
+        "finance_team_exits": "3 of about 18 finance staff (17%) left between Aug 2024 and Jan 2025",
+        "clevel_exits": "0 founders or C-level leaders left between Aug 2024 and Jan 2025",
+        "funding_age": "Last funding 11 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (6 years old)",
+        "job_posts": "29 job posts since Apr 2024, newest on 2024-09-17"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-05-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "amber",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,241 people worked at BluSmart in Apr 2025",
+        "joiner_rate": "215 joiners since May 2024 out of 1,241 profiles (17.3%)",
+        "headcount_trend": "Headcount 1,241 (Apr 2025), -1% in 6 months, 5% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Sep 2024 and Mar 2025",
+        "finance_team_exits": "4 of about 18 finance staff (22%) left between Sep 2024 and Mar 2025",
+        "clevel_exits": "2 founders or C-level leaders left between Sep 2024 and Mar 2025",
+        "funding_age": "Last funding 12 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (6 years old)",
+        "job_posts": "25 job posts since May 2024, newest on 2024-09-17"
+      },
+      "band": "reduce_50 (R7)",
+      "band_momentum": "reduce_50 (R7)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2025-06-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "amber",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "amber",
+        "clevel_exits": "red",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,129 people worked at BluSmart in May 2025",
+        "joiner_rate": "186 joiners since Jun 2024 out of 1,129 profiles (16.5%)",
+        "headcount_trend": "Headcount 1,129 (May 2025), -12% in 6 months, 13% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Oct 2024 and Apr 2025",
+        "finance_team_exits": "5 of about 17 finance staff (29%) left between Oct 2024 and Apr 2025",
+        "clevel_exits": "5 founders or C-level leaders left between Oct 2024 and Apr 2025",
+        "funding_age": "Last funding 13 months ago (May 2024, series_b)",
+        "company_age": "Founded in 2019 (6 years old)",
+        "job_posts": "17 job posts since Jun 2024, newest on 2024-09-17"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "amber"
+    }
+  ],
+  "policy_months_flagged": 2,
+  "policy_status_at_event": "reduce_25 (R6)",
+  "momentum_months_flagged": 2,
+  "momentum_status_at_event": "reduce_25 (R6)"
+}

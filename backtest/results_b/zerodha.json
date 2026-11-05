@@ -1,0 +1,234 @@
+{
+  "name": "Zerodha",
+  "crustdata_id": 7275,
+  "event_date": null,
+  "rows": [
+    {
+      "T": "2023-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "amber",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,015 people worked at Zerodha in Feb 2023",
+        "joiner_rate": "Only 94 joiners since Mar 2022 out of 2,015 profiles (4.7%)",
+        "headcount_trend": "Headcount 2,015 (Feb 2023), +2% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
+        "finance_team_exits": "0 of about 3 finance staff (0%) left between Jul 2022 and Dec 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2022 and Dec 2022",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (13 years old)",
+        "job_posts": "1 job posts since Mar 2022, newest on 2022-06-26"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,230 people worked at Zerodha in Aug 2023",
+        "joiner_rate": "152 joiners since Sep 2022 out of 2,230 profiles (6.8%)",
+        "headcount_trend": "Headcount 2,230 (Aug 2023), +11% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
+        "finance_team_exits": "1 of about 6 finance staff (17%) left between Jan 2023 and Jul 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2023 and Jul 2023",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (13 years old)",
+        "job_posts": "No job posts since Sep 2022, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,367 people worked at Zerodha in Feb 2024",
+        "joiner_rate": "205 joiners since Mar 2023 out of 2,367 profiles (8.7%)",
+        "headcount_trend": "Headcount 2,367 (Feb 2024), +6% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
+        "finance_team_exits": "1 of about 8 finance staff (12%) left between Jul 2023 and Jan 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2023 and Jan 2024",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (14 years old)",
+        "job_posts": "No job posts since Mar 2023, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,549 people worked at Zerodha in Aug 2024",
+        "joiner_rate": "211 joiners since Sep 2023 out of 2,549 profiles (8.3%)",
+        "headcount_trend": "Headcount 2,549 (Aug 2024), +8% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
+        "finance_team_exits": "2 of about 12 finance staff (17%) left between Jan 2024 and Jul 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2024 and Jul 2024",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (14 years old)",
+        "job_posts": "No job posts since Sep 2023, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,683 people worked at Zerodha in Feb 2025",
+        "joiner_rate": "178 joiners since Mar 2024 out of 2,683 profiles (6.6%)",
+        "headcount_trend": "Headcount 2,683 (Feb 2025), +5% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
+        "finance_team_exits": "1 of about 11 finance staff (9%) left between Jul 2024 and Dec 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2024 and Dec 2024",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (15 years old)",
+        "job_posts": "No job posts since Mar 2024, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "amber",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "amber",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "amber"
+      },
+      "summaries": {
+        "profiles": "About 2,765 people worked at Zerodha in Sep 2025",
+        "joiner_rate": "Only 140 joiners since Sep 2024 out of 2,765 profiles (5.1%)",
+        "headcount_trend": "Headcount 2,765 (Sep 2025), +3% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
+        "finance_team_exits": "3 of about 11 finance staff (27%) left between Jan 2025 and Jul 2025",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2025 and Jul 2025",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (15 years old)",
+        "job_posts": "No job posts since Sep 2024"
+      },
+      "band": "reduce_50 (R7)",
+      "band_momentum": "reduce_50 (R7)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2026-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "amber",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "amber"
+      },
+      "summaries": {
+        "profiles": "About 2,809 people worked at Zerodha in Feb 2026",
+        "joiner_rate": "Only 92 joiners since Mar 2025 out of 2,809 profiles (3.3%)",
+        "headcount_trend": "Headcount 2,809 (Feb 2026), +2% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
+        "finance_team_exits": "1 of about 7 finance staff (14%) left between Jul 2025 and Dec 2025",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2025 and Dec 2025",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (16 years old)",
+        "job_posts": "No job posts since Mar 2025"
+      },
+      "band": "reduce_50 (R7)",
+      "band_momentum": "reduce_50 (R7)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2026-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "amber",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "red",
+        "clevel_exits": "ok",
+        "funding_age": "na",
+        "company_age": "ok",
+        "job_posts": "amber"
+      },
+      "summaries": {
+        "profiles": "About 2,864 people worked at Zerodha in Aug 2026",
+        "joiner_rate": "Only 65 joiners since Sep 2025 out of 2,864 profiles (2.3%)",
+        "headcount_trend": "Headcount 2,864 (Aug 2026), +2% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2026 and Jul 2026",
+        "finance_team_exits": "3 of about 7 finance staff (43%) left between Jan 2026 and Jul 2026",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2026 and Jul 2026",
+        "funding_age": "Could not verify funding: no record",
+        "company_age": "Founded in 2010 (16 years old)",
+        "job_posts": "No job posts since Sep 2025"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "amber"
+    }
+  ],
+  "policy_false_alarms": 3,
+  "points": 8,
+  "momentum_false_alarms": 3
+}

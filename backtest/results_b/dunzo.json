@@ -1,0 +1,375 @@
+{
+  "name": "Dunzo",
+  "crustdata_id": 5721,
+  "event_date": "2023-07-20",
+  "rows": [
+    {
+      "T": "2022-07-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 2,121 people worked at Dunzo in Apr 2022",
+        "joiner_rate": "1676 joiners since Jul 2021 out of 2,121 profiles (79.0%)",
+        "headcount_trend": "Headcount 2,121 (Apr 2022), +81% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Nov 2021 and May 2022",
+        "finance_team_exits": "0 of about 51 finance staff (0%) left between Nov 2021 and May 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Nov 2021 and May 2022",
+        "funding_age": "Last funding 6 months ago (Jan 2022, series_e)",
+        "company_age": "Founded in 2015 (7 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-08-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 2,121 people worked at Dunzo in Apr 2022",
+        "joiner_rate": "1706 joiners since Aug 2021 out of 2,121 profiles (80.4%)",
+        "headcount_trend": "Headcount 2,121 (Apr 2022), +81% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Dec 2021 and Jun 2022",
+        "finance_team_exits": "0 of about 53 finance staff (0%) left between Dec 2021 and Jun 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Dec 2021 and Jun 2022",
+        "funding_age": "Last funding 7 months ago (Jan 2022, series_e)",
+        "company_age": "Founded in 2015 (7 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-09-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Sep 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Sep 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jan 2022 and Jul 2022",
+        "finance_team_exits": "0 of about 52 finance staff (0%) left between Jan 2022 and Jul 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2022 and Jul 2022",
+        "funding_age": "Last funding 8 months ago (Jan 2022, series_e)",
+        "company_age": "Founded in 2015 (7 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-10-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Oct 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Oct 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Feb 2022 and Aug 2022",
+        "finance_team_exits": "0 of about 52 finance staff (0%) left between Feb 2022 and Aug 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Feb 2022 and Aug 2022",
+        "funding_age": "Last funding 9 months ago (Jan 2022, series_e)",
+        "company_age": "Founded in 2015 (7 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-11-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Nov 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Nov 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Mar 2022 and Sep 2022",
+        "finance_team_exits": "0 of about 53 finance staff (0%) left between Mar 2022 and Sep 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Mar 2022 and Sep 2022",
+        "funding_age": "Last funding 10 months ago (Jan 2022, series_e)",
+        "company_age": "Founded in 2015 (7 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-12-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Dec 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Dec 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Apr 2022 and Oct 2022",
+        "finance_team_exits": "0 of about 56 finance staff (0%) left between Apr 2022 and Oct 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Apr 2022 and Oct 2022",
+        "funding_age": "Last funding 1 months ago (Nov 2022, debt_financing)",
+        "company_age": "Founded in 2015 (7 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-01-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,422 people worked at Dunzo in Dec 2022",
+        "joiner_rate": "1674 joiners since Jan 2022 out of 3,422 profiles (48.9%)",
+        "headcount_trend": "Headcount 3,422 (Dec 2022), +61% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between May 2022 and Nov 2022",
+        "finance_team_exits": "0 of about 57 finance staff (0%) left between May 2022 and Nov 2022",
+        "clevel_exits": "0 founders or C-level leaders left between May 2022 and Nov 2022",
+        "funding_age": "Last funding 2 months ago (Nov 2022, debt_financing)",
+        "company_age": "Founded in 2015 (8 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-02-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,416 people worked at Dunzo in Jan 2023",
+        "joiner_rate": "1509 joiners since Feb 2022 out of 3,416 profiles (44.2%)",
+        "headcount_trend": "Headcount 3,416 (Jan 2023), +61% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jun 2022 and Dec 2022",
+        "finance_team_exits": "0 of about 57 finance staff (0%) left between Jun 2022 and Dec 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jun 2022 and Dec 2022",
+        "funding_age": "Last funding 3 months ago (Nov 2022, debt_financing)",
+        "company_age": "Founded in 2015 (8 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,376 people worked at Dunzo in Feb 2023",
+        "joiner_rate": "1371 joiners since Mar 2022 out of 3,376 profiles (40.6%)",
+        "headcount_trend": "Headcount 3,376 (Feb 2023), +59% in 6 months, 1% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
+        "finance_team_exits": "0 of about 56 finance staff (0%) left between Jul 2022 and Dec 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2022 and Dec 2022",
+        "funding_age": "Last funding 4 months ago (Nov 2022, debt_financing)",
+        "company_age": "Founded in 2015 (8 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-04-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,330 people worked at Dunzo in Mar 2023",
+        "joiner_rate": "1182 joiners since Apr 2022 out of 3,330 profiles (35.5%)",
+        "headcount_trend": "Headcount 3,330 (Mar 2023), +57% in 6 months, 3% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Aug 2022 and Jan 2023",
+        "finance_team_exits": "0 of about 54 finance staff (0%) left between Aug 2022 and Jan 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Aug 2022 and Jan 2023",
+        "funding_age": "Last funding 5 months ago (Nov 2022, debt_financing)",
+        "company_age": "Founded in 2015 (8 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-05-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,220 people worked at Dunzo in May 2023",
+        "joiner_rate": "1006 joiners since May 2022 out of 3,220 profiles (31.2%)",
+        "headcount_trend": "Headcount 3,220 (May 2023), +52% in 6 months, 6% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Sep 2022 and Mar 2023",
+        "finance_team_exits": "2 of about 56 finance staff (4%) left between Sep 2022 and Mar 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Sep 2022 and Mar 2023",
+        "funding_age": "Last funding 1 months ago (Apr 2023, series_f)",
+        "company_age": "Founded in 2015 (8 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-06-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,154 people worked at Dunzo in May 2023",
+        "joiner_rate": "824 joiners since Jun 2022 out of 3,154 profiles (26.1%)",
+        "headcount_trend": "Headcount 3,154 (May 2023), +49% in 6 months, 8% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Oct 2022 and Apr 2023",
+        "finance_team_exits": "2 of about 56 finance staff (4%) left between Oct 2022 and Apr 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Oct 2022 and Apr 2023",
+        "funding_age": "Last funding 2 months ago (Apr 2023, series_f)",
+        "company_age": "Founded in 2015 (8 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    },
+    {
+      "T": "2023-07-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "About 3,088 people worked at Dunzo in Jun 2023",
+        "joiner_rate": "697 joiners since Jul 2022 out of 3,088 profiles (22.6%)",
+        "headcount_trend": "Headcount 3,088 (Jun 2023), -10% in 6 months, 10% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Nov 2022 and May 2023",
+        "finance_team_exits": "2 of about 58 finance staff (3%) left between Nov 2022 and May 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Nov 2022 and May 2023",
+        "funding_age": "Last funding 3 months ago (Apr 2023, series_f)",
+        "company_age": "Founded in 2015 (8 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    }
+  ],
+  "policy_months_flagged": 0,
+  "policy_status_at_event": "approve (R8)",
+  "momentum_months_flagged": 6,
+  "momentum_status_at_event": "reduce_25 (R6)"
+}

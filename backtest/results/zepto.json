@@ -1,0 +1,461 @@
+{
+  "name": "Zepto",
+  "crustdata_id": 622940,
+  "event_date": null,
+  "rows": [
+    {
+      "T": "2023-03-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 3017,
+        "change_6m": 0.1,
+        "drawdown": 0.0,
+        "joiners_12m": 1530,
+        "joiner_rate": 0.507,
+        "joiners_6m": 659,
+        "prior_best_6m": 932,
+        "hiring_momentum": -0.293,
+        "finance_exits": 1,
+        "finance_share": 0.07,
+        "finance_head_exit": [],
+        "clevel_exits": 0,
+        "funding_months": 10
+      },
+      "band_v2": "approve (R8)",
+      "band": "approve (R8)"
+    },
+    {
+      "T": "2023-06-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 3397,
+        "change_6m": 0.198,
+        "drawdown": 0.0,
+        "joiners_12m": 1357,
+        "joiner_rate": 0.399,
+        "joiners_6m": 706,
+        "prior_best_6m": 1170,
+        "hiring_momentum": -0.397,
+        "finance_exits": 2,
+        "finance_share": 0.12,
+        "finance_head_exit": [],
+        "clevel_exits": 0,
+        "funding_months": 13
+      },
+      "band_v2": "approve (R8)",
+      "band": "approve (R8)"
+    },
+    {
+      "T": "2023-09-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "amber",
+        "clevel_exits": "amber",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 3375,
+        "change_6m": 0.119,
+        "drawdown": 0.006,
+        "joiners_12m": 1449,
+        "joiner_rate": 0.429,
+        "joiners_6m": 790,
+        "prior_best_6m": 871,
+        "hiring_momentum": -0.093,
+        "finance_exits": 4,
+        "finance_share": 0.16,
+        "finance_head_exit": [],
+        "clevel_exits": 1,
+        "funding_months": 1
+      },
+      "band_v2": "reduce_50 (R7)",
+      "band": "reduce_50 (R7)"
+    },
+    {
+      "T": "2023-12-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "red",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 3754,
+        "change_6m": 0.105,
+        "drawdown": 0.0,
+        "joiners_12m": 1564,
+        "joiner_rate": 0.417,
+        "joiners_6m": 858,
+        "prior_best_6m": 706,
+        "hiring_momentum": 0.215,
+        "finance_exits": 4,
+        "finance_share": 0.13,
+        "finance_head_exit": [
+          "Chief Financial Officer"
+        ],
+        "clevel_exits": 1,
+        "funding_months": 1
+      },
+      "band_v2": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)"
+    },
+    {
+      "T": "2024-03-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "red",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 4386,
+        "change_6m": 0.3,
+        "drawdown": 0.0,
+        "joiners_12m": 1738,
+        "joiner_rate": 0.396,
+        "joiners_6m": 948,
+        "prior_best_6m": 790,
+        "hiring_momentum": 0.2,
+        "finance_exits": 2,
+        "finance_share": 0.07,
+        "finance_head_exit": [
+          "Senior Vice President Finance",
+          "Chief Financial Officer"
+        ],
+        "clevel_exits": 0,
+        "funding_months": 4
+      },
+      "band_v2": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)"
+    },
+    {
+      "T": "2024-06-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "red",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 4894,
+        "change_6m": 0.304,
+        "drawdown": 0.0,
+        "joiners_12m": 1971,
+        "joiner_rate": 0.403,
+        "joiners_6m": 1113,
+        "prior_best_6m": 858,
+        "hiring_momentum": 0.297,
+        "finance_exits": 4,
+        "finance_share": 0.11,
+        "finance_head_exit": [
+          "Senior Vice President Finance"
+        ],
+        "clevel_exits": 0,
+        "funding_months": 7
+      },
+      "band_v2": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)"
+    },
+    {
+      "T": "2024-09-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 7026,
+        "change_6m": 0.602,
+        "drawdown": 0.0,
+        "joiners_12m": 2881,
+        "joiner_rate": 0.41,
+        "joiners_6m": 1933,
+        "prior_best_6m": 948,
+        "hiring_momentum": 1.039,
+        "finance_exits": 4,
+        "finance_share": 0.1,
+        "finance_head_exit": [],
+        "clevel_exits": 0,
+        "funding_months": 1
+      },
+      "band_v2": "approve (R8)",
+      "band": "approve (R8)"
+    },
+    {
+      "T": "2024-12-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 10326,
+        "change_6m": 1.11,
+        "drawdown": 0.0,
+        "joiners_12m": 4814,
+        "joiner_rate": 0.466,
+        "joiners_6m": 3701,
+        "prior_best_6m": 1113,
+        "hiring_momentum": 2.325,
+        "finance_exits": 6,
+        "finance_share": 0.13,
+        "finance_head_exit": [],
+        "clevel_exits": 0,
+        "funding_months": 1
+      },
+      "band_v2": "approve (R8)",
+      "band": "approve (R8)"
+    },
+    {
+      "T": "2025-03-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "amber",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 13043,
+        "change_6m": 0.856,
+        "drawdown": 0.0,
+        "joiners_12m": 5764,
+        "joiner_rate": 0.442,
+        "joiners_6m": 3831,
+        "prior_best_6m": 1933,
+        "hiring_momentum": 0.982,
+        "finance_exits": 7,
+        "finance_share": 0.15,
+        "finance_head_exit": [],
+        "clevel_exits": 0,
+        "funding_months": 4
+      },
+      "band_v2": "approve (R8)",
+      "band": "approve (R8)"
+    },
+    {
+      "T": "2025-06-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "red",
+        "finance_team_exits": "amber",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 14550,
+        "change_6m": 0.409,
+        "drawdown": 0.0,
+        "joiners_12m": 6240,
+        "joiner_rate": 0.429,
+        "joiners_6m": 2539,
+        "prior_best_6m": 3701,
+        "hiring_momentum": -0.314,
+        "finance_exits": 11,
+        "finance_share": 0.2,
+        "finance_head_exit": [
+          "Vice President Finance"
+        ],
+        "clevel_exits": 0,
+        "funding_months": 1
+      },
+      "band_v2": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)"
+    },
+    {
+      "T": "2025-09-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "amber",
+        "finance_head_exit": "red",
+        "finance_team_exits": "amber",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 15923,
+        "change_6m": 0.176,
+        "drawdown": 0.0,
+        "joiners_12m": 5515,
+        "joiner_rate": 0.346,
+        "joiners_6m": 1684,
+        "prior_best_6m": 3831,
+        "hiring_momentum": -0.56,
+        "finance_exits": 9,
+        "finance_share": 0.16,
+        "finance_head_exit": [
+          "Vice President Finance"
+        ],
+        "clevel_exits": 0,
+        "funding_months": 1
+      },
+      "band_v2": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)"
+    },
+    {
+      "T": "2025-12-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "red",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "red",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 16609,
+        "change_6m": 0.105,
+        "drawdown": 0.0,
+        "joiners_12m": 3787,
+        "joiner_rate": 0.228,
+        "joiners_6m": 1248,
+        "prior_best_6m": 3701,
+        "hiring_momentum": -0.663,
+        "finance_exits": 5,
+        "finance_share": 0.1,
+        "finance_head_exit": [],
+        "clevel_exits": 2,
+        "funding_months": 2
+      },
+      "band_v2": "reduce_25 (R6)",
+      "band": "advance_only (R4)"
+    },
+    {
+      "T": "2026-03-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "amber",
+        "finance_head_exit": "red",
+        "finance_team_exits": "amber",
+        "clevel_exits": "red",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 17391,
+        "change_6m": 0.11,
+        "drawdown": 0.0,
+        "joiners_12m": 3105,
+        "joiner_rate": 0.179,
+        "joiners_6m": 1421,
+        "prior_best_6m": 3831,
+        "hiring_momentum": -0.629,
+        "finance_exits": 8,
+        "finance_share": 0.17,
+        "finance_head_exit": [
+          "CFO Office"
+        ],
+        "clevel_exits": 2,
+        "funding_months": 5
+      },
+      "band_v2": "advance_only (R4)",
+      "band": "advance_only (R4)"
+    },
+    {
+      "T": "2026-06-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "red",
+        "finance_team_exits": "amber",
+        "clevel_exits": "ok",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 18986,
+        "change_6m": 0.143,
+        "drawdown": 0.0,
+        "joiners_12m": 3143,
+        "joiner_rate": 0.166,
+        "joiners_6m": 1895,
+        "prior_best_6m": 2539,
+        "hiring_momentum": -0.254,
+        "finance_exits": 14,
+        "finance_share": 0.23,
+        "finance_head_exit": [
+          "CFO Office"
+        ],
+        "clevel_exits": 0,
+        "funding_months": 8
+      },
+      "band_v2": "reduce_25 (R6)",
+      "band": "reduce_25 (R6)"
+    },
+    {
+      "T": "2026-09-01",
+      "signals": {
+        "headcount_trend": "ok",
+        "joiner_rate": "ok",
+        "hiring_momentum": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "amber",
+        "clevel_exits": "amber",
+        "funding_age": "ok"
+      },
+      "facts": {
+        "headcount": 19514,
+        "change_6m": 0.099,
+        "drawdown": 0.0,
+        "joiners_12m": 3271,
+        "joiner_rate": 0.168,
+        "joiners_6m": 1850,
+        "prior_best_6m": 1684,
+        "hiring_momentum": 0.099,
+        "finance_exits": 10,
+        "finance_share": 0.17,
+        "finance_head_exit": [],
+        "clevel_exits": 1,
+        "funding_months": 11
+      },
+      "band_v2": "reduce_50 (R7)",
+      "band": "reduce_50 (R7)"
+    }
+  ],
+  "series_start": "2022-10-31",
+  "v2_false_alarms": 10,
+  "points": 15,
+  "v3_false_alarms": 10
+}

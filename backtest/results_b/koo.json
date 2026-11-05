@@ -1,0 +1,375 @@
+{
+  "name": "Koo",
+  "crustdata_id": 6232838,
+  "event_date": "2024-07-03",
+  "rows": [
+    {
+      "T": "2023-07-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 280 people worked at Koo in Jun 2023",
+        "joiner_rate": "111 joiners since Jul 2022 out of 280 profiles (39.6%)",
+        "headcount_trend": "Headcount 280 (Jun 2023), -8% in 6 months, 8% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Nov 2022 and May 2023",
+        "finance_team_exits": "1 of about 6 finance staff (17%) left between Nov 2022 and May 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Nov 2022 and May 2023",
+        "funding_age": "Last funding 8 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (3 years old)",
+        "job_posts": "3 job posts since Jul 2022, newest on 2022-11-25"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-08-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "amber",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 272 people worked at Koo in Jul 2023",
+        "joiner_rate": "109 joiners since Aug 2022 out of 272 profiles (40.1%)",
+        "headcount_trend": "Headcount 272 (Jul 2023), -11% in 6 months, 11% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Dec 2022 and Jun 2023",
+        "finance_team_exits": "1 of about 6 finance staff (17%) left between Dec 2022 and Jun 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Dec 2022 and Jun 2023",
+        "funding_age": "Last funding 9 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (3 years old)",
+        "job_posts": "3 job posts since Aug 2022, newest on 2022-11-25"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_50 (R7)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "amber",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 265 people worked at Koo in Aug 2023",
+        "joiner_rate": "101 joiners since Sep 2022 out of 265 profiles (38.1%)",
+        "headcount_trend": "Headcount 265 (Aug 2023), -13% in 6 months, 13% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
+        "finance_team_exits": "1 of about 6 finance staff (17%) left between Jan 2023 and Jul 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2023 and Jul 2023",
+        "funding_age": "Last funding 10 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (3 years old)",
+        "job_posts": "3 job posts since Sep 2022, newest on 2022-11-25"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-10-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "amber",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 263 people worked at Koo in Sep 2023",
+        "joiner_rate": "91 joiners since Oct 2022 out of 263 profiles (34.6%)",
+        "headcount_trend": "Headcount 263 (Sep 2023), -14% in 6 months, 14% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Feb 2023 and Aug 2023",
+        "finance_team_exits": "1 of about 6 finance staff (17%) left between Feb 2023 and Aug 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Feb 2023 and Aug 2023",
+        "funding_age": "Last funding 11 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (3 years old)",
+        "job_posts": "3 job posts since Oct 2022, newest on 2022-11-25"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-11-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "amber",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 260 people worked at Koo in Oct 2023",
+        "joiner_rate": "86 joiners since Nov 2022 out of 260 profiles (33.1%)",
+        "headcount_trend": "Headcount 260 (Oct 2023), -15% in 6 months, 15% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Mar 2023 and Sep 2023",
+        "finance_team_exits": "1 of about 6 finance staff (17%) left between Mar 2023 and Sep 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Mar 2023 and Sep 2023",
+        "funding_age": "Last funding 12 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (3 years old)",
+        "job_posts": "1 job posts since Nov 2022, newest on 2022-11-25"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-12-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "amber",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 244 people worked at Koo in Nov 2023",
+        "joiner_rate": "80 joiners since Dec 2022 out of 244 profiles (32.8%)",
+        "headcount_trend": "Headcount 244 (Nov 2023), -15% in 6 months, 20% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Apr 2023 and Oct 2023",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between Apr 2023 and Oct 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Apr 2023 and Oct 2023",
+        "funding_age": "Last funding 13 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (3 years old)",
+        "job_posts": "No job posts since Dec 2022, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-01-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "red",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 214 people worked at Koo in Jan 2024",
+        "joiner_rate": "68 joiners since Jan 2023 out of 214 profiles (31.8%)",
+        "headcount_trend": "Headcount 214 (Jan 2024), -24% in 6 months, 30% below its 24-month peak",
+        "finance_head_exit": "No finance head left between May 2023 and Nov 2023",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between May 2023 and Nov 2023",
+        "clevel_exits": "1 founders or C-level leaders left between May 2023 and Nov 2023",
+        "funding_age": "Last funding 14 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (4 years old)",
+        "job_posts": "No job posts since Jan 2023, but people are still joining"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2024-02-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "red",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 214 people worked at Koo in Jan 2024",
+        "joiner_rate": "55 joiners since Feb 2023 out of 214 profiles (25.7%)",
+        "headcount_trend": "Headcount 214 (Jan 2024), -21% in 6 months, 30% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jun 2023 and Dec 2023",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between Jun 2023 and Dec 2023",
+        "clevel_exits": "1 founders or C-level leaders left between Jun 2023 and Dec 2023",
+        "funding_age": "Last funding 15 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (4 years old)",
+        "job_posts": "No job posts since Feb 2023, but people are still joining"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "advance_only (R4)",
+      "momentum": "red"
+    },
+    {
+      "T": "2024-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "red",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 207 people worked at Koo in Feb 2024",
+        "joiner_rate": "52 joiners since Mar 2023 out of 207 profiles (25.1%)",
+        "headcount_trend": "Headcount 207 (Feb 2024), -22% in 6 months, 32% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between Jul 2023 and Jan 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Jul 2023 and Jan 2024",
+        "funding_age": "Last funding 16 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (4 years old)",
+        "job_posts": "No job posts since Mar 2023, but people are still joining"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "advance_only (R4)",
+      "momentum": "red"
+    },
+    {
+      "T": "2024-04-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "red",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 195 people worked at Koo in Apr 2024",
+        "joiner_rate": "48 joiners since Apr 2023 out of 195 profiles (24.6%)",
+        "headcount_trend": "Headcount 195 (Apr 2024), -25% in 6 months, 36% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Aug 2023 and Feb 2024",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between Aug 2023 and Feb 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Aug 2023 and Feb 2024",
+        "funding_age": "Last funding 17 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (4 years old)",
+        "job_posts": "No job posts since Apr 2023, but people are still joining"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "advance_only (R4)",
+      "momentum": "red"
+    },
+    {
+      "T": "2024-05-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "red",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 195 people worked at Koo in Apr 2024",
+        "joiner_rate": "33 joiners since May 2023 out of 195 profiles (16.9%)",
+        "headcount_trend": "Headcount 195 (Apr 2024), -25% in 6 months, 36% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Sep 2023 and Mar 2024",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between Sep 2023 and Mar 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Sep 2023 and Mar 2024",
+        "funding_age": "Last funding 18 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (4 years old)",
+        "job_posts": "No job posts since May 2023, but people are still joining"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "advance_only (R4)",
+      "momentum": "red"
+    },
+    {
+      "T": "2024-06-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "red",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "amber",
+        "funding_age": "amber",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 190 people worked at Koo in May 2024",
+        "joiner_rate": "31 joiners since Jun 2023 out of 190 profiles (16.3%)",
+        "headcount_trend": "Headcount 190 (May 2024), -22% in 6 months, 38% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Oct 2023 and Apr 2024",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between Oct 2023 and Apr 2024",
+        "clevel_exits": "1 founders or C-level leaders left between Oct 2023 and Apr 2024",
+        "funding_age": "Last funding 19 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (4 years old)",
+        "job_posts": "No job posts since Jun 2023, but people are still joining"
+      },
+      "band": "reduce_25 (R6)",
+      "band_momentum": "advance_only (R4)",
+      "momentum": "red"
+    },
+    {
+      "T": "2024-07-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 297 people worked at Koo in Jul 2024",
+        "joiner_rate": "25 joiners since Jul 2023 out of 297 profiles (8.4%)",
+        "headcount_trend": "Headcount 297 (Jul 2024), +39% in 6 months, 3% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Nov 2023 and May 2024",
+        "finance_team_exits": "0 of about 5 finance staff (0%) left between Nov 2023 and May 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Nov 2023 and May 2024",
+        "funding_age": "Last funding 20 months ago (Nov 2022, series_unknown)",
+        "company_age": "Founded in 2020 (4 years old)",
+        "job_posts": "No job posts since Jul 2023, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "reduce_25 (R6)",
+      "momentum": "red"
+    }
+  ],
+  "policy_months_flagged": 0,
+  "policy_status_at_event": "approve (R8)",
+  "momentum_months_flagged": 7,
+  "momentum_status_at_event": "reduce_25 (R6)"
+}

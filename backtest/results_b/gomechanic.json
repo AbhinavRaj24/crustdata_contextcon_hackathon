@@ -1,0 +1,375 @@
+{
+  "name": "GoMechanic",
+  "crustdata_id": 4681127,
+  "event_date": "2023-02-13",
+  "rows": [
+    {
+      "T": "2022-02-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "na"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Feb 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Feb 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jun 2021 and Dec 2021",
+        "finance_team_exits": "0 of about 27 finance staff (0%) left between Jun 2021 and Dec 2021",
+        "clevel_exits": "0 founders or C-level leaders left between Jun 2021 and Dec 2021",
+        "funding_age": "Last funding 8 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "Could not verify hiring posts: no job-post history for this company"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-03-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Mar 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Mar 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jul 2021 and Dec 2021",
+        "finance_team_exits": "0 of about 27 finance staff (0%) left between Jul 2021 and Dec 2021",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2021 and Dec 2021",
+        "funding_age": "Last funding 9 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "2 job posts since Mar 2021, newest on 2022-02-16"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-04-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Apr 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Apr 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Aug 2021 and Jan 2022",
+        "finance_team_exits": "2 of about 29 finance staff (7%) left between Aug 2021 and Jan 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Aug 2021 and Jan 2022",
+        "funding_age": "Last funding 10 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "12 job posts since Apr 2021, newest on 2022-03-30"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-05-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in May 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in May 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Sep 2021 and Mar 2022",
+        "finance_team_exits": "2 of about 29 finance staff (7%) left between Sep 2021 and Mar 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Sep 2021 and Mar 2022",
+        "funding_age": "Last funding 11 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "21 job posts since May 2021, newest on 2022-05-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-06-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Jun 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Jun 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Oct 2021 and Apr 2022",
+        "finance_team_exits": "2 of about 29 finance staff (7%) left between Oct 2021 and Apr 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Oct 2021 and Apr 2022",
+        "funding_age": "Last funding 12 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "38 job posts since Jun 2021, newest on 2022-06-01"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-07-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Jul 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Jul 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Nov 2021 and May 2022",
+        "finance_team_exits": "2 of about 29 finance staff (7%) left between Nov 2021 and May 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Nov 2021 and May 2022",
+        "funding_age": "Last funding 13 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "56 job posts since Jul 2021, newest on 2022-06-28"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-08-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Aug 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Aug 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Dec 2021 and Jun 2022",
+        "finance_team_exits": "2 of about 29 finance staff (7%) left between Dec 2021 and Jun 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Dec 2021 and Jun 2022",
+        "funding_age": "Last funding 14 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "64 job posts since Aug 2021, newest on 2022-07-30"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-09-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Sep 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Sep 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jan 2022 and Jul 2022",
+        "finance_team_exits": "0 of about 27 finance staff (0%) left between Jan 2022 and Jul 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2022 and Jul 2022",
+        "funding_age": "Last funding 15 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "73 job posts since Sep 2021, newest on 2022-08-29"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-10-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Oct 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Oct 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Feb 2022 and Aug 2022",
+        "finance_team_exits": "0 of about 29 finance staff (0%) left between Feb 2022 and Aug 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Feb 2022 and Aug 2022",
+        "funding_age": "Last funding 16 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "94 job posts since Oct 2021, newest on 2022-09-30"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-11-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Nov 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Nov 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Mar 2022 and Sep 2022",
+        "finance_team_exits": "0 of about 29 finance staff (0%) left between Mar 2022 and Sep 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Mar 2022 and Sep 2022",
+        "funding_age": "Last funding 17 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "109 job posts since Nov 2021, newest on 2022-10-31"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2022-12-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Dec 2022: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Dec 2022: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Apr 2022 and Oct 2022",
+        "finance_team_exits": "0 of about 29 finance staff (0%) left between Apr 2022 and Oct 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Apr 2022 and Oct 2022",
+        "funding_age": "Last funding 18 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (6 years old)",
+        "job_posts": "125 job posts since Dec 2021, newest on 2022-11-30"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-01-01",
+      "levels": {
+        "profiles": "na",
+        "joiner_rate": "na",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "Could not verify company size in Jan 2023: no headcount history then",
+        "joiner_rate": "Could not verify joiner rate in Jan 2023: no headcount history then",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between May 2022 and Nov 2022",
+        "finance_team_exits": "0 of about 29 finance staff (0%) left between May 2022 and Nov 2022",
+        "clevel_exits": "0 founders or C-level leaders left between May 2022 and Nov 2022",
+        "funding_age": "Last funding 19 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (7 years old)",
+        "job_posts": "135 job posts since Jan 2022, newest on 2022-12-23"
+      },
+      "band": "thin_data (R5)",
+      "band_momentum": "thin_data (R5)",
+      "momentum": "amber"
+    },
+    {
+      "T": "2023-02-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "na",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 945 people worked at GoMechanic.in in Jan 2023",
+        "joiner_rate": "461 joiners since Feb 2022 out of 945 profiles (48.8%)",
+        "headcount_trend": "Could not verify headcount trend: no usable history",
+        "finance_head_exit": "No finance head left between Jun 2022 and Dec 2022",
+        "finance_team_exits": "0 of about 28 finance staff (0%) left between Jun 2022 and Dec 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jun 2022 and Dec 2022",
+        "funding_age": "Last funding 20 months ago (Jun 2021, series_c)",
+        "company_age": "Founded in 2016 (7 years old)",
+        "job_posts": "135 job posts since Feb 2022, newest on 2022-12-23"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "amber"
+    }
+  ],
+  "policy_months_flagged": 0,
+  "policy_status_at_event": "approve (R8)",
+  "momentum_months_flagged": 0,
+  "momentum_status_at_event": "approve (R8)"
+}

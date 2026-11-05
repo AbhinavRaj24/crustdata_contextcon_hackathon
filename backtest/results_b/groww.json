@@ -1,0 +1,234 @@
+{
+  "name": "Groww",
+  "crustdata_id": 5894,
+  "event_date": null,
+  "rows": [
+    {
+      "T": "2023-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,404 people worked at Groww in Feb 2023",
+        "joiner_rate": "816 joiners since Mar 2022 out of 1,404 profiles (58.1%)",
+        "headcount_trend": "Headcount 1,404 (Feb 2023), +6% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2022 and Dec 2022",
+        "finance_team_exits": "1 of about 46 finance staff (2%) left between Jul 2022 and Dec 2022",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2022 and Dec 2022",
+        "funding_age": "Last funding 17 months ago (Oct 2021, series_e)",
+        "company_age": "Founded in 2016 (7 years old)",
+        "job_posts": "No job posts since Mar 2022, but people are still joining"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2023-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,646 people worked at Groww in Aug 2023",
+        "joiner_rate": "716 joiners since Sep 2022 out of 1,646 profiles (43.5%)",
+        "headcount_trend": "Headcount 1,646 (Aug 2023), +17% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2023 and Jul 2023",
+        "finance_team_exits": "1 of about 51 finance staff (2%) left between Jan 2023 and Jul 2023",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2023 and Jul 2023",
+        "funding_age": "Last funding 23 months ago (Oct 2021, series_e)",
+        "company_age": "Founded in 2016 (7 years old)",
+        "job_posts": "13 job posts since Sep 2022, newest on 2023-08-07"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 1,920 people worked at Groww in Feb 2024",
+        "joiner_rate": "835 joiners since Mar 2023 out of 1,920 profiles (43.5%)",
+        "headcount_trend": "Headcount 1,920 (Feb 2024), +17% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2023 and Jan 2024",
+        "finance_team_exits": "1 of about 58 finance staff (2%) left between Jul 2023 and Jan 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2023 and Jan 2024",
+        "funding_age": "Last funding 29 months ago (Oct 2021, series_e)",
+        "company_age": "Founded in 2016 (8 years old)",
+        "job_posts": "18 job posts since Mar 2023, newest on 2024-03-01"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2024-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,371 people worked at Groww in Aug 2024",
+        "joiner_rate": "961 joiners since Sep 2023 out of 2,371 profiles (40.5%)",
+        "headcount_trend": "Headcount 2,371 (Aug 2024), +23% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2024 and Jul 2024",
+        "finance_team_exits": "0 of about 58 finance staff (0%) left between Jan 2024 and Jul 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2024 and Jul 2024",
+        "funding_age": "Last funding 35 months ago (Oct 2021, series_e)",
+        "company_age": "Founded in 2016 (8 years old)",
+        "job_posts": "99 job posts since Sep 2023, newest on 2024-08-29"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,678 people worked at Groww in Feb 2025",
+        "joiner_rate": "909 joiners since Mar 2024 out of 2,678 profiles (33.9%)",
+        "headcount_trend": "Headcount 2,678 (Feb 2025), +13% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2024 and Dec 2024",
+        "finance_team_exits": "1 of about 59 finance staff (2%) left between Jul 2024 and Dec 2024",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2024 and Dec 2024",
+        "funding_age": "Last funding 41 months ago (Oct 2021, series_e)",
+        "company_age": "Founded in 2016 (9 years old)",
+        "job_posts": "109 job posts since Mar 2024, newest on 2024-12-13"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2025-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 2,753 people worked at Groww in Sep 2025",
+        "joiner_rate": "735 joiners since Sep 2024 out of 2,753 profiles (26.7%)",
+        "headcount_trend": "Headcount 2,753 (Sep 2025), +2% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2025 and Jul 2025",
+        "finance_team_exits": "1 of about 56 finance staff (2%) left between Jan 2025 and Jul 2025",
+        "clevel_exits": "1 founders or C-level leaders left between Jan 2025 and Jul 2025",
+        "funding_age": "Last funding 3 months ago (Jun 2025, series_f)",
+        "company_age": "Founded in 2016 (9 years old)",
+        "job_posts": "43 job posts since Sep 2024, newest on 2025-08-12"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2026-03-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 3,031 people worked at Groww in Feb 2026",
+        "joiner_rate": "650 joiners since Mar 2025 out of 3,031 profiles (21.4%)",
+        "headcount_trend": "Headcount 3,031 (Feb 2026), +11% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jul 2025 and Dec 2025",
+        "finance_team_exits": "4 of about 47 finance staff (9%) left between Jul 2025 and Dec 2025",
+        "clevel_exits": "0 founders or C-level leaders left between Jul 2025 and Dec 2025",
+        "funding_age": "Last funding 9 months ago (Jun 2025, series_f)",
+        "company_age": "Founded in 2016 (10 years old)",
+        "job_posts": "89 job posts since Mar 2025, newest on 2026-02-19"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    },
+    {
+      "T": "2026-09-01",
+      "levels": {
+        "profiles": "ok",
+        "joiner_rate": "ok",
+        "headcount_trend": "ok",
+        "finance_head_exit": "ok",
+        "finance_team_exits": "ok",
+        "clevel_exits": "ok",
+        "funding_age": "ok",
+        "company_age": "ok",
+        "job_posts": "ok"
+      },
+      "summaries": {
+        "profiles": "About 3,130 people worked at Groww in Aug 2026",
+        "joiner_rate": "609 joiners since Sep 2025 out of 3,130 profiles (19.5%)",
+        "headcount_trend": "Headcount 3,130 (Aug 2026), +2% in 6 months, 0% below its 24-month peak",
+        "finance_head_exit": "No finance head left between Jan 2026 and Jul 2026",
+        "finance_team_exits": "2 of about 30 finance staff (7%) left between Jan 2026 and Jul 2026",
+        "clevel_exits": "0 founders or C-level leaders left between Jan 2026 and Jul 2026",
+        "funding_age": "Last funding 4 months ago (May 2026, post_ipo_secondary)",
+        "company_age": "Founded in 2016 (10 years old)",
+        "job_posts": "101 job posts since Sep 2025, newest on 2026-09-01"
+      },
+      "band": "approve (R8)",
+      "band_momentum": "approve (R8)",
+      "momentum": "ok"
+    }
+  ],
+  "policy_false_alarms": 0,
+  "points": 8,
+  "momentum_false_alarms": 0
+}
