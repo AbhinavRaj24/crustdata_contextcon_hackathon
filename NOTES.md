@@ -24,3 +24,9 @@ returned 503 under load and one call hung 76 s, so: chain flash-lite -> 2.5-flas
 
 ## Log
 - 01:40 First real end-to-end case: Dunzo -> advance payment only (R3 zombie), letter passed the citation guard, ~7 credits, 97 s.
+- 01:50 Purchase-order fraud case: razorpay-payments.co flagged as a lookalike; held with no credit; verification routed (sandbox) to Razorpay's Head of Core Finance, found independently. 5 s, ~2 credits.
+- 01:55 FALSE ALARM found: healthy Razorpay got "advance only". Causes: (1) "Senior Director Finance left" counted as the finance head leaving;
+  (2) 7 finance exits counted as red, but that is 6% of a ~118-person finance team (normal attrition); (3) funding 54 months ago counted as amber
+  although Razorpay is growing; (4) the website check loaded a bit.ly link from Crustdata's website field.
+  Fixes: finance head = CFO / Head of Finance / VP Finance only; finance exits measured as a share of the team; funding age counts only when
+  shrinking or nobody joining; website checked on the primary domain. Result: Razorpay approved Rs 30 lakh on 45 days; Dunzo still advance-only.
