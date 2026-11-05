@@ -1,0 +1,40 @@
+# TermsDesk credit policy. Every decision stores this version. Starting values; the backtest tunes them.
+version: v2
+
+defaults:
+  terms_days: 30
+  max_terms_days: 60
+  refer_above_inr: 5000000        # Rs 50 lakh -> a human decides
+  unverified_hold_from_inr: 500000 # sender unverified and >= Rs 5 lakh -> hold and verify
+  thin_data_cap_inr: 100000        # Rs 1 lakh
+  thin_data_terms_days: 15
+  min_profiles: 30                 # fewer profiles than this = thin data
+
+base_limits:                       # by profiles currently at the company
+  - {max_profiles: 10, limit_inr: 200000}
+  - {max_profiles: 50, limit_inr: 1000000}
+  - {max_profiles: 200, limit_inr: 3000000}
+  - {max_profiles: 1000, limit_inr: 7500000}
+  - {max_profiles: null, limit_inr: 15000000}
+
+signals:
+  joiner_rate:          {red_below: 0.02, amber_below: 0.06}   # joiners in 12 months / current profiles
+  headcount_6m_change:  {red_at_or_below: -0.20, amber_at_or_below: -0.10}
+  headcount_drawdown:   {red_at_or_above: 0.30, amber_at_or_above: 0.15}  # below the 24-month peak
+  finance_head_exit:    {red: true, window_days: 180}
+  finance_team_exits:   {red_at_or_above: 5, amber_at_or_above: 3, window_days: 180}
+  clevel_exits:         {red_at_or_above: 2, amber_at_or_above: 1, window_days: 180}
+  funding_age_months:   {red_above: 24, amber_above: 18}       # red only while headcount is falling
+  company_age_years:    {amber_below: 1}
+  job_posts:            {window_days: 365}                     # zero posts: amber; red when joiner rate is red too
+  news_window_days: 180
+
+rules:  # first match wins
+  - {id: R1, when: fraud_flag, decision: hold_verify}
+  - {id: R2, when: unverified_large, decision: hold_verify}
+  - {id: R3, when: zombie, decision: advance_only}
+  - {id: R4, when: two_or_more_red, decision: advance_only}
+  - {id: R5, when: thin_data, decision: thin_data_cap}
+  - {id: R6, when: one_red, decision: reduce, share_of_base: 0.25, max_terms_days: 30, alt_advance_pct: 50}
+  - {id: R7, when: two_or_more_amber, decision: reduce, share_of_base: 0.50, max_terms_days: 30}
+  - {id: R8, when: clean, decision: approve, share_of_base: 1.0, max_terms_days: 60}

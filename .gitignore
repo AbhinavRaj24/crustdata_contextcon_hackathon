@@ -1,0 +1,14 @@
+crustdata_api.txt
+.env
+*.pdf
+some_photos_from_ppt/
+hackathon_about.txt
+__pycache__/
+node_modules/
+.venv/
+gemini_api_key.txt
+.venv/
+*.db
+*.db-shm
+*.db-wal
+TermsDesk_Spec.pdf
