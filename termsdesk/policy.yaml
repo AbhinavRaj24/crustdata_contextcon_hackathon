@@ -1,5 +1,6 @@
 # TermsDesk credit policy. Every decision stores this version. Starting values; the backtest tunes them.
-version: v2
+# v3 (B, 6 Nov): calibration fixes for false alarms on healthy companies (see NOTES.md, "Calibration").
+version: v3
 
 defaults:
   terms_days: 30
@@ -19,14 +20,18 @@ base_limits:                       # by profiles currently at the company
 
 signals:
   joiner_rate:          {red_below: 0.02, amber_below: 0.06}   # joiners in 12 months / current profiles
-  headcount_6m_change:  {red_at_or_below: -0.20, amber_at_or_below: -0.10}
-  headcount_drawdown:   {red_at_or_above: 0.30, amber_at_or_above: 0.15}  # below the 24-month peak
+  headcount_6m_change:  {red_at_or_below: -0.20, amber_at_or_below: -0.10, min_abs_change: 10}  # drops under 10 people are noise
+  headcount_drawdown:   {red_at_or_above: 0.30, amber_at_or_above: 0.15}  # below the 24-month peak (3-point median)
+  headcount_max_gap_days: 120      # point in time: the nearest series point must be this close to T
   finance_head_exit:    {red: true, window_days: 180}
   finance_team_exits:   {red_share: 0.30, amber_share: 0.15, min_people: 3, window_days: 180}  # share of the finance team that left
-  clevel_exits:         {red_at_or_above: 2, amber_at_or_above: 1, window_days: 180}
+  clevel_exits:         {red_at_or_above: 2, amber_at_or_above: 1, window_days: 180,
+                         large_company_profiles: 1000, large_red_at_or_above: 4, large_amber_at_or_above: 2}
+  internal_move_days: 62           # a new job at the same company within this many days = promotion, not an exit
+  exits_lag_days: 60               # point in time: only jobs that ended this long before T (profiles update late)
   funding_age_months:   {red_above: 24, amber_above: 18}       # red only while headcount is falling
   company_age_years:    {amber_below: 1}
-  job_posts:            {window_days: 365}                     # zero posts: amber; red when joiner rate is red too
+  job_posts:            {window_days: 365}                     # zero posts: amber/red only when joiners are weak too
   news_window_days: 180
 
 rules:  # first match wins

@@ -133,8 +133,9 @@ def list_events(case_id: str) -> list[dict]:
 # ---------- evidence ----------
 
 def add_evidence(ev: Evidence) -> Evidence:
-    n = conn().execute("SELECT COUNT(*) FROM evidence WHERE case_id = ?", (ev.case_id,)).fetchone()[0]
-    ev.id = ev.id or f"{ev.case_id}-e{n + 1}"
+    # Rows without an explicit id get a random one: a count-based id could be reused after clear_evidence
+    # and silently overwrite a row an older decision still cites (found by B).
+    ev.id = ev.id or f"{ev.case_id}-e{secrets.token_hex(4)}"
     conn().execute(
         "INSERT OR REPLACE INTO evidence VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
         (ev.id, ev.case_id, ev.signal, _j(ev.value), ev.unit, ev.source, ev.url, ev.as_of, ev.status, ev.note, ev.cost, now()),
