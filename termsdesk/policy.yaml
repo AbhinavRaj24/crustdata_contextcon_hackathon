@@ -1,6 +1,7 @@
 # TermsDesk credit policy. Every decision stores this version. Starting values; the backtest tunes them.
 # v3: calibration fixes for false alarms on healthy companies (see NOTES.md, "Calibration").
-version: v3.2
+version: v3.3
+# v3.3: a company's own listed domain (zeptonow.com for Zepto) is unverified, not fraud; unverified senders capped at a clean Rs 4 lakh.
 # v3.2 (from the backtest): hiring momentum. 2 of 6 collapses flagged early -> 5 of 6, no extra false alarm on 7 healthy controls.
 # v3.1: calibration on 13 live companies -> zombie threshold 2% -> 1%; regional 'City/Cluster CEO' titles are not C-level.
 

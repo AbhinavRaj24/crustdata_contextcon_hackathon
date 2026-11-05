@@ -100,3 +100,6 @@ append a table here: company, profiles, joiner rate, job posts, decision, right 
   seen today are complete, so it hid this. Fix: windows end 2 months back (same as the 60-day exit lag), live and in the backtest.
   Calibration back to 12 of 12. Honest backtest (v3.2 with lag): 5 of 6 collapses flagged early (2 of 6 without momentum);
   healthy controls 9 of 56 flagged (7 of 56 without), all reduced limits, never refusals.
+- 04:25 Same Zepto request gave hold (04:01) and approve (04:05, 04:13): not randomness but code changes in between (the zeptonow.com
+  domain fix and the Rs 4 lakh cap), while every decision still said "policy v3.2". Lesson: any change to decision rules bumps the
+  policy version, so a reviewer can always tell why two decisions differ. Now policy v3.3.
