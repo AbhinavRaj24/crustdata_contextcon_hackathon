@@ -1,0 +1,20 @@
+# Backtest cohort. Distressed = publicly reported unpaid salaries/vendors, insolvency or shutdown.
+# event_date + event_source are filled from cited news (see backtest/events.py); never from memory.
+distressed:
+  - {name: Dunzo, domain: dunzo.com}
+  - {name: "BYJU'S", search_before: "2024-06-01", domain: byjus.com, event_date: "2023-06-27", event_source: "https://timesofindia.indiatimes.com/business/india-business/byjus-ex-staff-allege-pf-unpaid-company-says-no-dues/articleshow/101293728.cms"}  # reviewed: auto-pick (2022 centre closure reversal) was not unpaid dues
+  - {name: GoMechanic, search_before: "2023-12-31", domain: gomechanic.in}
+  - {name: BluSmart, search_before: "2025-07-01", domain: blu-smart.com}
+  - {name: Builder.ai, search_before: "2025-07-01", domain: builder.ai, exclude: "no dated, citable event found"}
+  - {name: Koo, search_before: "2024-12-31", domain: kooapp.com}  # caution: headcount rises after the 2024 shutdown (stale or mismatched record)
+  - {name: Bira 91, search_before: "2025-09-01", domain: bira91.com}
+  - {name: Hike, search_before: "2025-12-31", domain: hike.in, exclude: "no dated, citable event found"}
+controls:
+  - {name: Razorpay, domain: razorpay.com}
+  - {name: Zerodha, domain: zerodha.com}
+  - {name: Groww, domain: groww.in}
+  - {name: Zepto, domain: zeptonow.com}
+  - {name: Meesho, domain: meesho.com, exclude: "resolves to legal entity Fashnear Technologies with 102 profiles (wrong record)"}
+  - {name: PhysicsWallah, domain: pw.live}
+  - {name: CRED, domain: cred.club}
+  - {name: Freshworks, domain: freshworks.com}

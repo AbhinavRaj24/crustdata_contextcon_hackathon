@@ -12,3 +12,4 @@ gemini_api_key.txt
 *.db-shm
 *.db-wal
 TermsDesk_Spec.pdf
+backtest/run.log

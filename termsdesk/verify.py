@@ -44,7 +44,8 @@ def levenshtein(a: str, b: str) -> int:
 
 
 def domain_check(sender_domain: Optional[str], primary: Optional[str]) -> tuple[str, str]:
-    """Returns (result, why). result: exact | free_mail | lookalike | unrelated | missing."""
+    """Returns (result, why). result: exact | free_mail | lookalike | alt_domain | unrelated | missing.
+    alt_domain (same name, other ending, e.g. dunzo.in for dunzo.com) may be the company's own: unverified, not fraud."""
     if not sender_domain:
         return "missing", "no sender email domain"
     s = sender_domain.lower().removeprefix("www.")
@@ -57,7 +58,7 @@ def domain_check(sender_domain: Optional[str], primary: Optional[str]) -> tuple[
         return "exact", f"{s} matches the company's domain {p}"
     sl, pl = registrable_label(s), registrable_label(p)
     if sl == pl:
-        return "lookalike", f"{s} copies {p} with a different ending"
+        return "alt_domain", f"{s} has the company's name but not its known domain {p}; it may be theirs or a copy"
     if len(pl) >= 4 and pl in sl.replace("-", ""):
         return "lookalike", f"{s} wraps the real name '{pl}' in extra words"
     if len(pl) >= 4 and levenshtein(_homoglyph(sl), _homoglyph(pl)) <= 2:
