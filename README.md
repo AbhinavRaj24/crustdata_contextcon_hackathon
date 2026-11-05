@@ -50,16 +50,26 @@ A request in the customer's own words goes in (English, Hinglish, or a form). A 
 
 The Dunzo case is the hardest one. Crustdata's summary fields say Dunzo is alive: status "active", about 2,400 employees, "+8% growth", 1,490 people still listing it as their employer. People stop updating profiles when a company dies, so headcount flatlines instead of falling. TermsDesk looks at **flows** instead of levels: nobody has joined Dunzo in a year, and nobody is hiring.
 
+## Screenshots
+
+**Dead company caught.** Crustdata says Dunzo is "active" with 1,490 profiles, but nobody has joined in a year, so it gets advance payment only, with every signal cited:
+
+![Dunzo: advance payment only](docs/screenshots/dead_company.png)
+
+| Healthy buyer approved | Purchase-order fraud held | Request form |
+| --- | --- | --- |
+| ![Razorpay approved](docs/screenshots/approved.png) | ![Lookalike domain held](docs/screenshots/fraud_hold.png) | ![New request](docs/screenshots/home.png) |
+
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TD
     R[Request: text, Hinglish, form] --> P[Parse<br/>rules + Gemini]
     P --> RS[Resolve company<br/>company/identify]
     RS --> V{Verify buyer<br/>domain + sender}
     V -- lookalike or unverified --> H[Hold<br/>finance head found via person/search<br/>asked out of band]
     H -- confirms --> E
-    V -- verified --> E[Evidence: 10 signals<br/>company/enrich, person/search,<br/>job/search, web search + fetch]
+    V -- verified --> E[Evidence: 11 signals<br/>company/enrich, person/search,<br/>job/search, web search + fetch]
     E --> D[Decide<br/>policy.yaml rules]
     D -- over Rs 50 lakh / conflict --> Q[Human queue]
     D --> X[Explain<br/>template + Gemini + citation guard]
@@ -68,6 +78,8 @@ flowchart LR
     A --> M[Monitor<br/>watch events]
     M -- fact changed --> E
 ```
+
+Diagram: [open in Mermaid Live](https://mermaid.live/view#pako:eNpVUk2P2jAQ_SujXMuW7qEXVCGtBCoXJBYqhJTsYWJPEhfHTv0BRIj_3okJqyWXeOx5b-a9mWsmrKRsBlml7Vk06AL8WRQG-NvmW_oXyYcZBLqECayUqbXyzQQq69oPeHmZwybfoPP0q3TTuYuaPHyD39Qqoz7uLJuUtt0xmbf6RCBs26HpE2I8T5UkE1TVj5jtLoH21z05voUy9uQSQNoWleEanowkd7vn7zkdtLVH1OpIYB1EcxqgimRiWuUrq2ViqJRBIwgaQsk6opFwUggdOW_N1BM60aRE9EdG2xjAVlCikWNzq6GYsKZSrvWJffmli6eyy3x5GqQJmsHrK3hVG9T-STkZpwQ7-lR_klL-2vIRw5lKuJ9Ze0VBNGM3y1RokS9IcKWE66xWov_eY6shjWRMXQz9WW4Qth5-_gCNxwamSQoDQiJ6z1exRQM890hfcHM45MtLp9n8VCNQy0Ggz2nzQaiAQVkDdUT3cOuQwG_5m-A1GoYGlu1IHJ49Le1lsJh_E0AheBwBNMma3Ih_H5rGrnPc-N3Uw_3hLQXrfG2NCva-HWdkY4BOvEwP0esBXyHL4-U29WMwhckmkLXkeJ3ksP7XIgsNtVRwUGSSKow6FNltSMMY7K43gp-Ci8Q3sZMsfqGwdtiO17f_oJsRxg) (opens for anyone) · [image](docs/screenshots/architecture.png) · [source](docs/diagram.mmd).
 
 Every state is saved to SQLite before the next step starts, so `resume(case_id)` restarts a crashed case at its first unfinished step.
 
