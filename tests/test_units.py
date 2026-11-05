@@ -92,3 +92,9 @@ def test_outbox_sends_once():
 def test_sender_first_name_is_not_taken_as_the_company():
     r = rules_parse("t", "hi, Paul here from razorpay (paul.dinakar@razorpay.com) - 40 laptop chahiye, 30 lakh ka order, 45 din ka credit")
     assert r.company_name != "Paul" and r.company_domain == "razorpay.com" and r.amount_inr == 3_000_000 and r.terms_days == 45
+
+
+def test_team_signature_is_not_a_person():
+    """Live UI run, 6 Nov: 'Accounts team' was searched as a person called 'Accounts' and the order was held."""
+    r = rules_parse("t", "Dear Acme, BYJU'S requires 60 tablets, total Rs 25 lakh, payment in 60 days. Accounts team, accounts@byjus.com")
+    assert r.sender_name is None and r.company_domain == "byjus.com"

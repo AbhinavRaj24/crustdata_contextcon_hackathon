@@ -635,6 +635,8 @@ def parse_request(raw_text: str = "", case_id: str = "", form: Optional[dict] = 
         sdom if sdom and sdom not in FREE_EMAIL_DOMAINS else None)
 
     sender_name = form.get("sender_name") or _sender_name(text, hdr.group("name") if hdr else None, sender_email)
+    if sender_name and set(re.split(r"[\s._-]+", sender_name.lower())) & (ROLE_MAILBOXES | {"team", "department", "dept", "desk", "office"}):
+        sender_name = None  # "Accounts team", "Procurement desk": a team signature, not a person
     company_name = form.get("company_name")
     if not company_name:
         cands = _company_candidates(text, sender_name)
@@ -668,6 +670,9 @@ def parse_request(raw_text: str = "", case_id: str = "", form: Optional[dict] = 
             if not company_domain and _in_text(extra.get("company_domain"), text):
                 d = clean_domain(extra["company_domain"])
                 company_domain = d if d and d not in FREE_EMAIL_DOMAINS else None
+
+    if sender_name and set(re.split(r"[\s._-]+", sender_name.lower())) & (ROLE_MAILBOXES | {"team", "department", "dept", "desk", "office"}):
+        sender_name = None  # also after the model pass: "Accounts team" is a team, not a person
 
     if not company_name and company_domain:
         company_name = name_from_domain(company_domain)
