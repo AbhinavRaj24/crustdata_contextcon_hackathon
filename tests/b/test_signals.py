@@ -266,3 +266,11 @@ def test_out_of_credits_stops_the_case(use_client):
 def test_two_argument_call_still_works(use_client):
     use_client(healthy_world())
     assert signals.collect("compat", H)
+
+
+def test_regional_ceo_titles_are_not_c_level():
+    """Zomato false alarm (live calibration, 6 Nov): City/Cluster CEOs and City COOs counted as C-level exits."""
+    for t in ["Cluster Ceo", "City CEO Madhya Pradesh and Chhattisgarh", "CEO - Andhra cluster", "City COO - Supply", "Regional CTO"]:
+        assert not signals.is_clevel(t), t
+    for t in ["CEO", "Chief Operating Officer", "Co-founder & CTO"]:
+        assert signals.is_clevel(t), t

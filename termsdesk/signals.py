@@ -46,7 +46,10 @@ CLEVEL = re.compile(r"\b(?:ceo|coo|cto|cbo|cro|cmo|cpo)\b|chief\s+\w+\s+officer|
                     re.IGNORECASE)
 NOT_CLEVEL = re.compile(r"founder'?s?\s+office|office\s+of\s+(?:the\s+)?(?:founders?|ceo|cto|coo|cfo)|chief\s+of\s+staff|"
                         r"(?:entrepreneur|founder)\s+in\s+residence|\bto\s+(?:the\s+)?(?:ceo|cto|coo|founders?)\b|"
-                        r"assistant|associate|analyst|intern\b|\bea\b", re.IGNORECASE)
+                        r"assistant|associate|analyst|intern\b|\bea\b|"
+                        # regional heads are not company leadership: "City CEO", "Cluster CEO", "CEO - Andhra cluster" (Zomato)
+                        r"\b(?:city|cluster|zonal|zone|regional|region|area|state|district|circle|branch|store|hub|country|"
+                        r"territory|market|vertical|division|unit)\b", re.IGNORECASE)
 JUNK_NEWS = re.compile(r"tracxn|crunchbase|zoominfo|cbinsights|pitchbook|owler|glassdoor|ambitionbox|linkedin|markhub",
                        re.IGNORECASE)
 BOT_BLOCK_CODES = {401, 403, 405, 406, 429}   # the site answered; it just refuses automated readers

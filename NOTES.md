@@ -72,3 +72,27 @@ that cannot reach the API, so the first run needs a teammate's key (about 7-10 c
   files: test path fixes for the tests/b/ folder. store.add_evidence now gives random ids to rows without one (B's finding:
   count-based ids could be reused after clear_evidence and overwrite a row an older decision cites).
 - Full suite after integration: 210 offline tests and 13 live end-to-end tests pass.
+
+### Calibration run (live, 2026-11-06, policy v3.1, ask Rs 20 lakh on 45 days)
+
+| Company | Label | Profiles | Joiners 12m | Job posts 12m | Red / amber | Could not verify | Decision | Right? | Credits |
+|---|---|---|---|---|---|---|---|---|---|
+| Razorpay #897127 | healthy | 3582 | 829 (23.1%) | 202 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 4.2 |
+| Zerodha #7275 | healthy | 2113 | 36 (1.7%) | 0 | joiner_rate amber, finance_team_exits amber, job_posts amber | funding_age | reduce Rs 20 lakh / 30d (R7 two or more amber signals) | right (caution) | 3.8 |
+| Freshworks #6042422 | healthy | 7531 | 1024 (13.6%) | 1388 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 8.0 |
+| Swiggy #5702 | healthy | 16466 | 2173 (13.2%) | 2030 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 10.0 |
+| Zomato #6162764 | healthy | 13434 | 1245 (9.3%) | 1 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 10.0 |
+| Groww #5894 | healthy | 2119 | 437 (20.6%) | 97 | none | website | approve Rs 20 lakh / 45d (R8 clean) | right | 5.0 |
+| Meesho #5300979 | healthy | 6300 | 1101 (17.5%) | 306 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 9.0 |
+| PhonePe #5729 | healthy | 9909 | 1021 (10.3%) | 540 | none | none | approve Rs 20 lakh / 45d (R8 clean) | right | 10.0 |
+| Dunzo #5721 | distressed | 1490 | 0 (0.0%) | 0 | joiner_rate red, funding_age amber | job_posts | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 1.7 |
+| BYJU'S #5705 | distressed | 10682 | 3 (0.0%) | 0 | joiner_rate red, job_posts red, distress_news red, funding_age amber | none | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 7.0 |
+| Koo App USA #609146 | distressed | 0 | 0 (0.0%) | 0 | none | profiles, joiner_rate, funding_age, job_posts | reduce Rs 1 lakh / 15d (R5 thin data) | thin data | 5.2 |
+| BluSmart #6214 | distressed | 738 | 0 (0.0%) | 0 | joiner_rate red, job_posts red, headcount_trend amber, funding_age amber | none | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 4.6 |
+| Builder.ai #632808 | distressed | 471 | 0 (0.0%) | 0 | joiner_rate red, job_posts red, headcount_trend amber, funding_age amber, website amber | none | advance_only Rs 0 / 0d (R3 zombie (nobody joining)) | right | 4.0 |
+
+12 of 12 right. False alarms: none. Missed: none.
+
+- 02:55 First live calibration (policy v3): 10 of 12 right. Zomato false alarm: "Cluster CEO", "City CEO", "City COO" counted as
+  C-level exits -> regional titles excluded. Zerodha false alarm: 1.7% joiners called a zombie, while every dead company sat at
+  0.0-0.03% -> zombie threshold 2% -> 1% (policy v3.1). Re-run: 12 of 12 right; Zerodha gets the full amount on 30 days (caution).
